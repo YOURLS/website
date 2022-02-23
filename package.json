@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev --port=3005",
+    "build": "vitepress build",
+    "serve": "vitepress serve",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@vue/theme": "^1.0.0",
+    "prettier": "^2.5.1",
+    "vitepress": "^0.21.6"
+  }
+}
