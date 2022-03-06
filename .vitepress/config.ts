@@ -46,7 +46,21 @@ const nav: NavItem[] = [
       {
         text: 'Ressources',
         items: [
-          { text: 'Awesome YOURLS', link: 'https://github.com/awesome-yourls' },
+          { text: 'Awesome YOURLS', link: 'https://github.com/YOURLS/awesome-yourls' },
+          { text: 'Plugin sample', link: 'https://github.com/YOURLS/plugin-sample' },
+        ],
+      },
+      {
+        text: 'References',
+        items: [
+          { text: 'Hooklist', link: 'https://yourls.org/hooklist.php' },
+          { text: 'XRef', link: 'https://yourls.org/xref/' },
+        ],
+      },
+      {
+        text: 'News',
+        items: [
+          { text: 'Blog', link: 'https://blog.yourls.org' },
         ],
       },
       // {
