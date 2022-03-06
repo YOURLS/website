@@ -37,7 +37,16 @@ const head: HeadConfig[] = [
 ]
 
 const nav: NavItem[] = [
-  { text: 'Docs', link: '/guide/quick-start' },
+  {
+    text: 'Docs',
+    link: '/guide/quick-start',
+    activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
+  },
+  {
+    text: 'Development',
+    link: '/development/plugins',
+    activeMatch: `^/(development)/`,
+  },
   {
     text: 'Ecosystem',
     items: [
@@ -47,13 +56,13 @@ const nav: NavItem[] = [
           { text: 'Awesome YOURLS', link: 'https://github.com/awesome-yourls' },
         ],
       },
-      {
-        text: 'Documentation',
-        items: [
-          { text: 'Laravel', link: 'https://laravel.com/' },
-          { text: 'Vue.js', link: 'https://vuejs.org/' },
-        ],
-      },
+      // {
+      //   text: 'Documentation',
+      //   items: [
+      //     { text: 'Laravel', link: 'https://laravel.com/' },
+      //     { text: 'Vue.js', link: 'https://vuejs.org/' },
+      //   ],
+      // },
     ],
   },
   { text: 'Sponsor', link: '/sponsor' },
@@ -66,50 +75,65 @@ const sidebar: SidebarConfig = {
       items: [
         { text: 'Introduction', link: '/guide/introduction' },
         { text: 'Quick start', link: '/guide/quick-start' },
+        { text: 'Server configuration', link: '/guide/server-configuration' },
       ],
     },
     {
       text: 'Essentials',
       items: [
-        { text: 'Development', link: '/guide/essentials/development' },
-        {
-          text: 'Server and manifest modes',
-          link: '/guide/essentials/server-and-manifest-modes',
-        },
-        {
-          text: 'Working with assets',
-          link: '/guide/essentials/working-with-assets',
-        },
         { text: 'Configuration', link: '/guide/essentials/configuration' },
-        {
-          text: 'Building for production',
-          link: '/guide/essentials/building-for-production',
-        },
-        { text: 'Tag generation', link: '/guide/essentials/tag-generation' },
+        { text: 'Credentials', link: '/guide/essentials/credentials' },
+        { text: 'Private/Public', link: '/guide/essentials/private-or-public' },
+        { text: 'Character set', link: '/guide/essentials/charset' },
       ],
     },
     {
-      text: 'Features',
+      text: 'Extend',
       items: [
-        { text: 'Entrypoints', link: '/guide/features/entrypoints' },
-        { text: 'Directives', link: '/guide/features/directives' },
-        { text: 'Helpers', link: '/guide/features/helpers' },
-        { text: 'SSR', link: '/guide/features/ssr' },
+        { text: 'Plugins', link: '/guide/extend/plugins' },
+        { text: 'Pages', link: '/guide/extend/pages' },
+        { text: 'Languages', link: '/guide/extend/languages' },
+        { text: 'Possible with a plugin', link: '/guide/extend/possible-with-a-plugin' },
       ],
     },
     {
-      text: 'Extra topics',
+      text: 'Advanced',
       items: [
-        { text: 'Vite with Inertia', link: '/guide/extra-topics/inertia' },
-        {
-          text: 'Multiple configurations',
-          link: '/guide/extra-topics/multiple-configurations',
-        },
-        { text: 'Path to PHP', link: '/guide/extra-topics/php-path' },
-        {
-          text: 'Troubleshooting',
-          link: '/guide/extra-topics/troubleshooting',
-        },
+        { text: 'Passwordless API', link: '/guide/advanced/passwordless-api' },
+        { text: 'Proxy', link: '/guide/advanced/proxy' },
+        { text: 'Public shortening', link: '/guide/advanced/public-shortening' },
+        { text: 'Custom protocols', link: '/guide/advanced/custom-protocols' },
+      ],
+    },
+    {
+      text: 'Troubleshooting',
+      items: [
+        { text: 'First steps', link: '/guide/troubleshooting/first-steps' },
+        { text: 'Common', link: '/guide/troubleshooting/common' },
+        { text: 'Abuse', link: '/guide/troubleshooting/abuse' },
+      ],
+    },
+  ],
+  '/development/': [
+    {
+      text: 'Getting started',
+      items: [
+        { text: 'Plugins', link: '/development/plugins' },
+        { text: 'Don\'t hack core', link: '/development/dont-hack-core' },
+        { text: 'Coding standards', link: '/development/coding-standards' },
+        { text: 'Database', link: '/development/database-queries' },
+        { text: 'Hooks', link: '/development/hooks' },
+        { text: 'i18n', link: '/development/i18n' },
+        { text: 'Debugging', link: '/development/debugging' },
+      ],
+    },
+    {
+      text: 'Examples',
+      items: [
+        { text: 'QRCode Link', link: '/development/examples/qrcode' },
+        { text: 'Preview URL', link: '/development/examples/preview' },
+        { text: 'Public Prefix-N-Shorten', link: '/development/examples/public-prefix' },
+        { text: 'RSS', link: '/development/examples/rss' },
       ],
     },
   ],
