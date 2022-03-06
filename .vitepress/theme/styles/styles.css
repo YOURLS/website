@@ -1,17 +1,17 @@
 body {
-  --vt-c-brand: #6988e6;
-  --vt-c-brand-light: #c084fc;
-  --vt-c-brand-dark: #f9a8d4;
-  --vt-c-brand-highlight: #f472b6;
-  --vt-c-green: #6988e6;
+  --vt-c-brand: #2a85b3;
+  --vt-c-brand-light: #88c0eb;
+  --vt-c-brand-dark: #1f669c;
+  --vt-c-brand-highlight: #2a85b3;
+  --vt-c-green: #2a85b3;
 }
 
 .dark body {
-  --vt-c-brand: #d8b4fe;
-  --vt-c-brand-light: #c084fc;
-  --vt-c-brand-dark: #d8b4fe;
-  --vt-c-brand-highlight: #f9a8d4;
-  --vt-c-green: #d8b4fe;
+  --vt-c-brand: #88c0eb;
+  --vt-c-brand-light: #1f669c;
+  --vt-c-brand-dark: #88c0eb;
+  --vt-c-brand-highlight: #c7e7ff;
+  --vt-c-green: #88c0eb;
   --docsearch-container-background: rgba(0, 0, 0, 0.5);
 }
 
@@ -25,7 +25,7 @@ a.VPNavBarTitle svg {
 
 a.VPNavBarTitle {
   width: 40px;
-  background-image: url(/logo.svg);
+  background-image: url(/favicon.svg);
   background-position: center;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -39,24 +39,4 @@ a.VPNavBarTitle {
 /* Add missing PHP in code blocks */
 .vt-doc [class~='language-php']::before {
   content: 'php';
-}
-
-#VPContent,
-#VPContent > .VPContentPage {
-  height: 100%;
-  min-height: calc(100vh - var(--vt-nav-height));
-}
-
-#VPContent > .VPContentPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#VPContent > .VPContentPage main {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
