@@ -39,4 +39,4 @@ If you can code (it's fun!) and look for ideas, browse through the issues labell
 ## Related resources
 
 - [Plugins development guide](/development/plugins) is your first crash course
-- The official [YOURLS Blog](http://blog.yourls.org/) is a place for announcements and YOURLS plugins news
+- The official [YOURLS Blog](https://blog.yourls.org/) is a place for announcements and YOURLS plugins news

@@ -52,7 +52,7 @@ $yourls_user_passwords = array(
 
 User will still log in using `joe` as a username and `MyPassword` as a password, but this password is no longer written down anywhere in the config file.
 
-**Nerd note**: we're using the rock solid [phpass](http://www.openwall.com/phpass/) library to encrypt passwords. This library will use the most secure encryption protocol installed on your server, and will hash your passwords so tight even the NSA will never find out.
+**Nerd note**: we're using the rock solid [phpass](https://www.openwall.com/phpass/) library to encrypt passwords. This library will use the most secure encryption protocol installed on your server, and will hash your passwords so tight even the NSA will never find out.
 
 ## Protecting your config file
 
@@ -95,7 +95,7 @@ $salt = rand( 10000, 99999 ); // example: 71688
 $encrypted = 'md5:' . $salt . ':' . md5( $salt . $password ) // example: md5:71688:0ce43474167f743b7b92d046ae970801
 ```
 
-You can simply use the [YOURLS salted hash generator](http://yourls.org/md5).
+You can simply use the [YOURLS salted hash generator](https://yourls.org/md5).
 
 Edit your `config.php` so that the `key => value` associations with encrypted passwords looks like the following:
 

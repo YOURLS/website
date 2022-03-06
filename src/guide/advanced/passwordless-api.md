@@ -20,7 +20,7 @@ A secret signature token is unique, associated to one account, and can be used o
 
 Use parameter `signature` in your API requests. Example:
 
-`http://yoursite/yourls-api.php?signature=1002a612b4&action=...`
+`https://yoursite/yourls-api.php?signature=1002a612b4&action=...`
 
 ## Usage of a time limited signature token
 
@@ -39,7 +39,7 @@ $signature = md5( $timestamp . '1002a612b4' );
 
 Now use parameters `signature` and `timestamp` in your API requests. Example:
 
-`http://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signature&action=...`
+`https://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signature&action=...`
 
 This URL would be valid for only 43200 seconds (12 hours), the default value of constant `YOURLS_NONCE_LIFE`.
 
@@ -59,7 +59,7 @@ $signature = hash('sha512', $timestamp . '1002a612b4' );
 ?>
 ```
 
-Now use `http://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signature&hash=sha512&action=...`
+Now use `https://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signature&hash=sha512&action=...`
 
 **NB**: if you try to use a hash algorithm that your setup doesn't support, you will get a simple authentication error as if the timestamp or signature were incorrect
 

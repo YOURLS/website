@@ -6,7 +6,7 @@ outline: deep
 
 # Public Prefix-N-Shorten
 
-Redirect all the "Prefix n' Shorten" URLs (eg `http://sho.rt/http://somelongurl.com/`) to a public interface instead of the admin area.
+Redirect all the "Prefix n' Shorten" URLs (eg `https://sho.rt/https://somelongurl.com/`) to a public interface instead of the admin area.
 
 ## Install
 
@@ -21,16 +21,16 @@ Redirect all the "Prefix n' Shorten" URLs (eg `http://sho.rt/http://somelongurl.
 <?php
 /**
 Plugin Name: Public Prefix-N-Shorten
-Plugin URI: http://yourls.org/
+Plugin URI: https://yourls.org/
 Description: Redirect "Prefix n' Shorten" bookmarklets to public interface
 Version: 1.0
 Author: Ozh
-Author URI: http://ozh.org/
+Author URI: https://ozh.org/
 **/
 
 // URL of your public interface, with query parameter to which the long URL will be passed
 // This URL must contain a query string with "parameter equals %" (eg "url=%")
-define( 'OZH_PUBPNF_URL', 'http://shor.rt/public.php?url=%' );
+define( 'OZH_PUBPNF_URL', 'https://shor.rt/public.php?url=%' );
 
 yourls_add_action( 'load_template_redirect_admin', 'ozh_pubpnf' );
 function ozh_pubpnf( $args ) {

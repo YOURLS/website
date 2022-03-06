@@ -24,7 +24,7 @@ Similarly, you can run a public API with a private install. There is also a samp
 
 If you run a public interface, you will have to deal with spam and if you're not prepared, your webhost will not like it and eventually shut your account down.
 
-Read the page about [Abuse](/guide/troubleshooting/abuse). Install anti spam plugins from the [Plugin List](https://github.com/YOURLS/awesome-yourls) or even consider adding a [Captcha](http://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/). Also, read this [blog post](http://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/).
+Read the page about [Abuse](/guide/troubleshooting/abuse). Install anti spam plugins from the [Plugin List](https://github.com/YOURLS/awesome-yourls) or even consider adding a [Captcha](https://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/). Also, read this [blog post](https://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/).
 
 ## Protocols
 

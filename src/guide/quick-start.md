@@ -21,5 +21,5 @@ If you are totally new to web app management, it might not be the best idea to j
 4. Fill `user/config.php` with the required settings
 5. Upload the unzipped files to your domain public_html or www folder
 6. Create a new database (see Configuration – you can also use an existing one)
-7. Point your browser to `http://your-own-domain-here.com/admin/`
+7. Point your browser to `https://your-own-domain-here.com/admin/`
 8. Follow the installation procedure

@@ -28,11 +28,11 @@ The plugin file `plugin.php` needs to begin with a header like the following one
 <?php
 /*
 Plugin Name: My Sample Plugin
-Plugin URI: http://your-own-domain-here.com/articles/hey-test-my-sample-plugin/
+Plugin URI: https://your-own-domain-here.com/articles/hey-test-my-sample-plugin/
 Description: This plugin does something and something else
 Version: 1.0
 Author: Ozh
-Author URI: http://ozh.org/
+Author URI: https://ozh.org/
 */
 ```
 
@@ -149,7 +149,7 @@ $keyword = yourls_apply_filter( 'random_keyword', $keyword );
 
 If a custom function hooks into the 'random_keyword' filter, it will be sent `$keyword` as an argument.
 
-Let's append 'iloveyourls' to every sequential keyword, so that the generated shorturl become `http://sho.rt/abciloveyourls` instead of `http://sho.rt/abc`
+Let's append 'iloveyourls' to every sequential keyword, so that the generated shorturl become `https://sho.rt/abciloveyourls` instead of `https://sho.rt/abc`
 
 ```php
 <?php
@@ -208,7 +208,7 @@ Plugin URI: https://github.com/YOURLS/my-first-plugin
 Description: Sample (pointless) plugin that interrupts short URLs redirection and creates absurdly long short URLs
 Version: 1.0
 Author: Ozh
-Author URI: http://ozh.org/
+Author URI: https://ozh.org/
 */
 
 // Hook our custom function into the 'pre_redirect' event
@@ -246,7 +246,7 @@ Congratulation, you've just extended the functionalities of YOURLS!
 
 ## List of hooks
 
-A full list of hooks (actions and filters) exists here: http://yourls.org/hooklist.php
+A full list of hooks (actions and filters) exists here: https://yourls.org/hooklist.php
 It is generated every night against the current development version of YOURLS
 
 If you code a plugin, you should run that dev version on a test install.

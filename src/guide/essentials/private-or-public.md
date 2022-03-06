@@ -18,7 +18,7 @@ define( 'YOURLS_PRIVATE', false );
 
 ## Private
 
-Setting to `define( 'YOURLS_PRIVATE', true );` (default setting) will make your admin area (`http://sho.rt/admin/`) protected by a login/password form.
+Setting to `define( 'YOURLS_PRIVATE', true );` (default setting) will make your admin area (`https://sho.rt/admin/`) protected by a login/password form.
 
 ## Public
 

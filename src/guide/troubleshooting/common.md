@@ -25,7 +25,7 @@ You've installed YOURLS, everything went fine and looks functional. However, whe
 
 ### Problem
 
-The Ajax script loads a URL like: `http://sho.rt/admin/index_ajax.php?mode=add&url=http://longurl.com/&keyword=123`
+The Ajax script loads a URL like: `https://sho.rt/admin/index_ajax.php?mode=add&url=https://longurl.com/&keyword=123`
 
 If that URL returns anything but a well formed result, then the Ajax script dies.
 

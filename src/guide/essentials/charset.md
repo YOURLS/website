@@ -10,7 +10,7 @@ In `user/config.php` the setting `YOURLS_URL_CONVERT` defines what characters sh
 
 ## Possible values : `36` or `62`. That's all.
 
-This rather cryptic setting defines the character set used for your short URL "keywords" (the `abc12` part in `http://sho.rt/abc12`) :
+This rather cryptic setting defines the character set used for your short URL "keywords" (the `abc12` part in `https://sho.rt/abc12`) :
 
 - with `36` : lower case alphanumeric, _ie_ allowed characters are `0123456789abcdefghijklmnopqrstuvwxyz`
 - with `62` : mixed case alphanumeric, _ie_ allowed characters are `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`

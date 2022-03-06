@@ -175,7 +175,7 @@ Practical example that will add `"title is modified"` to every admin page title,
 Plugin Name: Change admin page titles
 Version: 1.0
 Author: Ozh
-Author URI: http://ozh.org/
+Author URI: https://ozh.org/
 */
 
 class Hack_The_Page_Title{

@@ -20,7 +20,7 @@ YOURLS **cannot share** its root directory with another .htaccess rewrite rules 
 
 #### YOURLS installed on root
 
-If YOURLS root URL is `http://yoursite/`, the `.htaccess` file in the root directory must be like:
+If YOURLS root URL is `https://yoursite/`, the `.htaccess` file in the root directory must be like:
 
 ```apache
 # BEGIN YOURLS
@@ -36,7 +36,7 @@ RewriteRule ^.*$ /yourls-loader.php [L]
 
 #### YOURLS installed in subdirectory
 
-If YOURLS root URL is `http://yoursite/somedir/`, the `.htaccess` file in this subdirectory must be like:
+If YOURLS root URL is `https://yoursite/somedir/`, the `.htaccess` file in this subdirectory must be like:
 
 ```apache
 # BEGIN YOURLS

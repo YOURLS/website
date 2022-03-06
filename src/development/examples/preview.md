@@ -21,11 +21,11 @@ Add the character '`~`' to a short URL to display a preview screen before redire
 <?php
 /*
 Plugin Name: Preview URL
-Plugin URI: http://yourls.org/
+Plugin URI: https://yourls.org/
 Description: Preview URLs before you're redirected there
 Version: 1.0
 Author: Ozh
-Author URI: http://ozh.org/
+Author URI: https://ozh.org/
 */
 
 // EDIT THIS
