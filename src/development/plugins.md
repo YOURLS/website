@@ -14,15 +14,16 @@ YOURLS features a plugin architecture and API. Plugins are additional PHP script
 
 Using the plugin architecture, you can add new features to YOURLS without having to modify core files. This way, your changes won't be lost when you upgrade your YOURLS installation. Because, [don't hack core](/development/dont-hack-core).
 
-
 ## Structure of a Plugin File
 
-A plugin file needs to be named `plugin.php` and to be located in its own subdirectory of `[YOURLS_ROOT]/user/plugins`, *eg*:
+A plugin file needs to be named `plugin.php` and to be located in its own subdirectory of `[YOURLS_ROOT]/user/plugins`, _eg_:
+
 ```
 YOURLS_ROOT/user/plugins/my_sample_plugin/plugin.php
 ```
 
 The plugin file `plugin.php` needs to begin with a header like the following one:
+
 ```php
 <?php
 /*
@@ -37,21 +38,23 @@ Author URI: http://ozh.org/
 
 ## Plugin API
 
-YOURLS core uses two kinds of 'hooks', *filters* and *actions*, allowing your plugin to 'hook into' what YOURLS does.
+YOURLS core uses two kinds of 'hooks', _filters_ and _actions_, allowing your plugin to 'hook into' what YOURLS does.
 
-- *actions* are the hooks YOURLS triggers at specific points or during specific action. It's a way of telling "hey, this particular event just occurred", so your plugin can execute a defined function at this point.
-- *filters* are the hooks YOURLS triggers to allow modification of a variable before returning it, sending it into the database or displaying it.
+- _actions_ are the hooks YOURLS triggers at specific points or during specific action. It's a way of telling "hey, this particular event just occurred", so your plugin can execute a defined function at this point.
+- _filters_ are the hooks YOURLS triggers to allow modification of a variable before returning it, sending it into the database or displaying it.
 
 ### Actions
 
-*Actions* are triggered by specific actions: inserting a link in the database, sending headers to the browser, redirecting to a long URL...
+_Actions_ are triggered by specific actions: inserting a link in the database, sending headers to the browser, redirecting to a long URL...
 
 A typical action in YOURLS is a function call like the following:
+
 ```php
 yourls_do_action( 'some_event' );
 ```
 
 The function `yourls_do_action()` can also accept parameters to give more context to a particular event. For instance, the following action occurs on redirection to a long URL:
+
 ```php
 yourls_do_action( 'redirect_shorturl', $url );
 ```
@@ -67,11 +70,13 @@ The steps to create an action function are:
 #### Example of a simple Action function
 
 When an admin page is sent to the browser, after the YOURLS logo has been printed, an [event occurs in YOURLS core](https://github.com/YOURLS/YOURLS/blob/1.7/includes/functions-html.php#L15):
+
 ```php
 yourls_do_action( 'html_logo' );
 ```
 
 Let's add custom text right after the logo:
+
 ```php
 <?php
 // our custom function that adds text
@@ -88,6 +93,7 @@ Simple heh?
 #### Example of an advanced Action function
 
 Before the browser is redirected to another location (like when loading a short URL that points to a long URL), the following event is triggered:
+
 ```php
 yourls_do_action( 'pre_redirect', $location, $code );
 ```
@@ -97,6 +103,7 @@ with `$location` being the location to be redirected to, and `$code` being the s
 Now if you hook a custom function into the event 'pre_redirect', it will be passed `array($location, $code)` as an argument.
 
 Let's interrupt the redirection with a message telling the user they are about to be sent to another URL:
+
 ```php
 <?php
 // Hook our custom function into the 'pre_redirect' event
@@ -116,9 +123,10 @@ function warning_redirection( $args ) {
 
 ### Filters
 
-*Filters* are functions that process data, typically before being handled or returned by an internal function of YOURLS.
+_Filters_ are functions that process data, typically before being handled or returned by an internal function of YOURLS.
 
 A typical filter in YOURLS is a function call like the following:
+
 ```php
 $value = yourls_apply_filter( 'some_filter', $value );
 ```
@@ -127,13 +135,14 @@ $value = yourls_apply_filter( 'some_filter', $value );
 
 The steps to create a filter function are:
 
-1. define a custom PHP function `my_filter_function()` that accepts arguments, process them and *return* them;
+1. define a custom PHP function `my_filter_function()` that accepts arguments, process them and _return_ them;
 1. hook your function to the particular filter, using YOURLS function `yourls_add_filter()`;
 1. put your custom function and its hook into a plugin file.
 
 #### Example of a filter function
 
 When a short URL is created with no custom keyword provided, a random (actually, sequential) keyword is generated. Then this keyword goes through [the following filter](https://github.com/YOURLS/YOURLS/blob/1.7/includes/functions.php#L269):
+
 ```php
 $keyword = yourls_apply_filter( 'random_keyword', $keyword );
 ```
@@ -141,6 +150,7 @@ $keyword = yourls_apply_filter( 'random_keyword', $keyword );
 If a custom function hooks into the 'random_keyword' filter, it will be sent `$keyword` as an argument.
 
 Let's append 'iloveyourls' to every sequential keyword, so that the generated shorturl become `http://sho.rt/abciloveyourls` instead of `http://sho.rt/abc`
+
 ```php
 <?php
 // hook our custom function into the 'random_keyword' filter
@@ -189,6 +199,7 @@ First we need to create the plugin directory and file:
 **ProTip**: On Github, clone this skeleton repository to get yours in seconds: https://github.com/YOURLS/plugin-sample
 
 In this empty `plugin.php` paste the following code:
+
 ```php
 <?php
 /*

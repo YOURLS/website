@@ -17,6 +17,7 @@ To improve security and user experience, YOURLS 1.7+ **automatically encrypts** 
 Edit and save your config file with an array of simple `key => value` associations like the followings:
 
 One login/password:
+
 ```php
 <?php
 $yourls_user_passwords = array(
@@ -25,6 +26,7 @@ $yourls_user_passwords = array(
 ```
 
 Two or more users and login/passwords pairs:
+
 ```php
 <?php
 $yourls_user_passwords = array(
@@ -38,6 +40,7 @@ $yourls_user_passwords = array(
 ## Password auto-encryption
 
 Next time you'll run YOURLS, this array will be rewritten, replacing plain text passwords with encrypted and undecipherable hashes. If you check now your `config.php`, you should see something like:
+
 ```php
 <?php
 $yourls_user_passwords = array(
@@ -46,6 +49,7 @@ $yourls_user_passwords = array(
     // etc..
 );
 ```
+
 User will still log in using `joe` as a username and `MyPassword` as a password, but this password is no longer written down anywhere in the config file.
 
 **Nerd note**: we're using the rock solid [phpass](http://www.openwall.com/phpass/) library to encrypt passwords. This library will use the most secure encryption protocol installed on your server, and will hash your passwords so tight even the NSA will never find out.
@@ -58,13 +62,13 @@ Depending on your host, you should change `config.php` permissions to 400, 440 o
 
 ## FAQ
 
-### I have an error message: "*Could not auto-encrypt passwords*"
+### I have an error message: "_Could not auto-encrypt passwords_"
 
 If YOURLS cannot edit and save your `config.php` file, you will see the following notice:
 
-> *Could not auto-encrypt passwords. Error was: "cannot write file".*
+> _Could not auto-encrypt passwords. Error was: "cannot write file"._
 
-Your config file is probably locked for reading and or writing (eg *chmoded*), which can be a good security practice. Temporarily lift that restriction (`chmod 0666 config.php`), load a YOURLS page again, then `chmod` it back.
+Your config file is probably locked for reading and or writing (eg _chmoded_), which can be a good security practice. Temporarily lift that restriction (`chmod 0666 config.php`), load a YOURLS page again, then `chmod` it back.
 
 If for some reason you cannot get it working, see **manual MD5 encryption** below
 
@@ -83,6 +87,7 @@ If you prefer, you can manually encrypt passswords using a MD5 salted hash of th
 `md5:< salt of 5 digits >:< md5 of salt + password >`
 
 A PHP example to generate an encrypted password would be:
+
 ```php
 <?php
 $password = 'MyPassword';

@@ -18,8 +18,8 @@ It's a convenient way to create simple pages (about your team, corporate info, .
 
 ## How to create a Page
 
-* In `user/pages/`, create a new PHP file, for instance `about.php`
-* Put content in this file (HTML, PHP code, YOURLS stuff...)
+- In `user/pages/`, create a new PHP file, for instance `about.php`
+- Put content in this file (HTML, PHP code, YOURLS stuff...)
 
 That's all. This page is now viewable at `http://yoursite/about` (no `.php` extension).
 

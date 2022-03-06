@@ -26,21 +26,20 @@
     <section id="highlights" class="vt-box-container">
       <div class="vt-box">
         <h2>FOSS</h2>
-        <p>
-          Free and open-source software.
-          No strings attached.
-        </p>
+        <p>Free and open-source software. No strings attached.</p>
       </div>
       <div class="vt-box">
         <h2>Extensible</h2>
         <p>
-          Terrific Plugin architecture and dozens of plugins to easily implement new features.
+          Terrific Plugin architecture and dozens of plugins to easily implement
+          new features.
         </p>
       </div>
       <div class="vt-box">
         <h2>Analytics</h2>
         <p>
-          Awesome stats: historical click reports, referrers tracking, visitors geo-location.
+          Awesome stats: historical click reports, referrers tracking, visitors
+          geo-location.
         </p>
       </div>
     </section>

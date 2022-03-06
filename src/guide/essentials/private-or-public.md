@@ -7,6 +7,7 @@ outline: deep
 # Private/Public
 
 In your `config.php` you have to define constant `YOURLS_PRIVATE`. It can be one of these two lines:
+
 ```php
 <?php
 // Private:
@@ -28,6 +29,7 @@ Also, since there is no login/password needed, there will be no Secret Token on 
 ## Private + Public Interface
 
 If you want to run your own little bitly, you want to:
+
 - set your install to **private**: `define( 'YOURLS_PRIVATE', true );`
 - install a **public interface** in the root directory. There's a sample one provided in the package (see `sample-public-front-page.txt`)
 - read the page about [Public Shortening](/guide/advanced/public-shortening) for important tips and advices.

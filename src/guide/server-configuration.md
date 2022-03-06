@@ -14,7 +14,6 @@ What your `.htaccess` file for YOURLS should look like.
 
 If `.htaccess` file creation/updating failed because of file permission, you'll have to manually make one. No worry, it's simple.
 
-
 :::tip Note
 YOURLS **cannot share** its root directory with another .htaccess rewrite rules driven app such as WordPress. The `.htaccess` file should contain YOURLS directives and no other rewrite rule.
 :::
@@ -53,7 +52,7 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 
 ### Redirect all http to https
 
-Add this extra line right after the `RewriteBase` line: `RewriteCond %{HTTPS}  !=on`
+Add this extra line right after the `RewriteBase` line: `RewriteCond %{HTTPS} !=on`
 (Example [here](https://github.com/YOURLS/YOURLS/issues/2578#issuecomment-554732802))
 
 ### Give YOURLS its own directory
@@ -95,9 +94,8 @@ RewriteRule "(^|/)\.(?!well-known\/)" - [F]
 
 ### Other resources
 
-* [.htaccess snippets](https://github.com/phanan/htaccess) is a great resource for your `.htaccess`.
-* [H5BP Server Configs](https://github.com/h5bp/server-configs-apache) has a lot of in-depths tricks and tips regarding your `.htaccess` file.
-
+- [.htaccess snippets](https://github.com/phanan/htaccess) is a great resource for your `.htaccess`.
+- [H5BP Server Configs](https://github.com/h5bp/server-configs-apache) has a lot of in-depths tricks and tips regarding your `.htaccess` file.
 
 ## Nginx
 
@@ -151,7 +149,6 @@ server {
 
 }
 ```
-
 
 :::tip Note
 By design, this configuration will throw an error 403 "forbidden" on your bare YOURLS `server_name` domain: it will not answer with an index file on the bare domain, nor on any sub-directory (such as `/admin`), unless you manually specify `/admin/index.php` (example: `https://your.yourlsdomain.tld/admin/index.php`). ([source](https://github.com/YOURLS/YOURLS/issues/2549#issuecomment-589040063))

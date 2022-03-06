@@ -20,12 +20,12 @@ Same as above. Duh.
 
 Your install is completely private and access is supposed to be restricted to a few known users? Here are a few tips that may help:
 
-* Change YOURLS logins/passwords
-* Change DB logins/passwords
-* Make sure YOURLS is up to date. Always.
-* Make sure your plugins are up to date. Get rid of the plugins you're not sure about and don't need absolutely.
-* There are several plugins to help you prevent or throttle spam links. See the [plugin list](https://github.com/YOURLS/awesome-yourls).
-* Make sure your server is not stupidly configured to execute `.php.txt` files, read this [blog post](http://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/)
+- Change YOURLS logins/passwords
+- Change DB logins/passwords
+- Make sure YOURLS is up to date. Always.
+- Make sure your plugins are up to date. Get rid of the plugins you're not sure about and don't need absolutely.
+- There are several plugins to help you prevent or throttle spam links. See the [plugin list](https://github.com/YOURLS/awesome-yourls).
+- Make sure your server is not stupidly configured to execute `.php.txt` files, read this [blog post](http://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/)
 
 If you suspect YOURLS, a plugin or another script (see below) has been compromised, do not just update: the compromised file may still be present and continue to give access to malicious users. If unsure, delete all files and reinstall latest versions of what you strictly need.
 
@@ -39,9 +39,9 @@ Sometimes your account may be compromised at the FTP level: it won't hurt to cha
 
 ## Tailor-made counter measures
 
-* Add a [captcha on your public interface](http://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/)
-* Block specific IP, IP ranges or country with your .htaccess file -- implementation will depend on your server config, ask Google and/or your server admin
-* ... ?
+- Add a [captcha on your public interface](http://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/)
+- Block specific IP, IP ranges or country with your .htaccess file -- implementation will depend on your server config, ask Google and/or your server admin
+- ... ?
 
 ## Hire an expert
 

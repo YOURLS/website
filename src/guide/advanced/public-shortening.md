@@ -10,7 +10,7 @@ Tips and must-do things if you run a public shortening interface.
 
 ## Public Interface
 
-Want to run your own little *bitly*? You need what is called a **public interface** along with your **private** YOURLS install. Make sure you read [Private Or Public](/guide/essentials/private-or-public) first.
+Want to run your own little _bitly_? You need what is called a **public interface** along with your **private** YOURLS install. Make sure you read [Private Or Public](/guide/essentials/private-or-public) first.
 
 A sample public interface is provided, named `sample-public-front-page.txt`. Rename it as a `.php` file and customize it to suit your needs.
 

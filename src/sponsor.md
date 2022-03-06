@@ -14,8 +14,9 @@ generous financial backing of our sponsors.
 ## How to Sponsor
 
 Sponsorships can be done via the following methods:
-* [GitHub Sponsors](https://github.com/sponsors/YOURLS)
-* [OpenCollective](https://opencollective.com/YOURLS)
+
+- [GitHub Sponsors](https://github.com/sponsors/YOURLS)
+- [OpenCollective](https://opencollective.com/YOURLS)
 
 Invoices can be obtained via GitHub's payment system.
 Both monthly-recurring sponsorships and one-time donations are accepted.

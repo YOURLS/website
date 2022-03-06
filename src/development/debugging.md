@@ -53,8 +53,6 @@ function ozh_superdebug(...$args) {
 
 **Note**: If you want to trace filters and actions using the same function, you'll need as above to use a different priority so the second `yourls_add_**` doesn't overwrite the first one.
 
-
-
 A slighly less verbose and more usable plugin:
 
 ```php
@@ -93,16 +91,10 @@ function ozh_debug_in_footer_print() {
 ```
 
 Example output in the page footer:
+
 ```html
-Array
-(
-    [0] => filter : shunt_get_db
-    [1] => filter : get_db
-    [2] => action : plugins_loaded
-    [3] => filter : kses_allowed_entities
-    [4] => filter : kses_allowed_protocols
-    [5] => filter : shunt_get_db
-    [6] => filter : get_db
-    [7] => filter : is_admin
-    (...)
+Array ( [0] => filter : shunt_get_db [1] => filter : get_db [2] => action :
+plugins_loaded [3] => filter : kses_allowed_entities [4] => filter :
+kses_allowed_protocols [5] => filter : shunt_get_db [6] => filter : get_db [7]
+=> filter : is_admin (...)
 ```

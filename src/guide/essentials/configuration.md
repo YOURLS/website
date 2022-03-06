@@ -12,7 +12,7 @@ outline: deep
 
 MySQL username
 
-Example: ``define( 'YOURLS_DB_USER', 'joe' );``
+Example: `define( 'YOURLS_DB_USER', 'joe' );`
 
 ### `YOURLS_DB_PASS`
 
@@ -80,7 +80,7 @@ Example: `'joe' => 'mypassword'`
 
 ### `YOURLS_URL_CONVERT`
 
-See [related page](/guide/essentials/chartet).
+See [related page](/guide/essentials/charset).
 
 ### `$yourls_reserved_URL`
 

@@ -15,12 +15,12 @@ Although only filters are covered here, everything applies for actions as well.
 For brevity and clarity, generic and stupid names are given to functions and variables (eg `'my_function()'`). **Don't do this** and make sure you read the [Coding Standards](/development/coding-standards).
 :::
 
-
 ## Possible syntaxes
 
 ### `yourls_add_filter('filter', 'funcname');`
 
 This is the default way, using two strings. Example:
+
 ```php
 function say_hello( $name ) {
     return yourls_apply_filter( 'hello', "hello $name" );
@@ -45,6 +45,7 @@ var_dump( say_hello( "ozh" ) );
 You don't necessarily have to define your custom function, and can use an anonymous function inline with PHP function [create_function()](https://php.net/create_function) (Note: DEPRECATED as of PHP 7.2.0)
 
 The following example will return `false` to any hooked filters:
+
 ```php
 yourls_add_filter( 'some_filter', create_function( '', 'return false;' ) );
 ```
@@ -56,6 +57,7 @@ While very possible and a completely valid PHP syntax, **we don't encourage this
 A more elegant and readable way to use anonymous functions is to use [closures](https://php.net/manual/en/functions.anonymous.php).
 
 Full example:
+
 ```php
 function say_hello( $name ) {
     return yourls_apply_filter( 'hello', "hello $name" );
@@ -75,6 +77,7 @@ var_dump( say_hello( "ozh" ) );
 ### `yourls_add_filter('filter', array('my_class','some_function'));`
 
 You can use filter functions that are defined inside of classes. Example:
+
 ```php
 function say_hello( $name ) {
     return yourls_apply_filter( 'hello', "hello $name" );
@@ -97,11 +100,12 @@ var_dump( say_hello( "ozh" ) );
 // string 'hello ozh my friend' (length=19)
 ```
 
-Note that because the class is not instantiated, you have to declare your function as a  `static` method to be able to use it.
+Note that because the class is not instantiated, you have to declare your function as a `static` method to be able to use it.
 
 ### `yourls_add_filter('filter', 'my_class::some_function');`
 
 Slight variation of the same example, using notation `'class::method'` instead:
+
 ```php
 function say_hello( $name ) {
     return yourls_apply_filter( 'hello', "hello $name" );
@@ -127,6 +131,7 @@ var_dump( say_hello( "ozh" ) );
 ### `yourls_add_filter('filter', array($this,'some_function'));`
 
 If the class has an instance, the syntax is as follows:
+
 ```php
 function say_hello( $name ) {
     return yourls_apply_filter( 'hello', "hello $name" );
@@ -163,6 +168,7 @@ You will find all possible hook syntaxes in this [concise example](https://gist.
 ## Practical example of use
 
 Practical example that will add `"title is modified"` to every admin page title, [much like](https://github.com/YOURLS/YOURLS/blob/1.7/user/plugins/sample-plugin/plugin.php#L51:L60) in the sample plugin bundled with YOURLS:
+
 ```php
 <?php
 /*

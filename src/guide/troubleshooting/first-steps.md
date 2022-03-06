@@ -20,13 +20,13 @@ Make sure one of your plugins isn't causing the issue. Disable them all, see if 
 
 ## Enable debugging mode
 
-By default, most error messages are hidden in YOURLS, and this may end up with a blank screen (*ie* the dreaded *White Screen Of Death*). Turn debugging **on** to display any error or warning, with the following line anywhere in your `config.php`:
+By default, most error messages are hidden in YOURLS, and this may end up with a blank screen (_ie_ the dreaded _White Screen Of Death_). Turn debugging **on** to display any error or warning, with the following line anywhere in your `config.php`:
+
 ```php
 define( 'YOURLS_DEBUG', true );
 ```
 
 Check this page for more advanced debugging techniques: [Debugging](/development/debugging).
-
 
 ## Use latest release
 
@@ -36,29 +36,25 @@ If something isn't working as expected and is an actual confirmed bug, make sure
 
 See [Server configuration](/guide/server-configuration) page.
 
-
 ## Check server logs
 
-If the error is produced on the server side (*ie* the page is generated with an error), most of the time you will find valuable information in the server logs.
+If the error is produced on the server side (_ie_ the page is generated with an error), most of the time you will find valuable information in the server logs.
 
 Depending on the server software and configuration, this text file may be located somewhere like `/var/log/apache2/error.log`, `/usr/local/apache/logs/error_log`, `/xampp/apache/logs/error.log`, etc...
 
 If you don't know where the error log is, you can look for the `ErrorLog` directive in the Apache configuration. If you don't know how to do this, ask your server admin.
 
-
 ## Use your browser developer tools
 
-If the error is produced on the client side (*ie* the page is generated fine, but when you try to interact with it, something wrong happens), hunt for Javascript errors in Ajax requests.
+If the error is produced on the client side (_ie_ the page is generated fine, but when you try to interact with it, something wrong happens), hunt for Javascript errors in Ajax requests.
 
-Depending on your browser, this can be done with the Firebug extension in Firefox, with Chrome DevTools, ... You'll find plenty of guides explaining how to do so (*eg* [how to debug ajax chrome](https://www.google.com/search?q=how+to+debug+ajax+chrome))
-
+Depending on your browser, this can be done with the Firebug extension in Firefox, with Chrome DevTools, ... You'll find plenty of guides explaining how to do so (_eg_ [how to debug ajax chrome](https://www.google.com/search?q=how+to+debug+ajax+chrome))
 
 ## STFW after you have RTFM
 
-When you have **R**ead **T**he **F***ine* **M**anual but are still lost, please **S**earch **T**he **F***ine* **W**eb. Thousands of people have probably faced the same situation before and it may be documented already.
+When you have **R**ead **T**he **F\***ine\* **M**anual but are still lost, please **S**earch **T**he **F\***ine\* **W**eb. Thousands of people have probably faced the same situation before and it may be documented already.
 
-In particular, be sure to search in [issues](https://github.com/YOURLS/YOURLS/issues?q=is%3Aissue), open *and* closed. Your problem may have been dealt with, already.
-
+In particular, be sure to search in [issues](https://github.com/YOURLS/YOURLS/issues?q=is%3Aissue), open _and_ closed. Your problem may have been dealt with, already.
 
 ## Submit proper issues
 

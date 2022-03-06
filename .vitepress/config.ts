@@ -1,9 +1,5 @@
 import baseConfig from '@vue/theme/config'
-import {
-  defineConfigWithTheme,
-  HeadConfig,
-  UserConfig
-} from 'vitepress'
+import { defineConfigWithTheme, HeadConfig, UserConfig } from 'vitepress'
 import type { Config } from '@vue/theme'
 import { NavItem, SidebarConfig } from '@vue/theme/src/vitepress/config'
 
@@ -14,10 +10,7 @@ const image = `${site}/banner.png`
 
 const head: HeadConfig[] = [
   ['meta', { name: 'author', content: 'YOURLS Community' }],
-  [
-    'meta',
-    { name: 'keywords', content: 'yourls, shortner, url, bitly' },
-  ],
+  ['meta', { name: 'keywords', content: 'yourls, shortner, url, bitly' }],
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   ['meta', { name: 'HandheldFriendly', content: 'True' }],
   ['meta', { name: 'MobileOptimized', content: '320' }],
@@ -93,7 +86,10 @@ const sidebar: SidebarConfig = {
         { text: 'Plugins', link: '/guide/extend/plugins' },
         { text: 'Pages', link: '/guide/extend/pages' },
         { text: 'Languages', link: '/guide/extend/languages' },
-        { text: 'Possible with a plugin', link: '/guide/extend/possible-with-a-plugin' },
+        {
+          text: 'Possible with a plugin',
+          link: '/guide/extend/possible-with-a-plugin',
+        },
       ],
     },
     {
@@ -101,7 +97,10 @@ const sidebar: SidebarConfig = {
       items: [
         { text: 'Passwordless API', link: '/guide/advanced/passwordless-api' },
         { text: 'Proxy', link: '/guide/advanced/proxy' },
-        { text: 'Public shortening', link: '/guide/advanced/public-shortening' },
+        {
+          text: 'Public shortening',
+          link: '/guide/advanced/public-shortening',
+        },
         { text: 'Custom protocols', link: '/guide/advanced/custom-protocols' },
       ],
     },
@@ -119,7 +118,7 @@ const sidebar: SidebarConfig = {
       text: 'Getting started',
       items: [
         { text: 'Plugins', link: '/development/plugins' },
-        { text: 'Don\'t hack core', link: '/development/dont-hack-core' },
+        { text: "Don't hack core", link: '/development/dont-hack-core' },
         { text: 'Coding standards', link: '/development/coding-standards' },
         { text: 'Database', link: '/development/database-queries' },
         { text: 'Hooks', link: '/development/hooks' },
@@ -132,7 +131,10 @@ const sidebar: SidebarConfig = {
       items: [
         { text: 'QRCode Link', link: '/development/examples/qrcode' },
         { text: 'Preview URL', link: '/development/examples/preview' },
-        { text: 'Public Prefix-N-Shorten', link: '/development/examples/public-prefix' },
+        {
+          text: 'Public Prefix-N-Shorten',
+          link: '/development/examples/public-prefix',
+        },
         { text: 'RSS', link: '/development/examples/rss' },
       ],
     },
@@ -158,13 +160,11 @@ export default defineConfigWithTheme<Config>({
       indexName: '',
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/YOURLS/YOURLS' }],
 
     editLink: {
-    	repo: 'YOURLS/docs',
-    	text: 'Edit this page on Github',
+      repo: 'YOURLS/docs',
+      text: 'Edit this page on Github',
     },
 
     footer: {

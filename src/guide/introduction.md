@@ -18,10 +18,10 @@ YOURLS has two components, each with its own set of requirements.
 
 ### Server
 
-* [Apache (httpd)](https://httpd.apache.org/) version **2.4** or greater, with **`mod_rewrite`** enabled
-* [PHP](https://secure.php.net/) version **7.4** or greater
-  * PHP [cURL](http://www.php.net/curl) extension is required if you plan on playing with the API
-* [MySQL](https://www.mysql.com/) version **5.0** or greater
+- [Apache (httpd)](https://httpd.apache.org/) version **2.4** or greater, with **`mod_rewrite`** enabled
+- [PHP](https://secure.php.net/) version **7.4** or greater
+  - PHP [cURL](http://www.php.net/curl) extension is required if you plan on playing with the API
+- [MySQL](https://www.mysql.com/) version **5.0** or greater
 
 ### Client
 
