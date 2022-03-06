@@ -108,7 +108,7 @@ const sidebar: SidebarConfig = {
       text: 'Troubleshooting',
       items: [
         { text: 'First steps', link: '/guide/troubleshooting/first-steps' },
-        { text: 'Common', link: '/guide/troubleshooting/common' },
+        { text: 'Frequent issues', link: '/guide/troubleshooting/frequent-issues' },
         { text: 'Abuse', link: '/guide/troubleshooting/abuse' },
       ],
     },
