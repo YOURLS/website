@@ -54,12 +54,13 @@ section {
 #hero {
   padding: 96px 32px;
   text-align: center;
+  border-bottom: 1px solid var(--vt-c-divider-light);
 }
 
 .tagline {
-  text-transform: uppercase;
-  font-size: 45px;
+  font-size: 76px;
   line-height: 1.25;
+  font-weight: 900;
   letter-spacing: -1.5px;
   max-width: 960px;
   margin: 0px auto;
@@ -70,21 +71,13 @@ img.tagline {
   max-width: 300px;
 }
 
-html:not(.dark) .accent,
-.dark .tagline {
-  background: var(--vt-c-brand);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .description {
   max-width: 960px;
-  line-height: 1;
+  line-height: 1.5;
   color: var(--vt-c-text-2);
   transition: color 0.5s;
-  font-size: 30px;
-  margin: 10px auto 60px;
+  font-size: 22px;
+  margin: 24px auto 40px;
 }
 
 .actions a {
