@@ -38,7 +38,7 @@ See [Server configuration](/guide/server-configuration) page.
 
 ## Check server logs
 
-If the error is produced on the server side (_ie_ the page is generated with an error), most of the time you will find valuable information in the server logs.
+If the error is produced on the server-side (_ie_ the page is generated with an error), most of the time you will find valuable information in the server logs.
 
 Depending on the server software and configuration, this text file may be located somewhere like `/var/log/apache2/error.log`, `/usr/local/apache/logs/error_log`, `/xampp/apache/logs/error.log`, etc...
 
@@ -46,9 +46,9 @@ If you don't know where the error log is, you can look for the `ErrorLog` direct
 
 ## Use your browser developer tools
 
-If the error is produced on the client side (_ie_ the page is generated fine, but when you try to interact with it, something wrong happens), hunt for Javascript errors in Ajax requests.
+If the error is produced on the client-side (_ie_ the page is generated fine, but when you try to interact with it, something wrong happens), hunt for JavaScript errors in Ajax requests.
 
-Depending on your browser, this can be done with the Firebug extension in Firefox, with Chrome DevTools, ... You'll find plenty of guides explaining how to do so (_eg_ [how to debug ajax chrome](https://www.google.com/search?q=how+to+debug+ajax+chrome))
+Depending on your browser, this can be done with the Firebug extension in Firefox, with Chrome DevTools, ... You'll find plenty of guides explaining how to do so (_eg_ [how to debug Ajax chrome](https://www.google.com/search?q=how+to+debug+ajax+chrome))
 
 ## STFW after you have RTFM
 

@@ -26,7 +26,7 @@ Most of the time, features that are requested won't be implemented into core, bu
 
 ## There may be already a plugin for this
 
-Head to https://github.com/YOURLS/awesome-yourls to check if someone already coded a plugin with this feature, or get that plugin coded by someone who coded a similar plugin.
+Head to <https://github.com/YOURLS/awesome-yourls> to check if someone already coded a plugin with this feature, or get that plugin coded by someone who coded a similar plugin.
 
 ## Find a plugin coder
 

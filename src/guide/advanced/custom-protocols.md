@@ -10,9 +10,9 @@ YOURLS can shorten URLs with non standard protocols (other than `http` or `https
 
 ## What for ?
 
-All links are not intended to redirect to a website. Depending on your needs, you may want to shorten and share short links that redirect to a `mailto:` address, an `ftp://` URL, your `facetime:` or `skype:` profile.
+All links are not intended to redirect to a site. Depending on your needs, you may want to shorten and share short links that redirect to a `mailto:` address, an `ftp://` URL, your `facetime:` or `skype:` profile.
 
-Example: https://yourls.org/mailto
+Example: <https://yourls.org/mailto>
 
 When you shorten a non-standard link, a visual clue will be added next to the shortened link.
 

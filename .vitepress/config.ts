@@ -46,8 +46,14 @@ const nav: NavItem[] = [
       {
         text: 'Ressources',
         items: [
-          { text: 'Awesome YOURLS', link: 'https://github.com/YOURLS/awesome-yourls' },
-          { text: 'Plugin sample', link: 'https://github.com/YOURLS/plugin-sample' },
+          {
+            text: 'Awesome YOURLS',
+            link: 'https://github.com/YOURLS/awesome-yourls',
+          },
+          {
+            text: 'Plugin sample',
+            link: 'https://github.com/YOURLS/plugin-sample',
+          },
         ],
       },
       {
@@ -59,9 +65,7 @@ const nav: NavItem[] = [
       },
       {
         text: 'News',
-        items: [
-          { text: 'Blog', link: 'https://blog.yourls.org' },
-        ],
+        items: [{ text: 'Blog', link: 'https://blog.yourls.org' }],
       },
       // {
       //   text: 'Documentation',
@@ -122,7 +126,10 @@ const sidebar: SidebarConfig = {
       text: 'Troubleshooting',
       items: [
         { text: 'First steps', link: '/guide/troubleshooting/first-steps' },
-        { text: 'Frequent issues', link: '/guide/troubleshooting/frequent-issues' },
+        {
+          text: 'Frequent issues',
+          link: '/guide/troubleshooting/frequent-issues',
+        },
         { text: 'Abuse', link: '/guide/troubleshooting/abuse' },
       ],
     },

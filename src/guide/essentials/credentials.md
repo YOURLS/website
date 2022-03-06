@@ -21,7 +21,7 @@ One login/password:
 ```php
 <?php
 $yourls_user_passwords = array(
-	'joe' => 'MyPassword',
+    'joe' => 'MyPassword',
 );
 ```
 
@@ -30,10 +30,10 @@ Two or more users and login/passwords pairs:
 ```php
 <?php
 $yourls_user_passwords = array(
-	'joe'     => 'MyPassword',
-	'Randall' => 'correct horse battery staple',
-	'leetboy' => 'h3ll0w0rld!',
-	'api'     => 'passwordfortheapi',
+    'joe'     => 'MyPassword',
+    'Randall' => 'correct horse battery staple',
+    'leetboy' => 'h3ll0w0rld!',
+    'api'     => 'passwordfortheapi',
 );
 ```
 
@@ -58,7 +58,7 @@ User will still log in using `joe` as a username and `MyPassword` as a password,
 
 A good practice, especially in a shared hosting environment, is to change file permissions to disallow write access to your files. The best thing to do is to edit your `config.php` with a new password, run YOURLS to get it encrypted, and then remove write permissions.
 
-Depending on your host, you should change `config.php` permissions to 400, 440 or 600. This can be done via the command line (`chmod 0440 config.php`) or using your FTP client. For more help on this matter, please contact your host support.
+Depending on your host, you should change `config.php` permissions to 400, 440 or 600. This can be done via the command-line (`chmod 0440 config.php`) or using your FTP client. For more help on this matter, please contact your host support.
 
 ## FAQ
 
@@ -102,13 +102,13 @@ Edit your `config.php` so that the `key => value` associations with encrypted pa
 ```php
 <?php
 $yourls_user_passwords = array(
-	'joe' => 'md5:71688:0ce43474167f743b7b92d046ae970801',
+    'joe' => 'md5:71688:0ce43474167f743b7b92d046ae970801',
 );
 ```
 
 Hashes using MD5 are slightly less secure than using YOURLS encryption, but still way better than plain text passwords.
 
-### But I don't want to encrypt my password !
+### I don't want to encrypt my password
 
 If for some reason you'd rather keep your password unencrypted and in plain text in your config, simply add the following at the end of your `config.php`:
 

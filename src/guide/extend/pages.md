@@ -12,7 +12,7 @@ YOURLS has a little known -- yet fancy -- feature to route users to custom conte
 
 A page is PHP aware and YOURLS aware custom content.
 
-See for instance https://yourls.org/examplepage and its source: https://github.com/YOURLS/YOURLS/blob/master/user/pages/examplepage.php
+See for instance <https://yourls.org/examplepage> and its source: <https://github.com/YOURLS/YOURLS/blob/master/user/pages/examplepage.php>
 
 It's a convenient way to create simple pages (about your team, corporate info, ...) and route to them as if they were short URLs created with YOURLS
 
@@ -23,7 +23,7 @@ It's a convenient way to create simple pages (about your team, corporate info, .
 
 That's all. This page is now viewable at `https://yoursite/about` (no `.php` extension).
 
-#### "I have a `pages/` directory in YOURLS root, not in `user/` !"
+### "I have a `pages/` directory in YOURLS root, not in `user/` !"
 
 Previous versions of YOURLS used to have the pages folder located in the root directory. You can simply move the directory into the `user/pages/` folder and everything should work fine.
 
@@ -31,7 +31,7 @@ If for some reason you want to keep your pages located in the root directory (fo
 
 ## Page example
 
-Let's make a simple stat page like https://yourls.org/somestats
+Let's make a simple stat page like <https://yourls.org/somestats>
 
 First, create a new file named `somestats.php` and put it in `user/pages/`
 

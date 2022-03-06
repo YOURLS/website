@@ -6,11 +6,11 @@ outline: deep
 
 # Don't hack core
 
-## Why you MUST NOT alter core files.
+## Why you MUST NOT alter core files
 
 You're running YOURLS and are having fun with it. But you want it to do this here and have that, there. So you modified a bit a few cores files, so the output and functionality suits your needs
 
-## You're doing it wrong.
+## You're doing it wrong
 
 What when there's a new version of YOURLS?
 

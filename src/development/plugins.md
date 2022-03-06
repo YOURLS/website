@@ -6,21 +6,13 @@ outline: deep
 
 # Plugins
 
-How to make Plugins for YOURLS
-
-## Plugins
-
 YOURLS features a plugin architecture and API. Plugins are additional PHP scripts that extend the functionalities or features of YOURLS. The core of YOURLS is designed to be as light as possible and avoid bloat (implementing functions not everybody needs) and to allow for easy customization.
 
 Using the plugin architecture, you can add new features to YOURLS without having to modify core files. This way, your changes won't be lost when you upgrade your YOURLS installation. Because, [don't hack core](/development/dont-hack-core).
 
 ## Structure of a Plugin File
 
-A plugin file needs to be named `plugin.php` and to be located in its own subdirectory of `[YOURLS_ROOT]/user/plugins`, _eg_:
-
-```
-YOURLS_ROOT/user/plugins/my_sample_plugin/plugin.php
-```
+A plugin file needs to be named `plugin.php` and to be located in its own subdirectory of `[YOURLS_ROOT]/user/plugins`, _eg_: `YOURLS_ROOT/user/plugins/my_sample_plugin/plugin.php`.
 
 The plugin file `plugin.php` needs to begin with a header like the following one:
 
@@ -196,7 +188,7 @@ First we need to create the plugin directory and file:
 1. in `user/plugins/` create a new directory, named for instance `my_first_plugin`
 1. create a new empty file named `plugin.php`
 
-**ProTip**: On Github, clone this skeleton repository to get yours in seconds: https://github.com/YOURLS/plugin-sample
+**ProTip**: On GitHub, clone this skeleton repository to get yours in seconds: https://github.com/YOURLS/plugin-sample
 
 In this empty `plugin.php` paste the following code:
 
@@ -230,10 +222,10 @@ yourls_add_filter( 'random_keyword', 'my_silly_function' );
 
 // Our silly custom function
 function my_silly_function( $original_keyword ) {
-	$silly_keyword = $original_keyword . "iloveyourls";
+    $silly_keyword = $original_keyword . "iloveyourls";
 
-	// a filter function MUST return something once its arguments are processed
-	return $silly_keyword;
+    // a filter function MUST return something once its arguments are processed
+    return $silly_keyword;
 }
 
 
@@ -246,7 +238,7 @@ Congratulation, you've just extended the functionalities of YOURLS!
 
 ## List of hooks
 
-A full list of hooks (actions and filters) exists here: https://yourls.org/hooklist.php
+[A full list of hooks (actions and filters) is available](https://yourls.org/hooklist.php).
 It is generated every night against the current development version of YOURLS
 
 If you code a plugin, you should run that dev version on a test install.

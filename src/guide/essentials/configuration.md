@@ -63,7 +63,7 @@ Example: `define( 'YOURLS_UNIQUE_URLS', true );`
 
 ### `YOURLS_COOKIEKEY`
 
-A random secret hash used to encrypt cookies. You don't have to remember it, make it long and complicated. Hint: generate a unique one at https://yourls.org/cookie
+A random secret hash used to encrypt cookies. You don't have to remember it, make it long and complicated. Hint: generate a unique one at <https://yourls.org/cookie>
 
 Example: `define( 'YOURLS_COOKIEKEY', 'qQ4KhL_pu|s@Zm7n#%:b^{A[vhm' );`
 

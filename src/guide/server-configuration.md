@@ -50,7 +50,7 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 # END YOURLS
 ```
 
-### Redirect all http to https
+### Redirect all to HTTP over TLS
 
 Add this extra line right after the `RewriteBase` line: `RewriteCond %{HTTPS} !=on`
 (Example [here](https://github.com/YOURLS/YOURLS/issues/2578#issuecomment-554732802))

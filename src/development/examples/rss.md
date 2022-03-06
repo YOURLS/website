@@ -36,11 +36,11 @@ echo '<?'.'xml version="1.0" encoding="UTF-8" ?>';
 <language>en</language>
 <?php foreach( $items['links'] as $item ) { ?>
 <item>
-	<title><?php echo yourls_esc_html( $item['title'] ); ?></title>
-	<description><?php echo htmlentities( $item['url'] ); ?></description>
-	<pubDate><?php echo date('D, d M Y H:i:s O', strtotime($item['timestamp']) ); ?></pubDate>
-	<link><?php echo $item['shorturl']; ?></link>
-	<guid isPermaLink="false"><?php echo $item['shorturl']; ?></guid>
+  <title><?php echo yourls_esc_html( $item['title'] ); ?></title>
+  <description><?php echo htmlentities( $item['url'] ); ?></description>
+  <pubDate><?php echo date('D, d M Y H:i:s O', strtotime($item['timestamp']) ); ?></pubDate>
+  <link><?php echo $item['shorturl']; ?></link>
+  <guid isPermaLink="false"><?php echo $item['shorturl']; ?></guid>
 </item>
 <?php } ?>
 </channel>

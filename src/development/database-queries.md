@@ -27,11 +27,9 @@ function my_plugin_get_stuff_from_database() {
 
 **Don't hardcode table names.** To make sure your code is compatible with any YOURLS setup, don't hardcode table names (eg `yourls_url`) but use instead the user defined constants:
 
-```
-`YOURLS_DB_TABLE_URL`
-`YOURLS_DB_TABLE_OPTIONS`
-`YOURLS_DB_TABLE_LOG`
-```
+- `YOURLS_DB_TABLE_URL`
+- `YOURLS_DB_TABLE_OPTIONS`
+- `YOURLS_DB_TABLE_LOG`
 
 ## Versions 1.7.3 and up
 

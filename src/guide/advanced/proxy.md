@@ -10,7 +10,7 @@ YOURLS features proxy support, meaning that you can install it behind a firewall
 
 To add proxy support, edit your `config.php` and add the following, depending on your setup:
 
-## Proxy with no authentication:
+## Proxy with no authentication
 
 ```php
 define( 'YOURLS_PROXY', 'proxy:port' );
@@ -21,7 +21,7 @@ The `proxy:port` notation accepts domain names or IPs. Examples:
 - `define( 'YOURLS_PROXY', 'proxy.mycompany.com:3128' );`
 - `define( 'YOURLS_PROXY', '10.0.0.201:3128' );`
 
-## Proxy with authentication :
+## Proxy with authentication
 
 Define `YOURLS_PROXY_USERNAME` and `YOURLS_PROXY_PASSWORD` as well:
 

@@ -60,7 +60,7 @@ For simple explanations, use inline commenting. For larger explanation, don't he
 
 Comments should not focus on _what_ is happening (unless the code itself is not self explanatory enough) but on _why_ we are doing this.
 
-## _Recommended_ white space
+## _Recommended_ whitespace
 
 Your code must reflect logical structure and be easy on the eye
 
@@ -68,7 +68,7 @@ Your code must reflect logical structure and be easy on the eye
 - Align as many things as possible where it improves readability
 - Vertically align begining of line blocks and end of blocks with opening and closing parenthesis `()`, brackets `[` and braces `{}`
 
-Put white space anywhere it will make your code _breathe_
+Put whitespace anywhere it will make your code _breathe_
 
 ```php
 <?php
@@ -81,7 +81,7 @@ function do_stuff( $param1= 'foo', $param2 = 'bar' ) { ...
 // call a function
 do_stuff( '31337', other_func( 42 ) );
 
-// white space around variable array items
+// whitespace around variable array items
 $x = $foo['bar']; // string, no space = OK
 $y = $foo[ $bar ]; // variable, need spaces
 

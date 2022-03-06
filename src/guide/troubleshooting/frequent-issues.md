@@ -21,7 +21,7 @@ Cannot add or edit links?
 
 ### Symptoms
 
-You've installed YOURLS, everything went fine and looks functional. However, when you try to shorten a new link, or edit an existing one, the button get a little spinning icon forever ![](https://raw.github.com/YOURLS/YOURLS/master/images/loading.gif) and nothing actually happens.
+You've installed YOURLS, everything went fine and looks functional. However, when you try to shorten a new link, or edit an existing one, the button get a little spinning icon forever ![loading icon](https://raw.github.com/YOURLS/YOURLS/master/images/loading.gif) and nothing actually happens.
 
 ### Problem
 
