@@ -1,10 +1,10 @@
 ---
-title: Common
+title: Frequent issues
 editLink: false
 outline: deep
 ---
 
-# Common
+# Frequent issues
 
 ## 404 instead of redirection
 
