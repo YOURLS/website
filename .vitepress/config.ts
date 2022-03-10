@@ -176,9 +176,9 @@ export default defineConfigWithTheme<Config>({
     sidebar,
 
     algolia: {
-      appId: '',
-      apiKey: '',
-      indexName: '',
+      appId: '0OPRSQO7WN',
+      apiKey: 'a80dd06f8a0a36b8734e02e549324791',
+      indexName: 'yourls',
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/YOURLS/YOURLS' }],
