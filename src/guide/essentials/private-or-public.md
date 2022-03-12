@@ -1,6 +1,6 @@
 ---
 title: Private/Public
-editLink: false
+editLink: true
 outline: deep
 ---
 
