@@ -33,3 +33,4 @@ If you want to run your own little bitly, you want to:
 - set your install to **private**: `define( 'YOURLS_PRIVATE', true );`
 - install a **public interface** in the root directory. There's a sample one provided in the package (see `sample-public-front-page.txt`)
 - read the page about [Public Shortening](/guide/advanced/public-shortening) for important tips and advices.
+- This is an [incorrect link](/guide/advanced/nope) to test
