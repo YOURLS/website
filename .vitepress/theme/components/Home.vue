@@ -26,7 +26,7 @@
     <section id="highlights" class="vt-box-container">
       <div class="vt-box">
         <h2>FOSS</h2>
-        <p>Free and open-source software. No strings attached.</p>
+        <p>Free and open-source software. No strings attached. Full control over your data.</p>
       </div>
       <div class="vt-box">
         <h2>Extensible</h2>
