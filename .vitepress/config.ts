@@ -182,8 +182,8 @@ export default defineConfigWithTheme<Config>({
     },
 
     socialLinks: [
-        { icon: 'github', link: 'https://github.com/YOURLS/docs' },
-        { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
+      { icon: 'github', link: 'https://github.com/YOURLS/docs' },
+      { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
     ],
 
     docsBranch: 'main',
