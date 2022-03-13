@@ -1,7 +1,3 @@
----
-title: Introduction
-editLink: false
----
 
 # Introduction
 

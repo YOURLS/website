@@ -183,10 +183,9 @@ export default defineConfigWithTheme<Config>({
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/YOURLS/YOURLS' }],
 
-    editLink: {
-      repo: 'YOURLS/docs',
-      text: 'Edit this page on Github',
-    },
+    repo: 'YOURLS/docs',
+    editLinks: true,
+    editLinkText: 'Something incorrect or missing? Edit this page on Github',
 
     footer: {
       license: {
