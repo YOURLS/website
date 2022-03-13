@@ -6,7 +6,7 @@ import { NavItem, SidebarConfig } from '@vue/theme/src/vitepress/config'
 const title = 'YOURLS Documentation'
 const description = 'Your Own URL Shortener'
 const site = 'https://docs.yourls.org'
-const image = `${site}/banner.png`
+const image = `${site}/yourls-docs-logo.png`
 
 const head: HeadConfig[] = [
   ['meta', { name: 'author', content: 'YOURLS Community' }],
@@ -181,8 +181,13 @@ export default defineConfigWithTheme<Config>({
       indexName: 'yourls',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/YOURLS/YOURLS' }],
+    socialLinks: [
+        { icon: 'github', link: 'https://github.com/YOURLS/docs' },
+        { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
+    ],
 
+    docsBranch: 'main',
+    docsRepo: 'YOURLS/docs',
     repo: 'YOURLS/docs',
     editLinks: true,
     editLinkText: 'Something incorrect or missing? Edit this page on Github',
