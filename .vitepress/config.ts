@@ -181,7 +181,10 @@ export default defineConfigWithTheme<Config>({
       indexName: 'yourls',
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/YOURLS/YOURLS' }],
+    socialLinks: [
+        { icon: 'github', link: 'https://github.com/YOURLS/docs' },
+        { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
+    ],
 
     docsBranch: 'main',
     docsRepo: 'YOURLS/docs',
