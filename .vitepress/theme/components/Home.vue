@@ -25,17 +25,26 @@
     <section id="highlights" class="vt-box-container">
       <div class="vt-box">
         <h2>FOSS</h2>
-        <p>Free and open-source software. No strings attached. Full control over your data, on your own domain.</p>
+        <p>
+          Free and open-source software. No strings attached. Full control over
+          your data, on your own domain.
+        </p>
       </div>
       <div class="vt-box">
         <h2>Powerful Features</h2>
-        <p>Bookmarklets, developer API, and awesome stats with historical click reports, referrers tracking and visitors geo-location.</p>
+        <p>
+          Bookmarklets, developer API, and awesome stats with historical click
+          reports, referrers tracking and visitors geo-location.
+        </p>
       </div>
       <div class="vt-box">
         <h2>Extensible</h2>
-        <p>Terrific plugin architecture and dozens of plugins to easily implement new features. Make YOURLS work exactly the way you need. Endless possibilities.</p>
+        <p>
+          Terrific plugin architecture and dozens of plugins to easily implement
+          new features. Make YOURLS work exactly the way you need. Endless
+          possibilities.
+        </p>
       </div>
-
     </section>
   </ClientOnly>
 </template>
