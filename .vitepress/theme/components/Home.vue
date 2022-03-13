@@ -1,12 +1,11 @@
 <template>
   <ClientOnly>
     <section id="hero">
-      <img class="tagline" alt="YOURLS" src="/logo.svg" />
-      <!-- <h1 class="tagline">YOURLS</h1> -->
-      <p class="description">Documentation</p>
+      <img class="tagline" alt="YOURLS" src="/yourls-docs-logo.png" />
+      <h1 class="description">YOURLS Documentation</h1>
       <p class="actions">
         <a class="get-started" href="/guide/introduction.html">
-          Get Started
+          Getting Started
           <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,22 +25,17 @@
     <section id="highlights" class="vt-box-container">
       <div class="vt-box">
         <h2>FOSS</h2>
-        <p>Free and open-source software. No strings attached.</p>
+        <p>Free and open-source software. No strings attached. Full control over your data, on your own domain.</p>
+      </div>
+      <div class="vt-box">
+        <h2>Powerful Features</h2>
+        <p>Bookmarklets, developer API, and awesome stats with historical click reports, referrers tracking and visitors geo-location.</p>
       </div>
       <div class="vt-box">
         <h2>Extensible</h2>
-        <p>
-          Terrific Plugin architecture and dozens of plugins to easily implement
-          new features.
-        </p>
+        <p>Terrific plugin architecture and dozens of plugins to easily implement new features. Make YOURLS work exactly the way you need. Endless possibilities.</p>
       </div>
-      <div class="vt-box">
-        <h2>Analytics</h2>
-        <p>
-          Awesome stats: historical click reports, referrers tracking, visitors
-          geo-location.
-        </p>
-      </div>
+
     </section>
   </ClientOnly>
 </template>
@@ -68,7 +62,7 @@ section {
 
 img.tagline {
   margin-bottom: 40px;
-  max-width: 300px;
+  max-width: 80%;
 }
 
 .description {
