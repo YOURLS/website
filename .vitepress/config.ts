@@ -6,7 +6,7 @@ import { NavItem, SidebarConfig } from '@vue/theme/src/vitepress/config'
 const title = 'YOURLS Documentation'
 const description = 'Your Own URL Shortener'
 const site = 'https://docs.yourls.org'
-const image = `${site}/yourls-docs-logo.png`
+const image = `${site}/banner.png`
 
 const head: HeadConfig[] = [
   ['meta', { name: 'author', content: 'YOURLS Community' }],
