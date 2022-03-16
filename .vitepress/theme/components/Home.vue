@@ -5,7 +5,7 @@
       <h1 class="description">YOURLS Documentation</h1>
       <p class="actions">
         <a class="get-started" href="/guide/introduction.html">
-          Getting Started
+          Get Started
           <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
