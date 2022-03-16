@@ -1,7 +1,7 @@
 <template>
   <ClientOnly>
     <section id="hero">
-      <img class="tagline" alt="YOURLS" src="/yourls-docs-logo.png" />
+      <img class="tagline" alt="YOURLS" src="/logo.svg" />
       <h1 class="description">YOURLS Documentation</h1>
       <p class="actions">
         <a class="get-started" href="/guide/introduction.html">
@@ -71,7 +71,7 @@ section {
 
 img.tagline {
   margin-bottom: 40px;
-  max-width: 80%;
+  max-width: 300px;
 }
 
 .description {
