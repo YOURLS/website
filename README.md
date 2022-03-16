@@ -25,8 +25,3 @@ to [use Vue syntax inside markdown](https://vitepress.vuejs.org/guide/using-vue.
 npm i
 npm run dev
 ```
-
-## License
-
-Free software. Do whatever the hell you want with it.
-YOURLS is released under the [MIT license](LICENSE).
