@@ -6,23 +6,27 @@
 
 > The sources of the [documentation](https://docs.yourls.org) for [YOURLS](https://yourls.org)
 
-## Contribute
+## Contributing
 
-See something wrong or incomplete ? Please check our [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md).
+Site content is written in Markdown format located in `src`. For simple edits, you can directly edit the file on GitHub
+and generate a Pull Request.
 
-The docs are all the `.MD` files in the `src/` directory. We will more than happily review pull requests!
+See the [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md) for our rules and
+recommendations on contributions.
 
-## Build locally
+## Local development
 
-[YOURLS docs](https://docs.yourls.org/) is a static site built with VitePress. You will need `npm` and `yarn`, then:
+This site is built with [VitePress](https://github.com/vuejs/vitepress).
 
-```shell
-$ yarn add --dev vitepress # install needed dependencies
-$ yarn build               # build static site (in .vitepress/dist)
-$ yarn serve               # serve site at http://localhost:5000/
+See VitePress docs on supported [Markdown Extensions](https://vitepress.vuejs.org/guide/markdown.html) and the ability
+to [use Vue syntax inside markdown](https://vitepress.vuejs.org/guide/using-vue.html).
+
+```bash
+npm i
+npm run dev
 ```
 
 ## License
 
-Free software. Do whatever the hell you want with it.  
+Free software. Do whatever the hell you want with it.
 YOURLS is released under the [MIT license](LICENSE).
