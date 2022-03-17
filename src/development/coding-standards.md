@@ -1,9 +1,3 @@
----
-title: Coding standards
-editLink: false
-outline: deep
----
-
 # Coding standards
 
 ## #1 Rules Or Die

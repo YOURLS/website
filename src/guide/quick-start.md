@@ -1,9 +1,3 @@
----
-title: Quick start
-editLink: false
-outline: deep
----
-
 # Quick start
 
 Depending on your use case and preference, you can install YOURLS with or without a building the environment.

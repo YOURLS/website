@@ -1,9 +1,3 @@
----
-title: Languages
-editLink: false
-outline: deep
----
-
 # Languages
 
 YOURLS supports localization: this means if a language file for YOURLS in available in your language, YOURLS will speak your language!

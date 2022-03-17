@@ -1,9 +1,3 @@
----
-title: Abuse
-editLink: false
-outline: deep
----
-
 # Abuse
 
 Getting spam links shortened and added in your YOURLS install? Read this.

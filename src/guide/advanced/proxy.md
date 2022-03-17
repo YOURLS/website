@@ -1,9 +1,3 @@
----
-title: Proxy
-editLink: false
-outline: deep
----
-
 # Proxy
 
 YOURLS features proxy support, meaning that you can install it behind a firewall or a proxy, and hopefully use it without any limitation.

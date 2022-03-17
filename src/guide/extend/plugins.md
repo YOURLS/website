@@ -1,9 +1,3 @@
----
-title: Plugins
-editLink: false
-outline: deep
----
-
 # Plugins
 
 YOURLS has a powerful plugin API that allows to implement custom features and behaviors.

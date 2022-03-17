@@ -1,9 +1,3 @@
----
-title: QRCode
-editLink: false
-outline: deep
----
-
 # QRCode
 
 Add "`.qr`" to short URLs to display the shorturl's QR code.

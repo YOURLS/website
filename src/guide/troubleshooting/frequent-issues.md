@@ -1,6 +1,4 @@
 ---
-title: Frequent issues
-editLink: false
 outline: deep
 ---
 
