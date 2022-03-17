@@ -1,12 +1,14 @@
 import baseConfig from '@vue/theme/config'
 import { defineConfigWithTheme, HeadConfig, UserConfig } from 'vitepress'
 import type { Config } from '@vue/theme'
-import { NavItem, SidebarConfig } from '@vue/theme/src/vitepress/config'
+
+import { nav } from './config/navbar'
+import { sidebar } from './config/sidebar'
 
 const title = 'YOURLS Documentation'
 const description = 'Your Own URL Shortener'
 const site = 'https://docs.yourls.org'
-const image = `${site}/yourls-docs-logo.png`
+const image = `${site}/banner.png`
 
 const head: HeadConfig[] = [
   ['meta', { name: 'author', content: 'YOURLS Community' }],
@@ -28,139 +30,6 @@ const head: HeadConfig[] = [
   ['meta', { property: 'og:image', content: image }],
   ['meta', { property: 'og:description', content: description }],
 ]
-
-const nav: NavItem[] = [
-  {
-    text: 'Docs',
-    link: '/guide/quick-start',
-    activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
-  },
-  {
-    text: 'Development',
-    link: '/development/plugins',
-    activeMatch: `^/(development)/`,
-  },
-  {
-    text: 'Ecosystem',
-    items: [
-      {
-        text: 'Ressources',
-        items: [
-          {
-            text: 'Awesome YOURLS',
-            link: 'https://github.com/YOURLS/awesome-yourls',
-          },
-          {
-            text: 'Plugin sample',
-            link: 'https://github.com/YOURLS/plugin-sample',
-          },
-        ],
-      },
-      {
-        text: 'References',
-        items: [
-          { text: 'Hooklist', link: 'https://yourls.org/hooklist.php' },
-          { text: 'XRef', link: 'https://yourls.org/xref/' },
-        ],
-      },
-      {
-        text: 'News',
-        items: [{ text: 'Blog', link: 'https://blog.yourls.org' }],
-      },
-      // {
-      //   text: 'Documentation',
-      //   items: [
-      //     { text: 'Laravel', link: 'https://laravel.com/' },
-      //     { text: 'Vue.js', link: 'https://vuejs.org/' },
-      //   ],
-      // },
-    ],
-  },
-  { text: 'Sponsor', link: '/sponsor' },
-]
-
-const sidebar: SidebarConfig = {
-  '/guide/': [
-    {
-      text: 'Getting started',
-      items: [
-        { text: 'Introduction', link: '/guide/introduction' },
-        { text: 'Quick start', link: '/guide/quick-start' },
-        { text: 'Server configuration', link: '/guide/server-configuration' },
-      ],
-    },
-    {
-      text: 'Essentials',
-      items: [
-        { text: 'Configuration', link: '/guide/essentials/configuration' },
-        { text: 'Credentials', link: '/guide/essentials/credentials' },
-        { text: 'Private/Public', link: '/guide/essentials/private-or-public' },
-        { text: 'Character set', link: '/guide/essentials/charset' },
-      ],
-    },
-    {
-      text: 'Extend',
-      items: [
-        { text: 'Plugins', link: '/guide/extend/plugins' },
-        { text: 'Pages', link: '/guide/extend/pages' },
-        { text: 'Languages', link: '/guide/extend/languages' },
-        {
-          text: 'Possible with a plugin',
-          link: '/guide/extend/possible-with-a-plugin',
-        },
-      ],
-    },
-    {
-      text: 'Advanced',
-      items: [
-        { text: 'Passwordless API', link: '/guide/advanced/passwordless-api' },
-        { text: 'Proxy', link: '/guide/advanced/proxy' },
-        {
-          text: 'Public shortening',
-          link: '/guide/advanced/public-shortening',
-        },
-        { text: 'Custom protocols', link: '/guide/advanced/custom-protocols' },
-      ],
-    },
-    {
-      text: 'Troubleshooting',
-      items: [
-        { text: 'First steps', link: '/guide/troubleshooting/first-steps' },
-        {
-          text: 'Frequent issues',
-          link: '/guide/troubleshooting/frequent-issues',
-        },
-        { text: 'Abuse', link: '/guide/troubleshooting/abuse' },
-      ],
-    },
-  ],
-  '/development/': [
-    {
-      text: 'Getting started',
-      items: [
-        { text: 'Plugins', link: '/development/plugins' },
-        { text: "Don't hack core", link: '/development/dont-hack-core' },
-        { text: 'Coding standards', link: '/development/coding-standards' },
-        { text: 'Database', link: '/development/database-queries' },
-        { text: 'Hooks', link: '/development/hooks' },
-        { text: 'i18n', link: '/development/i18n' },
-        { text: 'Debugging', link: '/development/debugging' },
-      ],
-    },
-    {
-      text: 'Examples',
-      items: [
-        { text: 'QRCode Link', link: '/development/examples/qrcode' },
-        { text: 'Preview URL', link: '/development/examples/preview' },
-        {
-          text: 'Public Prefix-N-Shorten',
-          link: '/development/examples/public-prefix',
-        },
-        { text: 'RSS', link: '/development/examples/rss' },
-      ],
-    },
-  ],
-}
 
 export default defineConfigWithTheme<Config>({
   extends: baseConfig as () => UserConfig<Config>,
@@ -185,12 +54,6 @@ export default defineConfigWithTheme<Config>({
       { icon: 'github', link: 'https://github.com/YOURLS/docs' },
       { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
     ],
-
-    docsBranch: 'main',
-    docsRepo: 'YOURLS/docs',
-    repo: 'YOURLS/docs',
-    editLinks: true,
-    editLinkText: 'Something incorrect or missing? Edit this page on Github',
 
     footer: {
       license: {

@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://yourls.org">
-    <img src="src/public/yourls-docs-logo.png" width=66% alt="YOURLS">
+    <img src="src/public/banner.png" width=66% alt="YOURLS">
   </a>
 </h1>
 

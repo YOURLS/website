@@ -1,11 +1,11 @@
 <template>
   <ClientOnly>
     <section id="hero">
-      <img class="tagline" alt="YOURLS" src="/yourls-docs-logo.png" />
+      <img class="tagline" alt="YOURLS" src="/banner.png" />
       <h1 class="description">YOURLS Documentation</h1>
       <p class="actions">
         <a class="get-started" href="/guide/introduction.html">
-          Getting Started
+          Get Started
           <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
