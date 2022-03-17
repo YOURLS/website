@@ -71,7 +71,8 @@ section {
 
 img.tagline {
   margin-bottom: 40px;
-  max-width: 300px;
+  max-height: 125px;
+  width: 80%;
 }
 
 .description {
