@@ -1,6 +1,4 @@
 ---
-title: Credentials
-editLink: false
 outline: deep
 ---
 

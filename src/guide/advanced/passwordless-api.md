@@ -1,6 +1,4 @@
 ---
-title: Passwordless API
-editLink: false
 outline: deep
 ---
 

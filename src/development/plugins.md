@@ -1,6 +1,4 @@
 ---
-title: Plugins
-editLink: false
 outline: deep
 ---
 

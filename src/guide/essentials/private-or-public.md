@@ -1,9 +1,3 @@
----
-title: Private/Public
-editLink: false
-outline: deep
----
-
 # Private/Public
 
 In your `config.php` you have to define constant `YOURLS_PRIVATE`. It can be one of these two lines:

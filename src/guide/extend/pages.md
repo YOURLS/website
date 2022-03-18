@@ -1,9 +1,3 @@
----
-title: Pages
-editLink: false
-outline: deep
----
-
 # Pages
 
 YOURLS has a little known -- yet fancy -- feature to route users to custom content you create: **Pages**.
@@ -23,7 +17,7 @@ It's a convenient way to create simple pages (about your team, corporate info, .
 
 That's all. This page is now viewable at `https://yoursite/about` (no `.php` extension).
 
-### "I have a `pages/` directory in YOURLS root, not in `user/` !"
+### "I have a `pages/` directory in YOURLS root, not in `user/`!"
 
 Previous versions of YOURLS used to have the pages folder located in the root directory. You can simply move the directory into the `user/pages/` folder and everything should work fine.
 

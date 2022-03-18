@@ -1,9 +1,3 @@
----
-title: Possible with a plugin
-editLink: false
-outline: deep
----
-
 # Possible with a plugin
 
 Not all feature requests can be implemented. Why?

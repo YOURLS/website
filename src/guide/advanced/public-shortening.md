@@ -1,6 +1,4 @@
 ---
-title: Public shortening
-editLink: false
 outline: deep
 ---
 

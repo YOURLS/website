@@ -1,9 +1,3 @@
----
-title: Public Prefix-N-Shorten
-editLink: false
-outline: deep
----
-
 # Public Prefix-N-Shorten
 
 Redirect all the "Prefix n' Shorten" URLs (eg `https://sho.rt/https://somelongurl.com/`) to a public interface instead of the admin area.

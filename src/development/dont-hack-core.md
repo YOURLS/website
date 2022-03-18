@@ -1,9 +1,3 @@
----
-title: Don't hack core
-editLink: false
-outline: deep
----
-
 # Don't hack core
 
 ## Why you MUST NOT alter core files

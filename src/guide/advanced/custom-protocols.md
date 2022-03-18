@@ -1,9 +1,3 @@
----
-title: Custom protocols
-editLink: false
-outline: deep
----
-
 # Custom protocols
 
 YOURLS can shorten URLs with non standard protocols (other than `http` or `https`).

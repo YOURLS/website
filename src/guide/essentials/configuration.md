@@ -1,6 +1,4 @@
 ---
-title: Configuration
-editLink: false
 outline: deep
 ---
 

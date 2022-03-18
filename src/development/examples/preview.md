@@ -1,9 +1,3 @@
----
-title: Preview
-editLink: false
-outline: deep
----
-
 # Preview
 
 Add the character '`~`' to a short URL to display a preview screen before redirection
