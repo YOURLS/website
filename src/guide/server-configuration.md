@@ -1,6 +1,4 @@
 ---
-title: Server configuration
-editLink: false
 outline: deep
 ---
 

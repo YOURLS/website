@@ -1,9 +1,3 @@
----
-title: Database queries
-editLink: false
-outline: deep
----
-
 # Database queries
 
 This guide covers the proper way to query the database of a YOURLS setup.

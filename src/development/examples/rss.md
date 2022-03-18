@@ -1,9 +1,3 @@
----
-title: RSS
-editLink: false
-outline: deep
----
-
 # RSS
 
 This script will list the 20 latest links added, in an RSS fashion.

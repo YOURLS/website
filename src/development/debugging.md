@@ -1,9 +1,3 @@
----
-title: Debugging
-editLink: false
-outline: deep
----
-
 # Debugging
 
 ## `YOURLS_DEBUG`

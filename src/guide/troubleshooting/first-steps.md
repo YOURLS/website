@@ -1,9 +1,3 @@
----
-title: First steps
-editLink: false
-outline: deep
----
-
 # First steps
 
 Facing a problem? Something isn't working as expected? Before submitting a new issue, take your time and follow these few steps.

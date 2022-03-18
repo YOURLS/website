@@ -1,9 +1,3 @@
----
-title: Character set
-editLink: false
-outline: deep
----
-
 # Character set
 
 In `user/config.php` the setting `YOURLS_URL_CONVERT` defines what characters short URLs will use
