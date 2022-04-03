@@ -31,6 +31,8 @@ function add_exclamations( $input ) {
 }
 
 // Now filtered result
+yourls_add_filter( 'hello', 'add_exclamations' );
+
 var_dump( say_hello( "ozh" ) );
 // string 'hello ozh!!!' (length=12)
 ```

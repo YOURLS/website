@@ -21,9 +21,9 @@ In core patches, always prefix all your PHP functions with `yourls_`.
 
 In plugins, prefix **everything** (functions, classes, global variables, HTML elements...) with a unique and personal prefix such as `joe_myplugin_`
 
-## _Mandatory_ curly braces on same line as function name
+## Curly braces on same line as function name
 
-We put braces on the same line as the function or class declaration.
+We mostly put braces on the same line as the function or class declaration.
 
 Good:
 
@@ -52,7 +52,7 @@ There are **never** too many comments and we'd rather strip a few out before com
 
 For simple explanations, use inline commenting. For larger explanation, don't hesitation to break in multiple lines using `/** ... **/`
 
-Comments should not focus on _what_ is happening (unless the code itself is not self explanatory enough) but on _why_ we are doing this.
+Comments should not focus on **what** is happening (unless the code itself is not self explanatory enough) but on **why** we are doing this.
 
 ## _Recommended_ whitespace
 

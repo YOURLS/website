@@ -1,4 +1,4 @@
-# Preview
+# Example plugin : Preview URL
 
 Add the character '`~`' to a short URL to display a preview screen before redirection
 

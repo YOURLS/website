@@ -28,16 +28,16 @@ Author URI: https://ozh.org/
 
 ## Plugin API
 
-YOURLS core uses two kinds of 'hooks', _filters_ and _actions_, allowing your plugin to 'hook into' what YOURLS does.
+YOURLS core uses two kinds of 'hooks' : **filters** and **actions**, allowing your plugin to 'hook into' what YOURLS does.
 
-- _actions_ are the hooks YOURLS triggers at specific points or during specific action. It's a way of telling "hey, this particular event just occurred", so your plugin can execute a defined function at this point.
-- _filters_ are the hooks YOURLS triggers to allow modification of a variable before returning it, sending it into the database or displaying it.
+- **actions** are the hooks YOURLS triggers at specific points or during specific action. It's a way of telling "hey, this particular event just occurred", so your plugin can execute a defined function at this point.
+- **filters** are the hooks YOURLS triggers to allow modification of a variable before returning it, sending it into the database or displaying it.
 
 ### Actions
 
 _Actions_ are triggered by specific actions: inserting a link in the database, sending headers to the browser, redirecting to a long URL...
 
-A typical action in YOURLS is a function call like the following:
+A typical action in YOURLS core is a function call like the following:
 
 ```php
 yourls_do_action( 'some_event' );
@@ -49,7 +49,7 @@ The function `yourls_do_action()` can also accept parameters to give more contex
 yourls_do_action( 'redirect_shorturl', $url );
 ```
 
-#### Create an Action function
+#### Hook a custom function to an action
 
 The steps to create an action function are:
 
@@ -234,6 +234,33 @@ Now put this `plugin.php` into `user/plugins/my_first_plugin/` and go to the adm
 
 Congratulation, you've just extended the functionalities of YOURLS!
 
+## Uninstall plugin script
+
+Along with your plugin file `plugin.php`, with YOURLS `1.8.3` and above you can also have an uninstall script, that will be executed when the plugin is deactivated: `uninstall.php`
+
+A typical `uninstall.php` is simply a YOURLS aware piece of code where you add what would be needed to leave no trail. Example:
+
+```php
+<?php
+// No direct call.
+if( !defined( 'YOURLS_UNINSTALL_PLUGIN' ) ) die();
+
+// delete custom option
+yourls_delete_option('joe_plugin');
+ 
+// delete custom table
+$table  = 'JOE_CUSTOM_TABLE';
+$sql    = "DROP TABLE IF EXISTS :table";
+$binds  = array('table' => $table);
+$update = yourls_get_db()->fetchAffected($sql, $binds); 
+
+// delete specific files,
+// ping plugin's mothership to tell about uninstalling,
+// etc...
+```
+
+See for instance the [GeoIP Update plugin](https://github.com/ozh/yourls-geoip-update) to see how it is implemented.
+
 ## List of hooks
 
 [A full list of hooks (actions and filters) is available](https://yourls.org/hooklist.php).
@@ -249,4 +276,4 @@ If you code a plugin, you should run that dev version on a test install.
 - Code with `define( 'YOURLS_DEBUG', true );` in your `config.php` to catch PHP notices and coding mistakes soon
 - Write clean, whitespaced, commented code.
 
-Read [Coding Standards](/development/coding-standards)
+Read [Coding Standards](/development/coding-standards) for more details.
