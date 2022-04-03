@@ -4,7 +4,6 @@ YOURLS forms and internal links make extensive use of **nonces** (a **n**umber u
 
 If you can access the admin area, you have **authorization**. Nonce are here to make sure you also have **intention**.
 
-
 ## What are nonces
 
 Nonces are the crytpic strings you'll find for instance on internal links, such as the one to activate a plugin in your admin interface :
@@ -62,12 +61,7 @@ Before performing the action protected by the nonce, use `yourls_verify_nonce()`
 function joe-plugin-delete-everything() {
     // make sure there's a valid nonce -- if not the script will abort
     yourls_verify_nonce( 'joe-plugin-some-action' );
-    
+
     // Now delete everything
     ...
 ```
-
-
-
-
-

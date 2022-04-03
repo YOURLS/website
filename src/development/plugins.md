@@ -247,12 +247,12 @@ if( !defined( 'YOURLS_UNINSTALL_PLUGIN' ) ) die();
 
 // delete custom option
 yourls_delete_option('joe_plugin');
- 
+
 // delete custom table
 $table  = 'JOE_CUSTOM_TABLE';
 $sql    = "DROP TABLE IF EXISTS :table";
 $binds  = array('table' => $table);
-$update = yourls_get_db()->fetchAffected($sql, $binds); 
+$update = yourls_get_db()->fetchAffected($sql, $binds);
 
 // delete specific files,
 // ping plugin's mothership to tell about uninstalling,
