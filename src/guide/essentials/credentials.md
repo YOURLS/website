@@ -54,7 +54,6 @@ User will still log in using `joe` as a username and `MyPassword` as a password,
 We're using the Blowfish algorithm to encrypt passwords, an industry standard strong one-way hashing algorithm. This will hash your passwords so tight even the NSA will never be able to find out.
 :::
 
-
 ## FAQ
 
 ### I have an error message: "_Could not auto-encrypt passwords_"

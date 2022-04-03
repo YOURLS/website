@@ -119,6 +119,7 @@ define('YOURLS_URL_CONVERT', 36);
 A list of reserved keywords that won't be used as short URLs. Define here negative, unwanted or potentially misleading keywords
 
 Example:
+
 ```php
 'porn', 'faggot', 'sex', 'nigger', 'fuck', 'cunt', 'dick'
 ```
