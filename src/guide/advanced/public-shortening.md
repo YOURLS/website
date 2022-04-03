@@ -12,7 +12,7 @@ Want to run your own little _bitly_? You need what is called a **public interfac
 
 A sample public interface is provided, named `sample-public-front-page.txt`. Rename it as a `.php` file and customize it to suit your needs.
 
-You will find examples and inspiration in the **More / Showcase** section of the `readme.html`
+You will find examples and inspiration in the [Showcase section](https://github.com/YOURLS/awesome-yourls#showcases) of Awesome YOURLS.
 
 ## Public API
 
@@ -48,4 +48,4 @@ Often asked is the question about the kind of webhost and server you need to run
 
 YOURLS itself isn't much of a resource eater. The CPU load is virtually null and a redirection costs nothing. There's only a small SQL cost: each redirection generates 2 `read` queries and 2 `write` queries. Use these numbers to estimate what your web hosting is capable of.
 
-If you need further tweaking, you can install cache plugins or disable the logging - read the README.
+If you need further tweaking, you can install cache plugins or disable the logging - see [Configuration](/guide/essentials/configuration).

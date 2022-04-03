@@ -1,6 +1,6 @@
 # Character set
 
-In `user/config.php` the setting `YOURLS_URL_CONVERT` defines what characters short URLs will use
+In `user/config.php` the setting `YOURLS_URL_CONVERT` defines what characters short URLs will use.
 
 ## `36` or `62`, nothing else
 

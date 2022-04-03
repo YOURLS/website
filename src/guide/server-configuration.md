@@ -10,15 +10,15 @@ What your `.htaccess` file for YOURLS should look like.
 
 ### Make a `.htaccess` file
 
-If `.htaccess` file creation/updating failed because of file permission, you'll have to manually make one. No worry, it's simple.
+If the `.htaccess` file automated creation/updating failed because of file permission, you'll have to manually make one. No worry, it's simple.
 
 :::tip Note
-YOURLS **cannot share** its root directory with another .htaccess rewrite rules driven app such as WordPress. The `.htaccess` file should contain YOURLS directives and no other rewrite rule.
+YOURLS **cannot share** its root directory with another `.htaccess` rewrite rules driven app such as WordPress. The `.htaccess` file should contain YOURLS directives and no other rewrite rule.
 :::
 
 #### YOURLS installed on root
 
-If YOURLS root URL is `https://yoursite/`, the `.htaccess` file in the root directory must be like:
+If YOURLS root URL is `https://yoursite.com/` or `https://subdomain.yoursite.com/`, the `.htaccess` file in the root directory must be like:
 
 ```apache
 # BEGIN YOURLS
@@ -34,7 +34,7 @@ RewriteRule ^.*$ /yourls-loader.php [L]
 
 #### YOURLS installed in subdirectory
 
-If YOURLS root URL is `https://yoursite/somedir/`, the `.htaccess` file in this subdirectory must be like:
+If YOURLS root URL is `https://yoursite.com/somedir/`, the `.htaccess` file in this subdirectory must be like:
 
 ```apache
 # BEGIN YOURLS
@@ -48,7 +48,7 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 # END YOURLS
 ```
 
-### Redirect all to HTTP over TLS
+### Redirect all to HTTP to HTTPS
 
 Add this extra line right after the `RewriteBase` line: `RewriteCond %{HTTPS} !=on`
 (Example [here](https://github.com/YOURLS/YOURLS/issues/2578#issuecomment-554732802))
@@ -57,7 +57,7 @@ Add this extra line right after the `RewriteBase` line: `RewriteCond %{HTTPS} !=
 
 By default YOURLS installs its files in the directory it will run from.
 
-It is possible to move all YOURLS files in their own directory, but still having YOURLS served from the parent directory and without changing your URLs.
+This section explains how to have YOURLS running from `http://sho.rt/` but with all files installed in their own directory, say `http://sho.rt/yourls/`, and still have YOURLS served from the parent directory and without changing your URLs.
 
 1. **Move files**
    Simply create a directory, eg `yourls_subdir/` and move **everything** in this directory.

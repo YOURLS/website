@@ -6,7 +6,7 @@ export const sidebar: SidebarConfig = {
       text: 'Getting started',
       items: [
         { text: 'Introduction', link: '/guide/introduction' },
-        { text: 'Quick start', link: '/guide/quick-start' },
+        { text: 'Install', link: '/guide/install' },
         { text: 'Server configuration', link: '/guide/server-configuration' },
       ],
     },

@@ -50,13 +50,10 @@ $yourls_user_passwords = array(
 
 User will still log in using `joe` as a username and `MyPassword` as a password, but this password is no longer written down anywhere in the config file.
 
-**Nerd note**: we're using the rock solid [phpass](https://www.openwall.com/phpass/) library to encrypt passwords. This library will use the most secure encryption protocol installed on your server, and will hash your passwords so tight even the NSA will never find out.
+:::tip Nerd note:
+We're using the Blowfish algorithm to encrypt passwords, an industry standard strong one-way hashing algorithm. This will hash your passwords so tight even the NSA will never be able to find out.
+:::
 
-## Protecting your config file
-
-A good practice, especially in a shared hosting environment, is to change file permissions to disallow write access to your files. The best thing to do is to edit your `config.php` with a new password, run YOURLS to get it encrypted, and then remove write permissions.
-
-Depending on your host, you should change `config.php` permissions to 400, 440 or 600. This can be done via the command-line (`chmod 0440 config.php`) or using your FTP client. For more help on this matter, please contact your host support.
 
 ## FAQ
 
@@ -104,7 +101,7 @@ $yourls_user_passwords = array(
 );
 ```
 
-Hashes using MD5 are slightly less secure than using YOURLS encryption, but still way better than plain text passwords.
+Hashes using MD5 are slightly less secure than using native YOURLS encryption, but still way better than plain text passwords.
 
 ### I don't want to encrypt my password
 
