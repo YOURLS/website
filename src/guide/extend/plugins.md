@@ -12,11 +12,11 @@ Core plugins are bundled with YOURLS. They aim to either provide sample code for
 
 Normal plugins are written (and hopefully maintained) by various YOURLS users. You will find the list in the dedicated repository: <https://github.com/YOURLS/awesome-yourls>
 
-Being listed does not guarantee that the plugin is approved, its code is clean, future proof or anything (unless it's been made by Ozh of course ;)
+Being listed does not guarantee that the plugin is approved, its code is clean, future proof or anything (unless it's been made by Ozh of course ;))
 
 ## Create plugins
 
-Creating a plugin for YOURLS requires some PHP knowledge, but it's fairly easy. Follow [plugins development guide](/development/plugins).
+Creating a plugin for YOURLS requires some PHP knowledge, but it's fairly easy. Follow the [plugins development guide](/development/plugins).
 
 ## Get your plugin listed on awesome-yourls
 

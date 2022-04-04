@@ -3,7 +3,7 @@ import { NavItem } from '@vue/theme/src/vitepress/config'
 export const nav: NavItem[] = [
   {
     text: 'Docs',
-    link: '/guide/quick-start',
+    link: '/guide/introduction',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
   },
   {

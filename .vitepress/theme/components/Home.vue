@@ -18,7 +18,7 @@
             />
           </svg>
         </a>
-        <a class="setup" href="/guide/quick-start.html">Install</a>
+        <a class="setup" href="/guide/install.html">Install</a>
       </p>
     </section>
 

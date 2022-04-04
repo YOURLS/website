@@ -2,7 +2,7 @@
 
 ## Why you MUST NOT alter core files
 
-You're running YOURLS and are having fun with it. But you want it to do this here and have that, there. So you modified a bit a few cores files, so the output and functionality suits your needs
+You're running YOURLS and are having fun with it. But you want it to do this here and have that, there. So you modified a bit a few cores files, so the output and functionality suits your needs.
 
 ## You're doing it wrong
 
@@ -18,7 +18,7 @@ I'll tell you what: **headaches** and **disillusion**, plus a **major pain** to 
 
 Don't modify core: **override core**. YOURLS, like many well designed apps and CMS, comes with a Plugin API to make it flexible and modular.
 
-Implement your custom features in a separate files that will be left untouched when you update YOURLS.
+Implement your custom features in separate files that will be left untouched when you update YOURLS.
 
 There's a tutorial on how to make [Plugins](/development/plugins). There's an ever growing [Plugin List](https://github.com/YOURLS/awesome-yourls) that may already feature what you're looking for.
 

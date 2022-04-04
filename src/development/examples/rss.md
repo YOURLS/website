@@ -1,4 +1,4 @@
-# RSS
+# Example script : RSS
 
 This script will list the 20 latest links added, in an RSS fashion.
 

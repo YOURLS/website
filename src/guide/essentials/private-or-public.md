@@ -18,9 +18,9 @@ Setting to `define( 'YOURLS_PRIVATE', true );` (default setting) will make your 
 
 Setting to `define( 'YOURLS_PRIVATE', false );` will make your admin area **free to access** to anyone with the URL. Use this only if you're running a test setup, or for a setup shared by colleagues on a private intranet, for instance.
 
-Also, since there is no login/password needed, there will be no Secret Token on the Tools page for the PasswordlessAPI.
+Also, since there is no login/password needed, there will be no Secret Token on the Tools page for the [Passwordless API](/guide/advanced/passwordless-api).
 
-## Private + Public Interface
+## Private YOURLS + Public Interface
 
 If you want to run your own little bitly, you want to:
 

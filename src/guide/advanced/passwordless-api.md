@@ -4,7 +4,9 @@ outline: deep
 
 # Passwordless API
 
-YOURLS allows API calls the old fashioned way, using `username` and `password` parameters (if your setup is private, obviously). If you're worried about sending your credentials into the wild, you can also make API calls using a **secret signature token**.
+YOURLS allows API calls the old fashioned way, using `username` and `password` parameters (if your setup is private, obviously).
+
+If you're worried about sending your credentials into the wild, you can also make API calls using a **secret signature token**.
 
 ## Signature token
 
@@ -59,8 +61,10 @@ $signature = hash('sha512', $timestamp . '1002a612b4' );
 
 Now use `https://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signature&hash=sha512&action=...`
 
-**NB**: if you try to use a hash algorithm that your setup doesn't support, you will get a simple authentication error as if the timestamp or signature were incorrect
+**NB**: if you try to use a hash algorithm that your setup doesn't support, you will get a simple authentication error as if the timestamp or signature were incorrect.
 
 ## Reset your secret signature token
 
-If for some reason you need to reset your signature (ie to generate a new one while making previous signature inoperative), simply modify the `YOURLS_COOKIEKEY` constant in your `config.php`. Hint: you can simply copy the result from <https://api.yourls.org/services/cookiekey/1.0/> to generate a random unique cookie.
+If for some reason you need to reset your signature (ie to generate a new one while making previous signature inoperative), simply modify the `YOURLS_COOKIEKEY` constant in your `config.php`.
+
+Hint: you can simply copy the result from <https://api.yourls.org/services/cookiekey/1.0/> to generate a random unique cookie.
