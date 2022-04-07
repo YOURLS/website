@@ -6,7 +6,7 @@ If you can access the admin area, you have **authorization**. Nonce are here to 
 
 ## What are nonces
 
-Nonces are the crytpic strings you'll find for instance on internal links, such as the one to activate a plugin in your admin interface :
+Nonces are the crytpic strings you'll find for instance on internal links, such as the one to activate a plugin in your admin interface:
 
 ```
 https://sho.rt/admin/plugins.php?action=activate&plugin=joe-plugin&nonce=47876625a6
@@ -24,7 +24,7 @@ https://sho.rt/admin/plugins.php?action=deactivate&plugin=joe-plugin
 
 ## Protect links with nonces
 
-If you’re performing actions based on the clicking of links, you can add a nonce to your links using `yourls_nonce_url()` which takes two parameters : the action name, and the URL.
+If you’re performing actions based on the clicking of links, you can add a nonce to your links using `yourls_nonce_url()` which takes two parameters: the action name, and the URL.
 
 Example:
 
@@ -41,10 +41,10 @@ On said page, you will now be able to check that the nonce is valid, see below.
 
 ## Protect forms with nonces
 
-To protect your `<form>` with a nonce, simply use the `yourls_nonce_field()` function within the `<form>` :
+To protect your `<form>` with a nonce, simply use the `yourls_nonce_field()` function within the `<form>`:
 
 ```php
-<form action="....">
+<form action="...">
 ...
 <?php yourls_nonce_field('joe-plugin-some-action'); ?>
 ...

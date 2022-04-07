@@ -45,7 +45,7 @@ This URL would be valid for only 43200 seconds (12 hours), the default value of 
 
 To modify this duration, add the following to your `config.php`:
 `define( 'YOURLS_NONCE_LIFE', number_of_seconds );`
-(note this also affect all the internal links of YOURLS such as the ones to activate a plugin, delete a short URL, etc...)
+(note this also affect all the internal links of YOURLS such as the ones to activate a plugin, delete a short URL, etc.)
 
 ### Use other hash algorithms than `md5`
 

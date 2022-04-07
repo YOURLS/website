@@ -52,7 +52,7 @@ printf('<p>We have <strong>%s</strong> short urls and a total of <strong>%s</str
     );
 ?>
 
-<p>The 5 most clicked URLs are :</p>
+<p>The 5 most clicked URLs are:</p>
 <ul>
 <?php
 foreach($stats['links'] as $url) {
@@ -66,7 +66,7 @@ foreach($stats['links'] as $url) {
 ?>
 </ul>
 
-<p>The 5 most recent URLs are :</p>
+<p>The 5 most recent URLs are:</p>
 <ul>
 <?php
 $stats = yourls_get_stats('last', 5);

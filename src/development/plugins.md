@@ -28,7 +28,7 @@ Author URI: https://ozh.org/
 
 ## Plugin API
 
-YOURLS core uses two kinds of 'hooks' : **filters** and **actions**, allowing your plugin to 'hook into' what YOURLS does.
+YOURLS core uses two kinds of 'hooks': **filters** and **actions**, allowing your plugin to 'hook into' what YOURLS does.
 
 - **actions** are the hooks YOURLS triggers at specific points or during specific action. It's a way of telling "hey, this particular event just occurred", so your plugin can execute a defined function at this point.
 - **filters** are the hooks YOURLS triggers to allow modification of a variable before returning it, sending it into the database or displaying it.
@@ -256,7 +256,7 @@ $update = yourls_get_db()->fetchAffected($sql, $binds);
 
 // delete specific files,
 // ping plugin's mothership to tell about uninstalling,
-// etc...
+// etc.
 ```
 
 See for instance the [GeoIP Update plugin](https://github.com/ozh/yourls-geoip-update) to see how it is implemented.
@@ -270,7 +270,7 @@ If you code a plugin, you should run that dev version on a test install.
 
 ## Coding Guidelines Or Die
 
-- Prefix everything. Function names, global variables, classes, option names, everything should be uniquely prefixed to avoid conflict with another plugin or, worse, YOURLS' core. The best naming scheme to date is `nick_project_meaningful_stuff` (eg `ozh_pingfm_add_more_cheese`, `joe_captcha_validate_input`, etc..)
+- Prefix everything. Function names, global variables, classes, option names, everything should be uniquely prefixed to avoid conflict with another plugin or, worse, YOURLS' core. The best naming scheme to date is `nick_project_meaningful_stuff` (eg `ozh_pingfm_add_more_cheese`, `joe_captcha_validate_input`, etc.)
 - Corollary: you **must not** use `yourls_` as a prefix. This is for core functions only.
 - Code your plugin against the dev version. It'll be easier for you to follow code development and request inclusions of any missing hook
 - Code with `define( 'YOURLS_DEBUG', true );` in your `config.php` to catch PHP notices and coding mistakes soon

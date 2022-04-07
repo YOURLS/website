@@ -10,7 +10,7 @@ So, before crafting your SQL query, make sure there isn't a function to take car
 
 ## The YDB object
 
-If your use case isn't covered by a wrapper core function, you may need to query the database directly. To do so, you will need to use the global `$ydb` object, retrieved using helper function `yourls_get_db()` :
+If your use case isn't covered by a wrapper core function, you may need to query the database directly. To do so, you will need to use the global `$ydb` object, retrieved using helper function `yourls_get_db()`:
 
 ```php
 function my_plugin_get_stuff_from_database() {
@@ -82,11 +82,11 @@ $update  = $ydb->query("UPDATE `$table` SET `title` = '$title' WHERE `keyword` =
 
 The methods were:
 
-- `$ydb->get_col($query)` : get one column
-- `$ydb->get_row($query)` : get one row
-- `$ydb->get_var($query)` : get one value
-- `$ydb->get_results($query)` : get multiple rows
-- `$ydb->query($query)` : run a query and get the number of affected rows
+- `$ydb->get_col($query)`: get one column
+- `$ydb->get_row($query)`: get one row
+- `$ydb->get_var($query)`: get one value
+- `$ydb->get_results($query)`: get multiple rows
+- `$ydb->query($query)`: run a query and get the number of affected rows
 
 For compatibility reasons, those deprecated methods still work in YOURLS 1.7.3+ but they now send a deprecation notice when debug mode is on (as it should be if you are coding).
 

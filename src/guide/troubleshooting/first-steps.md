@@ -34,7 +34,7 @@ See [Server configuration](/guide/server-configuration) page.
 
 If the error is produced on the server-side (_ie_ the page is generated with an error), most of the time you will find valuable information in the server logs.
 
-Depending on the server software and configuration, this text file may be located somewhere like `/var/log/apache2/error.log`, `/usr/local/apache/logs/error_log`, `/xampp/apache/logs/error.log`, etc...
+Depending on the server software and configuration, this text file may be located somewhere like `/var/log/apache2/error.log`, `/usr/local/apache/logs/error_log`, `/xampp/apache/logs/error.log`, etc.
 
 If you don't know where the error log is, you can look for the `ErrorLog` directive in the Apache configuration. If you don't know how to do this, ask your server admin.
 
