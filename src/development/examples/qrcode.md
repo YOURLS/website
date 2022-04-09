@@ -1,4 +1,4 @@
-# Example plugin : QRCode
+# Example plugin: QRCode
 
 Add "`.qr`" to short URLs to display the shorturl's QR code.
 

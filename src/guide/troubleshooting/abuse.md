@@ -35,7 +35,7 @@ Sometimes your account may be compromised at the FTP level: it won't hurt to cha
 
 - Add a [captcha on your public interface](https://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/)
 - Block specific IP, IP ranges or country with your .htaccess file -- implementation will depend on your server config, ask Google and/or your server admin
-- ... ?
+- ...?
 
 ## Hire an expert
 

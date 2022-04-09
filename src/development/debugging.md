@@ -2,7 +2,7 @@
 
 ## `YOURLS_DEBUG`
 
-In your `user/config.php` :
+In your `user/config.php`:
 
 ```php
 define('YOURLS_DEBUG', true);
