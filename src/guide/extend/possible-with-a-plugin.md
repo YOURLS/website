@@ -26,7 +26,7 @@ Head to <https://github.com/YOURLS/awesome-yourls> to check if someone already c
 
 If you can't code yourself and want a feature implemented, you need to find a plugin coder.
 
-An option is to head towards freelancer sites (getacoder.com, elance.com, etc...) and post your project. You should get very affordable quotes.
+An option is to head towards freelancer sites (getacoder.com, elance.com, etc.) and post your project. You should get very affordable quotes.
 
 Another option, that includes quality, full YOURLS code knowledge and future-proof coding, is to ask me (Ozh, contact me offsite by mail, ozh at ozh dot org) for a quote. Depending on the project and my free time, I may be able to help you.
 

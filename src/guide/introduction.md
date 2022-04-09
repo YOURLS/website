@@ -10,7 +10,7 @@ It's free and open-source.
 
 ## Requirements
 
-YOURLS has the following requirements :
+YOURLS has the following requirements:
 
 ### Server
 

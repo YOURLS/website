@@ -44,7 +44,7 @@ Next time you'll run YOURLS, this array will be rewritten, replacing plain text 
 $yourls_user_passwords = array(
     'joe' => 'phpass:!2a!08!gRCCvpvK22BgiNzN9q9fXOnjCXqQoZP/P0wydAj7bB2',
     'api' => 'phpass:!2a!08!m4IbkpuC0jjDIab7yRvjXeljjvcOJTASFL5nagml1Dm',
-    // etc..
+    // etc.
 );
 ```
 
@@ -66,7 +66,7 @@ Your config file is probably locked for reading and or writing (eg _chmoded_), w
 
 If for some reason you cannot get it working, see **manual MD5 encryption** below
 
-### Why hash passwords ?
+### Why hash passwords?
 
 Storing your password as a crypted hash is more secure: if someone has access to your `config.php`, they won't be able to determine what your password is and won't be able to log in your setup. The drawback is that if you forget your own password, you cannot retrieve it: see below.
 
