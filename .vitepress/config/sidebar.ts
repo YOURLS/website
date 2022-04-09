@@ -8,6 +8,7 @@ export const sidebar: SidebarConfig = {
         { text: 'Introduction', link: '/guide/introduction' },
         { text: 'Install', link: '/guide/install' },
         { text: 'Server configuration', link: '/guide/server-configuration' },
+        { text: 'Upgrade', link: '/guide/upgrade' },
       ],
     },
     {
