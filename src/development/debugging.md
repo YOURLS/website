@@ -86,7 +86,7 @@ function ozh_debug_in_footer_print() {
 
 Example output in the page footer:
 
-```html
+```
 Array
 (
     [0] => filter : shunt_get_db
