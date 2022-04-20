@@ -6,10 +6,10 @@ In `user/config.php` the setting `YOURLS_URL_CONVERT` defines what characters sh
 
 This rather cryptic setting defines the character set used for your short URL "keywords" (the `abc12` part in `https://sho.rt/abc12`):
 
-- with `36`: lower case alphanumeric, _ie_ allowed characters are `0123456789abcdefghijklmnopqrstuvwxyz`
-- with `62`: mixed case alphanumeric, _ie_ allowed characters are `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`
+- with `36`: lower case alphanumeric, _i.e._ allowed characters are `0123456789abcdefghijklmnopqrstuvwxyz`
+- with `62`: mixed case alphanumeric, _i.e._ allowed characters are `0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-:::info Nerd explanation
+:::tip Nerd explanation
 The number represent the "base" a sequential or random number will be converted in. Base 36 has 36 characters (10 digits + 26 latin alphabet letters), base 62 has 62 characters (10 digits, 26 lower case and 26 upper case latin letters)
 :::
 

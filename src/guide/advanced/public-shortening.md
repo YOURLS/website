@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Public shortening
 
 Tips and must-do things if you run a public shortening interface.

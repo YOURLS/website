@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Configuration
 
 This page details how you are supposed to edit your `user/config.php` (with a raw text editor such as Notepad)

@@ -1,15 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "serve": "vitepress serve",
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@vue/theme": "^1.0.0",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.38",
     "prettier": "^2.5.1",
-    "vitepress": "^0.22.3"
+    "vuepress": "^2.0.0-beta.39"
   }
 }

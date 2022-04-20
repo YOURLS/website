@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Passwordless API
 
 YOURLS allows API calls the old fashioned way, using `username` and `password` parameters (if your setup is private, obviously).
