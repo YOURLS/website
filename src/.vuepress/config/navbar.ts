@@ -1,6 +1,6 @@
-import { NavItem } from '@vue/theme/src/vitepress/config'
+import { NavbarConfig } from '@vuepress/theme-default'
 
-export const nav: NavItem[] = [
+export const navbar: NavbarConfig = [
   {
     text: 'Docs',
     link: '/guide/introduction',
@@ -13,10 +13,10 @@ export const nav: NavItem[] = [
   },
   {
     text: 'Ecosystem',
-    items: [
+    children: [
       {
         text: 'Ressources',
-        items: [
+        children: [
           {
             text: 'Awesome YOURLS',
             link: 'https://github.com/YOURLS/awesome-yourls',
@@ -29,14 +29,14 @@ export const nav: NavItem[] = [
       },
       {
         text: 'References',
-        items: [
+        children: [
           { text: 'Hooklist', link: 'https://yourls.org/hooklist.php' },
           { text: 'XRef', link: 'https://yourls.org/xref/' },
         ],
       },
       {
         text: 'News',
-        items: [{ text: 'Blog', link: 'https://blog.yourls.org' }],
+        children: [{ text: 'Blog', link: 'https://blog.yourls.org' }],
       },
     ],
   },

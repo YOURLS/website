@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Server configuration
 
 ## Apache
@@ -20,7 +16,7 @@ YOURLS **cannot share** its root directory with another `.htaccess` rewrite rule
 
 If YOURLS root URL is `https://yoursite.com/` or `https://subdomain.yoursite.com/`, the `.htaccess` file in the root directory must be like:
 
-```apache
+```apacheconf
 # BEGIN YOURLS
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -36,7 +32,7 @@ RewriteRule ^.*$ /yourls-loader.php [L]
 
 If YOURLS root URL is `https://yoursite.com/somedir/`, the `.htaccess` file in this subdirectory must be like:
 
-```apache
+```apacheconf
 # BEGIN YOURLS
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -65,7 +61,7 @@ This section explains how to have YOURLS running from `http://sho.rt/` but with 
 2. **`.htaccess`**
    In the now empty directory, create a `.htaccess` file with the following (replace `sho.rt` and `yourls_subdir` with your hostname and directory name).
 
-```apache
+```apacheconf
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{HTTP_HOST} sho.rt$
@@ -86,7 +82,7 @@ This doesn't change the fact that YOURLS needs its own `.htaccess` in the direct
 
 The following line will prevent access to any "dot file" or "dot directory", except for `.well-known/` which is rightfully used in various cases:
 
-```apache
+```apacheconf
 RewriteRule "(^|/)\.(?!well-known\/)" - [F]
 ```
 

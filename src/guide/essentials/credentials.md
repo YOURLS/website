@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Credentials
 
 **How to use encrypted passwords in your config file.**

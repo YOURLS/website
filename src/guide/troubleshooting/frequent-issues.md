@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # Frequent issues
 
 ## 404 instead of redirection

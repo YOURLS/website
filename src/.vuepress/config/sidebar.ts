@@ -1,10 +1,10 @@
-import { SidebarConfig } from '@vue/theme/src/vitepress/config'
+import { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebar: SidebarConfig = {
   '/guide/': [
     {
       text: 'Getting started',
-      items: [
+      children: [
         { text: 'Introduction', link: '/guide/introduction' },
         { text: 'Install', link: '/guide/install' },
         { text: 'Server configuration', link: '/guide/server-configuration' },
@@ -13,7 +13,7 @@ export const sidebar: SidebarConfig = {
     },
     {
       text: 'Essentials',
-      items: [
+      children: [
         { text: 'Configuration', link: '/guide/essentials/configuration' },
         { text: 'Credentials', link: '/guide/essentials/credentials' },
         { text: 'Private/Public', link: '/guide/essentials/private-or-public' },
@@ -22,7 +22,7 @@ export const sidebar: SidebarConfig = {
     },
     {
       text: 'Extend',
-      items: [
+      children: [
         { text: 'Plugins', link: '/guide/extend/plugins' },
         { text: 'Pages', link: '/guide/extend/pages' },
         { text: 'Languages', link: '/guide/extend/languages' },
@@ -34,7 +34,7 @@ export const sidebar: SidebarConfig = {
     },
     {
       text: 'Advanced',
-      items: [
+      children: [
         { text: 'Passwordless API', link: '/guide/advanced/passwordless-api' },
         { text: 'Proxy', link: '/guide/advanced/proxy' },
         {
@@ -46,7 +46,7 @@ export const sidebar: SidebarConfig = {
     },
     {
       text: 'Troubleshooting',
-      items: [
+      children: [
         { text: 'First steps', link: '/guide/troubleshooting/first-steps' },
         {
           text: 'Frequent issues',
@@ -59,7 +59,7 @@ export const sidebar: SidebarConfig = {
   '/development/': [
     {
       text: 'Getting started',
-      items: [
+      children: [
         { text: 'Plugins', link: '/development/plugins' },
         { text: "Don't hack core", link: '/development/dont-hack-core' },
         { text: 'Coding standards', link: '/development/coding-standards' },
@@ -72,7 +72,7 @@ export const sidebar: SidebarConfig = {
     },
     {
       text: 'Examples',
-      items: [
+      children: [
         { text: 'QRCode Link', link: '/development/examples/qrcode' },
         { text: 'Preview URL', link: '/development/examples/preview' },
         {

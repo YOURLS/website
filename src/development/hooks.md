@@ -2,7 +2,7 @@
 
 This guide is for coders who have already gone through the basics of the [Plugins](/development/plugins) API. It lists all the possible ways to hook your custom functions into actions and events.
 
-:::info Note
+:::tip Note
 Although only filters are covered here, everything applies for actions as well.
 :::
 

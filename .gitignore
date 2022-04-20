@@ -1,4 +1,5 @@
 node_modules
-.vitepress/dist
+src/.vuepress/dist
+src/.vuepress/.*
 package-lock.json
 drafts
