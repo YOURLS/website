@@ -13,7 +13,7 @@ https://sho.rt/admin/plugins.php?action=activate&plugin=joe-plugin&nonce=4787662
 ```
 
 This nonce is here to verify that a user’s action is intentional and originates from within the YOURLS admin.
-Nonces are unique to the YOURLS install, to the YOURLS user, to the requested action, and to the time of the action (12 hour window).
+Nonces are unique to the YOURLS install, to the YOURLS user, to the requested action, and to the time of the action (12 hour window by default, see below for customization).
 If any of these things changes, the nonce is invalid.
 
 For example, thanks to nonces, no one can trick you into deactivating a plugin (or deleting a short URL, or anything done in the admin interface) because the following link misses a valid nonce:
@@ -65,3 +65,18 @@ function joe-plugin-delete-everything() {
     // Now delete everything
     ...
 ```
+
+## Define custom nonce lifetime
+
+By default, nonces are valid 12 hours. From [the source](https://github.com/YOURLS/YOURLS/blob/1.8.2/includes/Config/Config.php#L192-L194):
+```php
+// life span of a nonce in seconds
+if (!defined( 'YOURLS_NONCE_LIFE' ))
+    define( 'YOURLS_NONCE_LIFE', 43200 ); // 3600 * 12
+```
+
+If you want to enforce a different time span, for instance an hour (3600 seconds) you can add the following to your `config.php` :
+```php
+define( 'YOURLS_NONCE_LIFE', 3600 );
+```
+
