@@ -69,6 +69,7 @@ function joe-plugin-delete-everything() {
 ## Define custom nonce lifetime
 
 By default, nonces are valid 12 hours. From [the source](https://github.com/YOURLS/YOURLS/blob/1.8.2/includes/Config/Config.php#L192-L194):
+
 ```php
 // life span of a nonce in seconds
 if (!defined( 'YOURLS_NONCE_LIFE' ))
