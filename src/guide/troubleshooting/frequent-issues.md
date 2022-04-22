@@ -32,3 +32,7 @@ Most of the time, the problem is a **server configuration** issue.
 - Manually check what kind of result the Ajax URL returns (type the full URL in your browser, or use your web browser developer tools)
 
 Most of the time, you **should not** open an issue about it. Search in closed issues.
+
+## Share icon and share links not showing
+
+On the admin page you will see action buttons next to each short URL, to delete, share, edit them or see their stats. If the Share button isn't visible and you cannot get the Share Box to be displayed, make sure to turn your ad blocker off.
