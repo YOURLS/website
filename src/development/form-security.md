@@ -81,4 +81,3 @@ If you want to enforce a different time span, for instance an hour (3600 seconds
 ```php
 define( 'YOURLS_NONCE_LIFE', 3600 );
 ```
-
