@@ -75,7 +75,8 @@ if (!defined( 'YOURLS_NONCE_LIFE' ))
     define( 'YOURLS_NONCE_LIFE', 43200 ); // 3600 * 12
 ```
 
-If you want to enforce a different time span, for instance an hour (3600 seconds) you can add the following to your `config.php` :
+If you want to enforce a different time span, for instance an hour (3600 seconds) you can add the following to your `config.php`:
+
 ```php
 define( 'YOURLS_NONCE_LIFE', 3600 );
 ```
