@@ -45,6 +45,10 @@ export default defineUserConfig<DefaultThemeOptions>({
     docsRepo: 'YOURLS/docs',
     docsDir: 'src',
     logo: '/favicon.svg',
+
+    themePlugins: {
+      git: false,
+    },
   },
 
   plugins: [
