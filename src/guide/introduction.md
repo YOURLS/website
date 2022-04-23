@@ -15,7 +15,7 @@ YOURLS has the following requirements:
 ### Server
 
 - [Apache (httpd)](https://httpd.apache.org/) version **2.4** or greater, with **`mod_rewrite`** enabled
-- [PHP](https://secure.php.net/) version **7.4** or greater
+- [PHP](https://secure.php.net/) version **8.0** or greater
   - PHP [cURL](https://www.php.net/curl) extension is required if you plan on playing with the API
 - [MySQL](https://www.mysql.com/) version **5.0** or greater, or [MariaDB](https://mariadb.org/) version **10.0** or greater.
 
