@@ -232,7 +232,7 @@ Congratulation, you've just extended the functionalities of YOURLS!
 
 ## Uninstall plugin script
 
-Along with your plugin file `plugin.php`, with YOURLS `1.8.3` and above you can also have an uninstall script, that will be executed when the plugin is deactivated: `uninstall.php`
+Along with your plugin file `plugin.php`, with YOURLS `1.9` and above you can also have an uninstall script, that will be executed when the plugin is deactivated: `uninstall.php`
 
 A typical `uninstall.php` is simply a YOURLS aware piece of code where you add what would be needed to leave no trail. Example:
 
