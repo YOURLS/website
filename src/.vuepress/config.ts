@@ -1,4 +1,10 @@
-import { defineUserConfig, HeadConfig } from 'vuepress'
+import {
+  defaultTheme,
+  viteBundler,
+  defineUserConfig,
+  HeadConfig,
+} from 'vuepress'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { DefaultThemeOptions } from '@vuepress/theme-default'
 
 import { navbar } from './config/navbar'
@@ -36,8 +42,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   description,
   lang: 'en-US',
 
-  theme: '@vuepress/theme-default',
-  themeConfig: {
+  theme: defaultTheme({
     navbar,
     sidebar,
 
@@ -49,16 +54,15 @@ export default defineUserConfig<DefaultThemeOptions>({
     themePlugins: {
       git: false,
     },
-  },
+  }),
 
   plugins: [
-    [
-      '@vuepress/docsearch',
-      {
-        appId: '0OPRSQO7WN',
-        apiKey: 'a80dd06f8a0a36b8734e02e549324791',
-        indexName: 'yourls',
-      },
-    ],
+    docsearchPlugin({
+      appId: '0OPRSQO7WN',
+      apiKey: 'a80dd06f8a0a36b8734e02e549324791',
+      indexName: 'yourls',
+    }),
   ],
+
+  bundler: viteBundler(),
 })
