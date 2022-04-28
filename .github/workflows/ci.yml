@@ -1,0 +1,18 @@
+# https://docs.github.com/actions
+
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  npm-run:
+    name: Node.js
+    uses: YOURLS/.github/.github/workflows/nodejs.yml@main
+    with:
+      action-matrix: '["lint", "build"]'
