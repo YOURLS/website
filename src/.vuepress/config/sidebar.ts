@@ -64,13 +64,13 @@ export const sidebar: SidebarConfig = {
     {
       text: 'Examples',
       children: [
-        { text: 'QRCode Link', link: '/development/examples/qrcode.md' },
-        { text: 'Preview URL', link: '/development/examples/preview.md' },
+        { text: 'QRCode Link', link: '/development/examples/qrcode.html' },
+        { text: 'Preview URL', link: '/development/examples/preview.html' },
         {
           text: 'Public Prefix-N-Shorten',
-          link: '/development/examples/public-prefix.md',
+          link: '/development/examples/public-prefix.html',
         },
-        { text: 'RSS', link: '/development/examples/rss.md' },
+        { text: 'RSS', link: '/development/examples/rss.html' },
       ],
     },
   ],
