@@ -19,7 +19,9 @@ YOURLS has the following requirements:
   - PHP [cURL](https://www.php.net/curl) extension is required if you plan on playing with the API
 - [MySQL](https://www.mysql.com/) version **5.0** or greater, or [MariaDB](https://mariadb.org/) version **10.0** or greater.
 
-We also suggest that your host has **HTTPS** support.
+We also suggest that you use a host with **HTTPS** support.
+
+If you are installing your own server, see [this file](https://github.com/YOURLS/YOURLS/blob/master/composer.json) for the PHP extensions YOURLS will use.
 
 ### Client
 
