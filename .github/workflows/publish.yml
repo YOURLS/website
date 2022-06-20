@@ -1,0 +1,42 @@
+# https://docs.github.com/actions
+
+name: Publish
+
+on:
+  push:
+
+permissions:
+  deployments: write
+
+jobs:
+  publish:
+    name: Cloudflare Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Install NPM packages
+        run: npm ci
+
+      - name: Run build
+        run: npm run build --if-present
+
+      - run: cp -r src/.vuepress/dist ./dist
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          gitHubToken: ${{ github.token }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+          directory: dist
