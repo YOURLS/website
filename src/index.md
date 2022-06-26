@@ -8,7 +8,7 @@ hero:
   name: YOURLS
   text: Documentation
   tagline: Your Own URL Shortner
-  image: 
+  image:
     src: /logo.svg
     alt: YOURLS
   actions:

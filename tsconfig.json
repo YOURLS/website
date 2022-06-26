@@ -7,7 +7,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
-    "baseUrl": ".",
+    "baseUrl": "."
   },
-  "include": ["src/**/*", ".vitepress/**/*"]
+  "include": ["src/**/*", "src/.vitepress/**/*"]
 }

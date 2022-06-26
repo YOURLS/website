@@ -1,4 +1,15 @@
+# https://git-scm.com/docs/gitignore
+
+# Dependencies
 node_modules
+
+# Dist
 src/.vitepress/dist
 src/.vitepress/.*
+
+# Development
 drafts
+npm-debug.log
+yarn-error.log
+/.vscode
+/.idea
