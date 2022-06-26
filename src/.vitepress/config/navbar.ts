@@ -2,14 +2,24 @@ import { DefaultTheme } from 'vitepress'
 
 export const navbar: DefaultTheme.NavItem[] = [
   {
-    text: 'Docs',
+    text: 'Guides',
     link: '/guide/introduction',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
   },
   {
+    text: 'Configuration',
+    link: '/configuration/',
+    activeMatch: `^/configuration/`,
+  },
+  {
     text: 'Development',
     link: '/development/plugins',
-    activeMatch: `^/(development)/`,
+    activeMatch: `^/development/`,
+  },
+  {
+    text: 'API',
+    link: '/api/',
+    activeMatch: `^/api/`,
   },
   {
     text: 'Ecosystem',
@@ -30,8 +40,8 @@ export const navbar: DefaultTheme.NavItem[] = [
       {
         text: 'References',
         items: [
-          { text: 'Hooklist', link: 'https://yourls.org/hooklist.php' },
-          { text: 'XRef', link: 'https://yourls.org/xref/' },
+          { text: 'Laravel', link: 'https://laravel.com/' },
+          { text: 'Vue.js', link: 'https://vuejs.org/' },
         ],
       },
       {
@@ -42,7 +52,12 @@ export const navbar: DefaultTheme.NavItem[] = [
   },
   { text: 'Sponsor', link: '/sponsor' },
   {
-    text: '1.x (stable)',
-    link: 'https://docs.yourls.org',
+    text: '2.x (next)',
+    items: [
+      {
+        text: '1.x (stable)',
+        link: 'https://docs.yourls.org',
+      },
+    ],
   },
 ]
