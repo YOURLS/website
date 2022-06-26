@@ -8,9 +8,6 @@
     "allowJs": true,
     "strict": true,
     "baseUrl": ".",
-    "paths": {
-      "/@theme/*": [".vuepress/theme/*"]
-    }
   },
-  "include": ["src/**/*", ".vuepress/**/*"]
+  "include": ["src/**/*", ".vitepress/**/*"]
 }

@@ -1,0 +1,28 @@
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-brand: #2a85b3;
+  --vp-c-brand-light: #88c0eb;
+  --vp-c-brand-lighter: #c7e7ff;
+  --vp-c-brand-dark: #1f669c;
+  --vp-c-brand-darker: #19507a;
+  --vp-c-brand-dimm: rgba(42, 133, 179, 0.08);
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lighter);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}

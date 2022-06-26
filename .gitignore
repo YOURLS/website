@@ -1,4 +1,4 @@
 node_modules
-src/.vuepress/dist
-src/.vuepress/.*
+src/.vitepress/dist
+src/.vitepress/.*
 drafts

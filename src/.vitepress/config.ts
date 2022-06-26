@@ -1,13 +1,9 @@
 import {
-  defaultTheme,
-  viteBundler,
-  defineUserConfig,
+  defineConfig,
   HeadConfig,
-} from 'vuepress'
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { DefaultThemeOptions } from '@vuepress/theme-default'
+} from 'vitepress'
 
-import { navbar } from './config/navbar'
+import { navbar as nav } from './config/navbar'
 import { sidebar } from './config/sidebar'
 
 const title = 'YOURLS Documentation'
@@ -36,33 +32,37 @@ const head: HeadConfig[] = [
   ['meta', { property: 'og:description', content: description }],
 ]
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineConfig({
   title,
   head,
   description,
-  lang: 'en-US',
 
-  theme: defaultTheme({
-    navbar,
+  lastUpdated: true,
+
+  themeConfig: {
+    nav,
     sidebar,
 
-    repo: 'YOURLS/YOURLS',
-    docsRepo: 'YOURLS/docs',
-    docsDir: 'src',
+    siteTitle: 'YOURLS Docs',
     logo: '/favicon.svg',
 
-    themePlugins: {
-      git: false,
+    editLink: {
+      pattern: 'https://github.com/YOURLS/docs/edit/main/src/:path'
     },
-  }),
 
-  plugins: [
-    docsearchPlugin({
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/YOURLS/YOURLS' },
+    ],
+
+    footer: {
+      message: 'Code licensed MIT, documentation CC BY 4.0.',
+      copyright: 'Copyright © 2009-present · YOURLS Contributors'
+    },
+
+    algolia: {
       appId: '0OPRSQO7WN',
       apiKey: 'a80dd06f8a0a36b8734e02e549324791',
       indexName: 'yourls',
-    }),
-  ],
-
-  bundler: viteBundler(),
+    },
+  },
 })

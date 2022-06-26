@@ -1,6 +1,6 @@
-import { NavbarConfig } from '@vuepress/theme-default'
+import { DefaultTheme } from 'vitepress'
 
-export const navbar: NavbarConfig = [
+export const navbar: DefaultTheme.NavItem[] = [
   {
     text: 'Docs',
     link: '/guide/introduction',
@@ -13,10 +13,10 @@ export const navbar: NavbarConfig = [
   },
   {
     text: 'Ecosystem',
-    children: [
+    items: [
       {
         text: 'Ressources',
-        children: [
+        items: [
           {
             text: 'Awesome YOURLS',
             link: 'https://github.com/YOURLS/awesome-yourls',
@@ -29,16 +29,20 @@ export const navbar: NavbarConfig = [
       },
       {
         text: 'References',
-        children: [
+        items: [
           { text: 'Hooklist', link: 'https://yourls.org/hooklist.php' },
           { text: 'XRef', link: 'https://yourls.org/xref/' },
         ],
       },
       {
         text: 'News',
-        children: [{ text: 'Blog', link: 'https://blog.yourls.org' }],
+        items: [{ text: 'Blog', link: 'https://blog.yourls.org' }],
       },
     ],
   },
   { text: 'Sponsor', link: '/sponsor' },
+  {
+    text: '1.x (stable)',
+    link: 'https://docs.yourls.org',
+  },
 ]
