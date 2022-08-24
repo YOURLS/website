@@ -50,7 +50,7 @@ yourls_do_action( 'redirect_shorturl', $url );
 The steps to create an action function are:
 
 1. define a custom PHP function `my_event_function()` that you want to execute when the event `'that_event'` occurs;
-2. hook your function to the particular event, using YOURLS functions `yourls_add_action();`. The syntax will be: `yourls_add_action( 'my_event_function', 'that_event' );`
+2. hook your function to the particular event, using YOURLS functions `yourls_add_action();`. The syntax will be: `yourls_add_action( 'that_event', 'my_event_function' );`
 3. put your custom function and its hook into a plugin file
 
 #### Example of a simple Action function
