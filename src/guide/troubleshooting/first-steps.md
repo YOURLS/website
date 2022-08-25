@@ -46,7 +46,7 @@ Depending on your browser, this can be done with the Firebug extension in Firefo
 
 ## STFW after you have RTFM
 
-When you have **R**ead **T**he **F\***ine\* **M**anual but are still lost, please **S**earch **T**he **F\***ine\* **W**eb. Thousands of people have probably faced the same situation before and it may be documented already.
+When you have **R**ead **T**he **F**_ine_ **M**anual but are still lost, please **S**earch **T**he **F**_ine_ **W**eb. Thousands of people have probably faced the same situation before and it may be documented already.
 
 In particular, be sure to search in [issues](https://github.com/YOURLS/YOURLS/issues?q=is%3Aissue), open _and_ closed. Your problem may have been dealt with, already.
 
