@@ -30,5 +30,3 @@ Any modern web browser will do.
 ## Development Environments
 
 All of these requirements are satisfied by the [Laravel Sail](https://laravel.com/docs/sail) Docker development environment, which makes it a great starting point for building a Laravel application using PHP, MySQL, and Redis without requiring prior Docker experience.
-
-See [Development Guide]() // TODO
