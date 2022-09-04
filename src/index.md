@@ -1,12 +1,12 @@
 ---
 layout: home
 
-title: YOURLS
-titleTemplate: Documentation
+title: Learn YOURLS
+titleTemplate: YOURLS Documentation
 
 hero:
-  name: YOURLS
-  text: Documentation
+  name: Learn
+  text: YOURLS
   tagline: Your Own URL Shortner
   image:
     src: /logo.svg
