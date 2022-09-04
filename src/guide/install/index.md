@@ -18,4 +18,4 @@ We recommend using whichever approach you're most comfortable with.
 
 ---
 
-<VPFeatures :features="frontmatter.features" />
+<VPFeatures :features="$frontmatter.features" />
