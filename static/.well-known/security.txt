@@ -1,0 +1,13 @@
+# Canonical URI
+Canonical: https://yourls.org/.well-known/security.txt
+
+# Our security address
+Contact: mailto:yourls@yourls.org
+
+# Our OpenPGP key
+Encryption: openpgp4fpr:6fcd850e18e4a4ff76dd1184a3a42a61961e423f
+
+# Our security policy
+Policy: https://github.com/YOURLS/YOURLS/security/policy
+
+Expires: 2023-12-31T18:37:07z
