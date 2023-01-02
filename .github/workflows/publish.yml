@@ -30,8 +30,6 @@ jobs:
       - name: Run build
         run: npm run build --if-present
 
-      - run: cp -r src/.vuepress/dist ./dist
-
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@1
         with:
@@ -39,4 +37,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
-          directory: dist
+          directory: build
