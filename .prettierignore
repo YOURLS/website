@@ -5,6 +5,8 @@ dist
 .cache
 .temp
 worker
+.docusaurus
+.cache-loader
 
 # Ignore all HTML files:
 *.html
