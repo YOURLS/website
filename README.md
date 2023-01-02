@@ -1,26 +1,30 @@
-<h1 align="center">
-  <a href="https://yourls.org">
-    <img src="src/.vuepress/public/banner.png" width=66% alt="YOURLS">
-  </a>
-</h1>
+# YOURLS Website
 
-> The sources of the [documentation](https://docs.yourls.org) for [YOURLS](https://yourls.org)
+> The sources of the [website](https://yourls.org) for [YOURLS](https://yourls.org)
 
 ## Contributing
 
-Site content is written in Markdown format located in `src`. For simple edits, you can directly edit the file on GitHub
-and generate a Pull Request.
+Site content is written in Markdown format located in:
 
-See engine docs on supported [Markdown Extensions](https://v2.vuepress.vuejs.org/guide/markdown.html).
+- [`docs/`](/docs/) for the documentation;
+- [`blog/`](/blog/) for the blog.
 
-See the [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md) for our rules and
-recommendations on contributions.
+For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
+
+See the [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md)
+for our rules and recommendations on contributions.
 
 ## Local development
 
-This site is built with [VuePress](https://v2.vuepress.vuejs.org/).
+This site is built with [Docusaurus 2](https://docusaurus.io/).
+See engine guide on supported [Markdown extensions](https://docusaurus.io/docs/markdown-features).
 
 ```bash
-npm i
-npm run dev
+npm install
+npm run start
 ```
+
+## License
+
+The documentation content is licensed under a [CC BY 4.0 license](LICENSE).
+All other code in this repository is licensed under the [MIT license](LICENSE-CODE).
