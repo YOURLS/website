@@ -114,7 +114,7 @@ const config = {
       },
       algolia: {
         appId: '0OPRSQO7WN',
-        apiKey: 'a80dd06f8a0a36b8734e02e549324791',
+        apiKey: '690f80e826ffeb1920dea258742fb626',
         indexName: 'yourls',
       },
     }),
