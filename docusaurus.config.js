@@ -74,7 +74,7 @@ const config = {
           {
             type: 'dropdown',
             position: 'right',
-            label: 'Ressources',
+            label: 'Resources',
             items: [
               {
                 label: 'Awesome YOURLS',
