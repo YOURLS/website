@@ -7,7 +7,8 @@
 Site content is written in Markdown format located in:
 
 - [`docs/`](/docs/) for the documentation;
-- [`blog/`](/blog/) for the blog.
+- [`blog/`](/blog/) for the blog;
+- [`src/`](/src/) for the pages;
 
 For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
 
