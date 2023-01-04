@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 const FeatureList = [
   {
     title: 'FOSS',
-    Svg: require('@site/static/assets/images/undraw_docusaurus_mountain.svg')
+    Svg: require('@site/static/assets/images/undraw_launching_re_tomg.svg')
       .default,
     description: (
       <>
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Powerful Features',
-    Svg: require('@site/static/assets/images/undraw_docusaurus_tree.svg')
+    Svg: require('@site/static/assets/images/undraw_pie_graph_re_fvol.svg')
       .default,
     description: (
       <>
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Extensible',
-    Svg: require('@site/static/assets/images/undraw_docusaurus_react.svg')
+    Svg: require('@site/static/assets/images/undraw_innovative_re_rr5i.svg')
       .default,
     description: (
       <>
