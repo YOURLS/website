@@ -1,7 +1,7 @@
 /*
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: document-domain=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src *; connect-src *; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src * data:; connect-src *; frame-ancestors 'none';
 
 /assets/*
   Cache-Control: max-age=31536000, immutable, stale-while-revalidate
