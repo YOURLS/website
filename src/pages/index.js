@@ -28,10 +28,7 @@ function HomepageHeader() {
             <b>Your Own URL Shortener</b>
           </p> */}
           <div className={styles.buttons}>
-            <Link
-              className="button button--primary button--lg"
-              to="/docs"
-            >
+            <Link className="button button--primary button--lg" to="/docs">
               Get Started
             </Link>
             <Link
