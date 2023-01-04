@@ -22,11 +22,7 @@ const sidebars = {
         type: 'generated-index',
       },
       collapsed: false,
-      items: [
-        'guide/install',
-        'guide/server-configuration',
-        'guide/upgrade',
-      ],
+      items: ['guide/install', 'guide/server-configuration', 'guide/upgrade'],
     },
     {
       label: 'Essentials',
