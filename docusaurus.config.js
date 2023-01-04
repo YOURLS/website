@@ -32,7 +32,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/YOURLS/website/tree/main/',
+          editUrl: 'https://github.com/YOURLS/website/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -60,7 +60,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'guide/introduction',
+            docId: 'introduction',
             position: 'right',
             label: 'Docs',
           },
