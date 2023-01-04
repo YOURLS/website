@@ -2,6 +2,9 @@
 title: YOURLS 1.8 "Mike Muir"
 authors:
   - ozh
+tags:
+  - release
+slug: /2021/02/yourls-1-8-mike-muir-released
 ---
 
 It is with great pleasure and excitement that I announce the release of [YOURLS 1.8 "Mike Muir"](https://github.com/YOURLS/YOURLS/releases/1.8)!

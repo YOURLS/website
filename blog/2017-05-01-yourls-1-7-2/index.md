@@ -2,6 +2,9 @@
 title: YOURLS 1.7.2
 authors:
   - ozh
+tags:
+  - release
+slug: /2017/05/yourls-1-7-2
 ---
 
 Hello World! I've had some free time recently to devote to your favorite URL shortener, and as a result the latest is now [YOURLS 1.7.2](https://github.com/YOURLS/YOURLS/releases/tag/1.7.2). Update now and be sure your friends update too!

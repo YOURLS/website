@@ -2,6 +2,9 @@
 title: YOURLS 1.9 "Nergal" released
 authors:
   - ozh
+tags:
+  - release
+slug: /2022/04/yourls-1-9-nergal-released
 ---
 
 Hello everyone, I'm very excited to announce the release of [YOURLS 1.9](https://github.com/YOURLS/YOURLS/releases/tag/1.9) \\o/
