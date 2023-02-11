@@ -5,6 +5,10 @@ export async function onRequest({ next, request }) {
     const url = new URL(request.url)
     url.hostname = `app.yourls.org`
 
+    if (url.pathname.startsWith('/admin')) {
+      return Response.redirect(url, 308)
+    }
+
     const app = await fetch(
       new Request(
         url.toString(),
