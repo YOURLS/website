@@ -1,3 +1,5 @@
+# https://developers.cloudflare.com/pages/platform/headers/
+
 /*
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: document-domain=()
