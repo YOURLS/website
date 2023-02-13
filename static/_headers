@@ -8,3 +8,6 @@
   ! X-Frame-Options
   ! Permissions-Policy
   ! Content-Security-Policy
+
+/admin/*
+  Access-Control-Allow-Origin: https://app.yourls.org
