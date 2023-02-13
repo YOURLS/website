@@ -1,11 +1,11 @@
 # Special files
 
 YOURLS support a number of _special user files_ to further customize some internal behaviors.
-They are all loaded from `user/` folder.
+They are all loaded from the `user/` folder.
 
 ## Pages
 
-Pages are custom files is `user/pages/` that will be displayed when requested like short URLs.
+Pages are custom files in `user/pages/` that will be displayed when requested like short URLs.
 See [Pages](/docs/guide/extend/pages) for details.
 
 ## Custom DB error page
@@ -27,14 +27,14 @@ You can easily display a custom favicon with your own `user/favicon.(jpg|gif|png
 
 If present, YOURLS will always include `user/cache.php` early during the boot process, before regular active plugins are loaded.
 
-This special file will not appear in the list of plugin and cannot be activated or deactivated in the admin area. To deactivate it,
-delete (or rename) it manually.
+This special file will not appear in the list of plugins and cannot be activated or deactivated in the admin area.
+To deactivate it, delete (or rename) it manually.
 
 :::note
-"Cache" stands for "Custom Additional Code for Hazardous Extension".
+"Cache" stands for "Custom Additional Code for Hazardous Extensions".
 :::
 
 ## Custom DB layer
 
 Out of the box, YOURLS uses PDO to interact with a MySQL server.
-If you are an experienced coder and want to replace the core DB engine, you can implement your own library in `/user/db.php`.
+If you are an experienced coder and want to replace the core DB engine, you can implement your own library in `user/db.php`.
