@@ -9,7 +9,7 @@ export async function onRequest({ next, request }) {
       const redirect = Response.redirect(url, 308)
       redirect.headers.append(
         'Access-Control-Allow-Origin',
-        'https://app.yourls.org'
+        'https://app.yourls.org',
       )
       return redirect
     }
