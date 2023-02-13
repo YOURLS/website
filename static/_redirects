@@ -1,2 +1,4 @@
+# https://developers.cloudflare.com/pages/platform/headers/
+
 /cookiekey.php https://api.yourls.org/services/cookiekey/1.0/ 301
-/admin/* https://app.yourls.org/admin/:splat 308
+# /admin/* https://app.yourls.org/admin/:splat 308
