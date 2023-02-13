@@ -1,3 +1,5 @@
+# https://developers.cloudflare.com/pages/platform/headers/
+
 /*
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: document-domain=()
@@ -8,3 +10,6 @@
   ! X-Frame-Options
   ! Permissions-Policy
   ! Content-Security-Policy
+
+/admin/*
+  Access-Control-Allow-Origin: https://app.yourls.org
