@@ -15,7 +15,16 @@ For simple edits, you can directly edit the file on GitHub and generate a Pull R
 See the [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md)
 for our rules and recommendations on contributions.
 
-## Local development
+## Development
+
+### Codespaces
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=466833669)
+
+This repository is ready for [Development Containers](https://containers.dev/).  
+Click the badge above to create a codespace for this repository and start making and submitting changes.
+
+### Local
 
 This site is built with [Docusaurus 2](https://docusaurus.io/).
 See engine guide on supported [Markdown extensions](https://docusaurus.io/docs/markdown-features).
