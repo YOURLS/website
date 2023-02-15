@@ -48,6 +48,7 @@ const sidebars = {
         'guide/extend/pages',
         'guide/extend/languages',
         'guide/extend/possible-with-a-plugin',
+        'guide/extend/special-files',
       ],
     },
     {
