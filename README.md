@@ -6,9 +6,9 @@
 
 Site content is written in Markdown format located in:
 
-- [`docs/`](/docs/) for the documentation;
-- [`blog/`](/blog/) for the blog;
-- [`src/`](/src/) for the pages;
+- [`docs/`](/docs/) for the [documentation](https://yourls.org/docs) ([development guide](https://docusaurus.io/docs/docs-introduction));
+- [`blog/`](/blog/) for the [blog](https://yourls.org/blog) ([development guide](https://docusaurus.io/docs/blog));
+- [`src/`](/src/) for the [pages](https://yourls.org/) ([development guide](https://docusaurus.io/docs/creating-pages)).
 
 For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
 
@@ -17,11 +17,11 @@ for our rules and recommendations on contributions.
 
 ## Development
 
-### Codespaces
+### Dev Container
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=466833669)
 
-This repository is ready for [Development Containers](https://containers.dev/).  
+This repository is ready for [Development Containers](https://containers.dev/).
 Click the badge above to create a codespace for this repository and start making and submitting changes.
 
 ### Local
