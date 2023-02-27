@@ -1,3 +1,4 @@
 # https://developers.cloudflare.com/pages/platform/redirects/
 
 /cookiekey.php https://api.yourls.org/services/cookiekey/1.0/ 301
+/md5.php https://yourls.org/md5

@@ -10,3 +10,6 @@ worker
 
 # Ignore all HTML files:
 *.html
+
+# Others
+package-lock.json
