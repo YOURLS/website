@@ -9,6 +9,7 @@ const config = {
   tagline: 'Your Own URL Shortener',
   url: 'https://yourls.org',
   baseUrl: '/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'assets/images/favicon.svg',
