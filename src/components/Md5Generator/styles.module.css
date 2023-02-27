@@ -1,0 +1,11 @@
+.input {
+  padding: calc(
+      var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
+    )
+    1em;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  font-family: var(--ifm-font-family-monospace);
+}
