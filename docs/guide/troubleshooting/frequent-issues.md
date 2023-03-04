@@ -37,3 +37,10 @@ Most of the time, you **should not** open an issue about it. Search in closed is
 
 On the admin page you will see action buttons next to each short URL, to delete, share, edit them or see their stats.
 If the Share button isn't visible and you cannot get the Share Box to be displayed, make sure to turn your ad blocker off.
+
+## 403 'error' message
+By design navigating to the root `domain.tld` or to `domain.tld/invalidshortlink` will show a 403 error page (the latter automatically redirects to root by default).
+
+**Option:** If you want to change this behaviour then you may add an index.(php|html) file to the root `/var/www/html` folder to be displayed instead of the standard 403 error page.
+
+Plugins can override the behavior for unrecognised links, e.g., [Fuzzy Keyword Suggestions for YOURLS](https://github.com/philhagen/ltc-fuzzy-keyword-suggestions) that fuzzy-suggests possible matches.
