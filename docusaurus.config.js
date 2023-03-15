@@ -48,6 +48,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'assets/images/splash.png',
       navbar: {
         title: 'YOURLS',
         logo: {
