@@ -32,4 +32,4 @@ Another option, that includes quality, full YOURLS code knowledge and future-pro
 
 ## Find plugin ideas
 
-If you can code (it's fun!) and look for ideas, browse through the issues labelled with [`plugin domain`](https://github.com/YOURLS/YOURLS/issues?q=label%3A%22plugin+domain%22+). You will find there people with real use case and needs!
+If you can code (it's fun!) and look for ideas, browse through the issues labelled with [`plugin`](https://github.com/YOURLS/YOURLS/issues?q=label%3Aplugin). You will find there people with real use case and needs!
