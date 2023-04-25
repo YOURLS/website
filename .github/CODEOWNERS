@@ -1,5 +1,8 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
-* @YOURLS/core
+*.md @YOURLS/core
+blog/ @YOURLS/core
+docs/ @YOURLS/core
+src/ @YOURLS/core
 /package.json
 /package-lock.json
