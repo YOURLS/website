@@ -1,7 +1,6 @@
 // @ts-check
 
-const lightCodeTheme = require('prism-react-renderer/themes/github')
-const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const codeThemes = require('prism-react-renderer').themes
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -110,8 +109,8 @@ const config = {
         copyright: `Code licensed MIT, documentation CC BY 4.0<br>Copyright © 2009-present · YOURLS Contributors`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: codeThemes.github,
+        darkTheme: codeThemes.dracula,
         additionalLanguages: ['php', 'apacheconf', 'nginx'],
       },
       algolia: {
