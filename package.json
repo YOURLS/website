@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.4.1",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.1"
   }
 }
