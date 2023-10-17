@@ -13,17 +13,17 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@docusaurus/core": "2.4.1",
-    "@docusaurus/preset-classic": "2.4.1",
+    "@docusaurus/core": "2.4.3",
+    "@docusaurus/preset-classic": "2.4.3",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^2.0.0",
     "md5": "^2.3.0",
-    "prism-react-renderer": "^2.0.6",
+    "prism-react-renderer": "^2.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.4.1",
-    "prettier": "^3.0.2"
+    "@docusaurus/module-type-aliases": "2.4.3",
+    "prettier": "^3.0.3"
   }
 }
