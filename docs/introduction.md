@@ -2,31 +2,40 @@
 slug: /
 ---
 
-# Introduction
+# Welcome to YOURLS
 
-## Overview
+## Introduction
 
-**YOURLS** is a set of PHP scripts that will allow you to run **Y**our **O**wn **URL** **S**hortener, on your server, using the domain or subdomain of your choice.
+**YOURLS** is a powerful set of PHP scripts that empowers you to run your very own URL shortener on your server. With YOURLS, you have complete control over your links, detailed statistics, plugin support, and more, all wrapped in a free and open-source package.
 
-You'll have full control over your data, detailed stats, analytics, plugins, and more.
+## Key Features
 
-It's free and open-source.
+- **Total Control**: YOURLS lets you take charge of your short links. Use your domain or subdomain, ensuring that your branding takes center stage.
+
+- **Detailed Stats**: Gain insights into link performance with YOURLS' comprehensive statistics and analytics.
+
+- **Extensible**: Customize and extend your URL shortener with a variety of plugins available in the YOURLS ecosystem.
+
+- **Open Source**: YOURLS is open-source, allowing you to modify and adapt it to your specific needs.
 
 ## Requirements
 
-YOURLS has the following requirements:
+To get started with YOURLS, you need to ensure that your server and client meet the following requirements:
 
-### Server
+### Server Requirements
 
-- [Apache (httpd)](https://httpd.apache.org/) version **2.4** or greater, with **`mod_rewrite`** enabled
-- [PHP](https://secure.php.net/) version **7.4** or greater
-  - PHP [cURL](https://www.php.net/curl) extension is required if you plan on playing with the API
-- [MySQL](https://www.mysql.com/) version **5.0** or greater, or [MariaDB](https://mariadb.org/) version **10.0** or greater.
+- **Web Server**: YOURLS requires Apache (httpd) version **2.4** or greater, with the **`mod_rewrite`** module enabled.
 
-We also suggest that you use a host with **HTTPS** support.
+- **PHP**: You'll need PHP version **7.4** or greater for YOURLS to function correctly. If you plan on utilizing the YOURLS API, make sure the PHP [cURL](https://www.php.net/curl) extension is enabled.
 
-If you are installing your own server, see [this file](https://github.com/YOURLS/YOURLS/blob/master/composer.json) for the PHP extensions YOURLS will use.
+- **Database**: YOURLS supports either MySQL (version **5.0** or greater) or MariaDB (version **10.0** or greater) for storing link data.
 
-### Client
+- **HTTPS Support**: For security reasons, we recommend hosting your YOURLS installation on a server with HTTPS support.
 
-Any modern web browser will do.
+If you are setting up your own server, please refer to [this file](https://github.com/YOURLS/YOURLS/blob/master/composer.json) for a list of PHP extensions that YOURLS will use.
+
+### Client Requirements
+
+For accessing and using your shortened links, any modern web browser will suffice.
+
+By meeting these requirements, you can leverage the full potential of YOURLS to create and manage your URL shortener. If you're ready to get started, head over to the installation guide for a step-by-step setup process.
