@@ -4,7 +4,7 @@ YOURLS supports localization: this means if a language file for YOURLS in availa
 
 ## Available languages
 
-See <https://github.com/YOURLS/awesome-yourls>
+See [github.com/YOURLS/awesome-yourls](https://github.com/YOURLS/awesome-yourls)
 
 Your language is not available so you'd like to translate YOURLS? See below!
 
