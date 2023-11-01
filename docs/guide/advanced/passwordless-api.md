@@ -63,4 +63,4 @@ Now use `https://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signatu
 
 If for some reason you need to reset your signature (ie to generate a new one while making previous signature inoperative), simply modify the `YOURLS_COOKIEKEY` constant in your `config.php`.
 
-Hint: you can simply copy the result from <https://api.yourls.org/services/cookiekey/1.0/> to generate a random unique cookie.
+Hint: you can simply copy the result from [api.yourls.org/services/cookiekey/1.0/](https://api.yourls.org/services/cookiekey/1.0/) to generate a random unique cookie.
