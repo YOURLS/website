@@ -104,4 +104,4 @@ foreach($results as $url) {
 yourls_html_footer();
 ```
 
-See the result at `https://yoursite/sometats`
+See the result at `https://yoursite/somestats`
