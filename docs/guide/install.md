@@ -6,7 +6,7 @@ Some hosts provide process automation, with tools such as CPanel.
 :::tip Prerequisites
 This part of the documentation assumes basic familiarity with software deployment or system administration.
 If you are totally new to web app management, it might not be the best idea to jump right into the project as your first step - grasp the basics then come back!
-:::
+::: 
 
 ## Manual instructions
 
