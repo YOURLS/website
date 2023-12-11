@@ -8,7 +8,8 @@ updates:
     schedule:
       interval: daily
 
-  - package-ecosystem: npm
-    directory: '/'
-    schedule:
-      interval: daily
+  # Managed by renovate
+  # - package-ecosystem: npm
+  #   directory: '/'
+  #   schedule:
+  #     interval: daily
