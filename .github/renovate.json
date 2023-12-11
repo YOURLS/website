@@ -4,16 +4,16 @@
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "packageRules": [
-      {
-          "matchUpdateTypes": ["minor", "patch"],
-          "automerge": true
-      }
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
   ],
   "lockFileMaintenance": {
-      "enabled": true,
-      "automerge": true
+    "enabled": true,
+    "automerge": true
   },
   "github-actions": {
-      "enabled": false
+    "enabled": false
   }
 }
