@@ -46,8 +46,9 @@ RewriteRule ^.*$ /somedir/yourls-loader.php [L]
 
 ### Redirect everything from HTTP to HTTPS
 
-Add this extra line right after the `RewriteBase` line: `RewriteCond %{HTTPS} !=on`
-(Example [here](https://github.com/YOURLS/YOURLS/issues/2578#issuecomment-554732802))
+Add `RewriteCond %{HTTPS} off` and `RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]`
+before the `RewriteBase /` rule in your Apache configuration.
+(Full example [here](https://github.com/YOURLS/YOURLS/issues/2578#issuecomment-612451531))
 
 ### Give YOURLS its own directory
 
