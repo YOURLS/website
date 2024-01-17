@@ -6,27 +6,27 @@
       "settings": {
         "[typescript]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode",
-          "editor.formatOnSave": true
+          "editor.formatOnSave": true,
         },
         "[json]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode",
-          "editor.formatOnSave": true
+          "editor.formatOnSave": true,
         },
         "[jsonc]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode",
-          "editor.formatOnSave": true
+          "editor.formatOnSave": true,
         },
-        "cSpell.words": ["YOURLS"]
+        "cSpell.words": ["YOURLS"],
       },
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "streetsidesoftware.code-spell-checker"
-      ]
-    }
+        "streetsidesoftware.code-spell-checker",
+      ],
+    },
   },
   "postCreateCommand": "npm install",
   "postAttachCommand": {
-    "server": "npm run start -- --host 0.0.0.0"
-  }
+    "server": "npm run start -- --host 0.0.0.0",
+  },
 }
