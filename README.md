@@ -10,7 +10,8 @@ Site content is written in Markdown format located in:
 - [`blog/`](/blog/) for the [blog](https://yourls.org/blog) ([development guide](https://docusaurus.io/docs/blog));
 - [`src/`](/src/) for the [standalone pages](https://yourls.org/) ([development guide](https://docusaurus.io/docs/creating-pages)).
 
-For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
+> [!TIP]
+> For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
 
 See the [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md)
 for our rules and recommendations on contributions.
