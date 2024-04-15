@@ -35,7 +35,9 @@ function ozh_yourls_qrcode( $request ) {
                 $keyword = yourls_sanitize_keyword( $matches[1] );
                 if( yourls_is_shorturl( $keyword ) ) {
                         // Show the QR code then!
-                        header('Location: https://chart.apis.google.com/chart?chs=200x200&cht=qr&chld=M&chl='.YOURLS_SITE.'/'.$keyword);
+                        // API documentation: https://goqr.me/api/doc/create-qr-code/
+                        // Terms: Requesting IP and referrer are loged, but not requested QR data. Limit 10,000 requests per day.
+                        header('Location: https://api.qrserver.com/v1/create-qr-code/?size=200x200&qzone=2&ecc=M&data='.YOURLS_SITE.'/'.$keyword);
                         exit;
                 }
         }
