@@ -1,0 +1,45 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.sponsors {
+  background-color: var(--ifm-hero-background-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.sponsorsButtons {
+  display: flex;
+  margin-top: 48px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sponsorsAvatars {
+  padding: 1rem 0;
+  border-radius: 50%;
+}
+
+.sponsorItem {
+  margin: 2rem;
+}
+
+.sponsorItem img {
+  background: white;
+}
+
+.sponsorAvatar {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+  object-fit: contain;
+}

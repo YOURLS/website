@@ -20,7 +20,7 @@ Help the project, become a sponsor and get your logo on our README on Github wit
 Donations and sponsorships can be done via the following methods:
 
 - [GitHub Sponsors](https://github.com/sponsors/YOURLS)
-- [OpenCollective](https://opencollective.com/YOURLS)
+- [OpenCollective](https://opencollective.com/yourls)
 
 Both monthly-recurring sponsorships and one-time donations are accepted, using various payment methods (credit cards, Paypal, even crypto currencies). Invoices can be obtained.
 

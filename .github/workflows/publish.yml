@@ -4,6 +4,8 @@ name: Publish
 
 on:
   push:
+  schedule:
+    - cron: '30 15 * * *'
 
 permissions:
   deployments: write
@@ -27,6 +29,8 @@ jobs:
       - name: Install NPM packages
         run: npm ci
 
+      - name: Fetch sponsors
+        run: npm run fetch-sponsors --if-present
       - name: Run build
         run: npm run build --if-present
 
