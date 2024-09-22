@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Fetch sponsors
-        run: npm run build --if-present
+        run: npm run fetch-sponsors --if-present
       - name: Run build
         run: npm run build --if-present
 
