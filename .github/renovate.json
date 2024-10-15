@@ -1,9 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>YOURLS/.github:renovate-config",
-    "customManagers:dockerfileVersions"
-  ],
+  "extends": ["local>YOURLS/.github:renovate-config"],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
