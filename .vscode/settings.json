@@ -1,5 +1,7 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
-    ]
+    ],
+    "files.autoSave": "onFocusChange",
+    "editor.renderWhitespace": "boundary"
 }
