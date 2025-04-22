@@ -1,6 +1,6 @@
 # YOURLS Website
 wnation.com 
-> The sources of the [website](https://yourls.org) for [YOURLS](https://yourls.org)
+> The sources of the [website](https://yourls.org) for [YOURLS](https://wnation.org)
 
 ## Contributing
    
