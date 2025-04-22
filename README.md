@@ -1,6 +1,6 @@
 # YOURLS Website
 wnation.com 
-> The sources of the [website](https://yourls.org) for [YOURLS](https://yourls.org)
+> The sources of the [website](https://yourls.org) for [https://wnation.org ])
 
 ## Contributing
    
@@ -8,13 +8,13 @@ wnation.com
 Site content is written in Markdown format located in:
 
 - [`docs/`](/docs/) for the [documentation](https://yourls.org/docs) ([development guide](https://docusaurus.io/docs/docs-introduction));
-- [`blog/`](/blog/) for the [blog](https://yourls.org/blog) ([development guide](https://docusaurus.io/docs/blog));
-- [`src/`](/src/) for the [standalone pages](https://yourls.org/) ([development guide](https://docusaurus.io/docs/creating-pages)).
+- [`blog/`](/blog/) for the [blog](https://wnation.org/blog) ([development guide](https://docusaurus.io/docs/blog));
+- [`src/`](/src/) for the [standalone pages](https://wnation.org/) ([development guide](https://docusaurus.io/docs/creating-pages)).
 
 > [!TIP]
 > For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
 
-See the [Contributing Guidelines](https://github.com/YOURLS/.github/blob/master/CONTRIBUTING.md)
+See the [Contributing Guidelines](https://github.com/wnation.org/github/blob/master/CONTRIBUTING.md)
 for our rules and recommendations on contributions.
 
 ## Development
