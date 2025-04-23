@@ -23,7 +23,7 @@ To get started with YOURLS, you need to ensure that your server and client meet 
 ### Server Requirements
 
 - **Web Server**: YOURLS requires Apache (httpd) version **2.4** or greater, with the **`mod_rewrite`** module enabled.
-- **PHP**: PHP version **7.4** or greater is required for YOURLS to function correctly.
+- **PHP**: PHP version **8.1** or greater is required for YOURLS to function correctly.
   - If you plan on utilizing the YOURLS API, make sure the PHP [cURL](https://www.php.net/curl) extension is enabled.
 - **Database**: YOURLS supports either MySQL (version **5.0** or greater) or MariaDB (version **10.0** or greater) for storing link data.
 - **HTTPS Support**: For security reasons, we recommend hosting your YOURLS installation on a server with HTTPS support.
