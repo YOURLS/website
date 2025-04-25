@@ -9,3 +9,9 @@ LeoColomb:
   title: YOURLS Ecosystem
   url: https://github.com/LeoColomb
   image_url: https://github.com/LeoColomb.png
+
+dgw:
+  name: dgw
+  title: YOURLS Helper
+  url: https://github.com/dgw
+  image_url: https://github.com/dgw.png
