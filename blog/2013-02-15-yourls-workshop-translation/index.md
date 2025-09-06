@@ -4,7 +4,7 @@ authors:
   - ozh
 tags:
   - tutorial
-slug: /2013/02/15/workshop-how-to-create-your-own-translation-file-for-yourls
+slug: /2013/02/workshop-how-to-create-your-own-translation-file-for-yourls
 ---
 
 Since version 1.6 YOURLS is fully "localizable", ie translatable, and the translation process itself is very simple. We're going to create a translation file, but first, a very little theory.
