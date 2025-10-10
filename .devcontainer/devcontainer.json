@@ -1,4 +1,4 @@
-// https://containers.dev/
+// https://containers .dev/
 {
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "customizations": {
