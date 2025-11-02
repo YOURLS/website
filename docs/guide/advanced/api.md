@@ -1,4 +1,4 @@
-# YOURLS' API
+# API
 
 YOURLS comes with an API wrapper, `yourls-api.php` at the root of your install.
 The API allows to:

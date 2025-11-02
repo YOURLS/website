@@ -58,6 +58,7 @@ const sidebars = {
         type: 'generated-index',
       },
       items: [
+        'guide/advanced/api',
         'guide/advanced/passwordless-api',
         'guide/advanced/proxy',
         'guide/advanced/public-shortening',
