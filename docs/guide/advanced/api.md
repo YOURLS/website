@@ -18,30 +18,26 @@ The built-in API parameters are:
 - Authentication:
   - A valid `username` / `password` pair, or
   - Your `signature` token (see [Passwordless API](passwordless-api) requests)
-- An `action` that can take one of the following values:
-  - `action = "shorturl"`: get short URL for a link.
+- One of the following built-in `action` values:
+  - `shorturl` action: Get short URL for a link.
     - the `url` to shorten
-    - optional `keyword` and `title` for custom short URLs
-    - `output` format: either `"jsonp"`, `"json"`, `"xml"`, or `"simple"`
-
-  - `action = "expand"`: get long URL of a shorturl.
-    - the `shorturl` to expand (can be either `'abc'` or `'http://sho.rt/abc'`)
-    - `output` format: either `"jsonp"`, `"json"`, `"xml"`, or `"simple"`
-
-  - `action = "url-stats"`: get stats about one short URL.
-    - the `shorturl` for which to get stats (can be either 'abc' or 'http://site/abc')
-    - `output` format: either `"jsonp"`, `"json"`, or `"xml"`
-
-  - `action = "stats"`: get stats about your links.
-    - the `filter`: either `"top"`, `"bottom"` , `"rand"`, or `"last"`
+    - optional `keyword` for custom short URLs
+    - optional `title` to override YOURLS' auto-fetch
+    - `output` format: one of `jsonp`, `json`, `xml`, or `simple`
+  - `expand` action: Get long URL of a shorturl.
+    - the `shorturl` to expand (can be either `abc` or `https://sho.rt/abc`)
+    - `output` format: one of `jsonp`, `json`, `xml`, or `simple`
+  - `url-stats` action: Get stats about one short URL.
+    - the `shorturl` for which to get stats (can be either `abc` or `https://sho.rt/abc`)
+    - `output` format: one of `jsonp`, `json`, or `xml`
+  - `stats` action: Get stats about your links.
+    - the `filter`: one of `top`, `bottom` , `rand`, or `last`
     - the `limit` (maximum number of links to return)
-    - `output` format: either `"jsonp"`, `"json"`, or `"xml"`
-
-  - `action = "db-stats"`: get global link and click count.
-    - `output` format: either `"jsonp"`, `"json"`, or `"xml"`
-
-  - `action = "version"`: get YOURLS version.
-    - `output` format: either `"jsonp"`, `"json"`, `"xml"`, or `"simple"`
+    - `output` format: one of `jsonp`, `json`, or `xml`
+  - `db-stats` action: Get global link and click counts.
+    - `output` format: one of `jsonp`, `json`, or `xml`
+  - `version` action: Get YOURLS version.
+    - `output` format: one of `jsonp`, `json`, `xml`, or `simple`
 
 ## Examples
 
