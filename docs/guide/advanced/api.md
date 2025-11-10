@@ -5,16 +5,19 @@ The API allows to:
 
 - Generate or get existing short URLs, with sequential or custom keyword.
 - Get some statistics about your links: top clicked links, least clicked links, newest links.
-- Return various output format: JSON, XML, or simple raw text.
+- Return your preferred output format: JSON, XML, or simple raw text.
 - Authenticate either with login/password or using a secure [passwordless](passwordless-api) mechanism.
 - Even define your own custom API requests and actions.
 
 ## Usage
 
-Parameters has to be sent to `http://your-own-domain-here.com/yourls-api.php` either via GET or POST (remember to URL-encode parameters if via GET).
-These parameters are:
+Parameters must be sent to `https://your-own-domain-here.com/yourls-api.php` either via GET or POST. (Remember to URL-encode parameters if via GET!)
 
-- A valid `username` / `password` pair, or your signature (see [Passwordless API](passwordless-api) requests)
+The built-in API parameters are:
+
+- Authentication:
+  - A valid `username` / `password` pair, or
+  - Your `signature` token (see [Passwordless API](passwordless-api) requests)
 - An `action` that can take one of the following values:
   - `action = "shorturl"`: get short URL for a link.
     - the `url` to shorten
@@ -47,7 +50,7 @@ These parameters are:
 #### JavaScript Request
 
 ```javascript
-var api_url = 'http://sho.rt/yourls-api.php'
+var api_url = 'https://sho.rt/yourls-api.php'
 var response = $.get(
   api_url,
   {
@@ -55,7 +58,7 @@ var response = $.get(
     password: 'your_password',
     action: 'shorturl',
     format: 'json',
-    url: 'http://ozh.org/',
+    url: 'https://ozh.org/',
   },
   // callback function that will deal with the server response
   function (data) {
@@ -71,15 +74,15 @@ var response = $.get(
 {
   "url": {
     "keyword": "ozh",
-    "url": "http:\/\/ozh.org",
+    "url": "https:\/\/ozh.org",
     "title": "Ozh RICHARD \u00ab ozh.org",
     "date": "2014-10-24 16:01:39",
     "ip": "127.0.0.1"
   },
   "status": "success",
-  "message": "http:\/\/ozh.org added to database",
+  "message": "https:\/\/ozh.org added to database",
   "title": "Ozh RICHARD \u00ab ozh.org",
-  "shorturl": "http:\/\/sho.rt\/1f",
+  "shorturl": "https:\/\/sho.rt\/1f",
   "statusCode": "200"
 }
 ```
@@ -92,7 +95,7 @@ var response = $.get(
 <?php
 $username = 'your_username';
 $password = 'your_password';
-$api_url =  'http://sho.rt/yourls-api.php';
+$api_url =  'https://sho.rt/yourls-api.php';
 
 // Init the CURL session
 $ch = curl_init();
@@ -122,8 +125,8 @@ echo $data->longurl;
 ```xml
 <result>
     <keyword>ozh</keyword>
-    <shorturl>http://sho.rt/ozh</shorturl>
-    <longurl>http://ozh.org/</longurl>
+    <shorturl>https://sho.rt/ozh</shorturl>
+    <longurl>https://ozh.org/</longurl>
     <message>success</message>
     <statusCode>200</statusCode>
 </result>
