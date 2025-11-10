@@ -11,7 +11,11 @@ The API allows to:
 
 ## Usage
 
-Parameters must be sent to `https://your-own-domain-here.com/yourls-api.php` either via GET or POST. (Remember to URL-encode parameters if via GET!)
+Parameters must be sent to `https://your-own-domain-here.com/yourls-api.php` either via GET or POST.
+
+:::tip
+Remember to URL-encode parameters if via GET
+:::
 
 The built-in API parameters are:
 
