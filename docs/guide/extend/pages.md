@@ -1,3 +1,5 @@
+फल
+पद
 # Pages
 
 YOURLS has a little known -- yet fancy -- feature to route users to custom content you create: **Pages**.
