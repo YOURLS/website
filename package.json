@@ -27,6 +27,6 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "graphql-request": "^7.3.5",
-    "prettier": "^3.7.3"
+    "prettier": "^3.7.4"
   }
 }
