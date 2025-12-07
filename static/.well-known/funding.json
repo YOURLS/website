@@ -1,0 +1,83 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "YOURLS Team",
+    "email": "yourls@yourls.org",
+    "phone": "",
+    "description": "The YOURLS Team is the core group of maintainers and contributors who develop and support the YOURLS ecosystem. This team coordinates project governance, reviews contributions, maintains code quality standards, and oversees the broader YOURLS community. Beyond the main URL shortener application, the team curates and maintains satellite projects including the Awesome YOURLS collection (a curated list of plugins, themes, and tools), official plugins, developer resources, and comprehensive documentation. The team fosters an active open-source community through GitHub discussions, issue tracking, and collaborative development. With contributors from around the world, the YOURLS Team ensures the project remains sustainable, secure, and continuously evolves to meet users' needs while maintaining its commitment to self-hosted, privacy-respecting URL shortening.",
+    "webpageUrl": {
+      "url": "https://yourls.org/"
+    }
+  },
+  "projects": [
+    {
+      "guid": "yourls",
+      "name": "YOURLS - Your Own URL Shortener",
+      "description": "YOURLS is a free and open-source set of PHP scripts that allows you to run your own URL shortening service (a la TinyURL or bitly). It's a self-hosted, customizable alternative to services like bit.ly, giving you full control over your data without depending on third party services. Running your own URL shortener is fun, geeky and useful: you own your data and can add branding to your short URLs. YOURLS can be configured as private (your links only) or public (everybody can create short links), features detailed statistics and analytics, includes a powerful plugin system for extensibility, and provides a RESTful API for integration. With over 11,000 stars on GitHub and used by hundreds of thousands of websites worldwide, YOURLS has become the de facto standard for self-hosted URL shorteners. The project is actively maintained and continuously improved by a dedicated community of contributors who ensure it remains secure, performant, and feature-rich.",
+      "webpageUrl": {
+        "url": "https://yourls.org/"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/YOURLS/YOURLS"
+      },
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "php",
+        "url-shortener",
+        "yourls",
+        "short-url",
+        "self-hosted",
+        "open-source"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "github-sponsors",
+        "type": "payment-provider",
+        "address": "https://github.com/sponsors/YOURLS",
+        "description": "Support YOURLS through GitHub Sponsors. Monthly-recurring sponsorships and one-time donations are accepted using various payment methods including credit cards."
+      },
+      {
+        "guid": "opencollective",
+        "type": "payment-provider",
+        "address": "https://opencollective.com/yourls",
+        "description": "Support YOURLS through Open Collective. Both monthly-recurring sponsorships and one-time donations are accepted, using various payment methods (credit cards, PayPal, even cryptocurrencies). Invoices can be obtained."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "monthly-sponsorship",
+        "status": "active",
+        "name": "Monthly Sponsorship",
+        "description": "Recurring monthly sponsorship to help maintain and develop YOURLS. Your logo will be featured on the project README on GitHub with a link to your site.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "monthly",
+        "channels": [
+          "github-sponsors",
+          "opencollective"
+        ]
+      },
+      {
+        "guid": "one-time-donation",
+        "status": "active",
+        "name": "One-time Donation",
+        "description": "Make a one-time donation to support the YOURLS project. Any amount helps maintain the infrastructure and continue development.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": [
+          "github-sponsors",
+          "opencollective"
+        ]
+      }
+    ],
+    "history": null
+  }
+}
