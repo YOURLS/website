@@ -4,6 +4,7 @@ authors:
   - ozh
 slug: /2014/01/on-yourls-1-7-and-api-yourls-org
 ---
+
 In case you missed it earlier: [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases) is out, and I've started a series of posts explaining why it's twice greater than the Great Wall of China.
 
 Previous posts explained how protecting against SQL injections is cool, and how better HTTP requests are neat. Today, let's discuss how awesome it is to chit chat with `https://api.yourls.org`.
@@ -22,7 +23,7 @@ Your own YOURLS setup will be now chatting with the mothership (aka `api.yourls.
 
 ## YOURLS phone home
 
-Just like [E.T.](https://www.youtube.com/watch?v=iyFijjikkeM "Man, this movie is 30 YEAR OLD, none of your readers has seen it!"), YOURLS will now phone home. What does that mean exactly?
+Just like [E.T.](https://www.youtube.com/watch?v=iyFijjikkeM 'Man, this movie is 30 YEAR OLD, none of your readers has seen it!'), YOURLS will now phone home. What does that mean exactly?
 
 It means that your YOURLS setup will, along with checking once in a while if there's a new version, send a few stats to the mothership to help us understand how you have installed YOURLS and how we can improve things in the future. These stats will provide us **tremendously useful** insights and facts, and I'm not overstating this.
 
