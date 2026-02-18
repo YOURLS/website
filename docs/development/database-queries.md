@@ -14,7 +14,7 @@ If your use case isn't covered by a wrapper core function, you may need to query
 
 ```php
 function my_plugin_get_stuff_from_database() {
-    $stuff = yourls_get_db()->some_SQL_method('some SQL query'); // details below
+    $stuff = yourls_get_db('some context')->some_SQL_method('some SQL query'); // details below
     ...
 }
 ```
@@ -37,7 +37,7 @@ Example:
 $table = YOURLS_DB_TABLE_URL;
 $sql   = "SELECT * FROM `$table` WHERE `keyword` = :keyword"; // notice the ":keyword" placeholder
 $binds = array('keyword', $some_keyword);
-$infos = yourls_get_db()->fetchObject($sql, $binds);
+$infos = yourls_get_db('read-some_info')->fetchObject($sql, $binds);
 ```
 
 Example:
@@ -46,7 +46,7 @@ Example:
 $table  = YOURLS_DB_TABLE_URL;
 $sql    = "UPDATE `$table` SET `title` = :title WHERE `keyword` = :keyword";
 $binds  = array('title' => $title, 'keyword' => $keyword);
-$update = yourls_get_db()->fetchAffected($sql, $binds);
+$update = yourls_get_db('write-some_info')->fetchAffected($sql, $binds);
 ```
 
 The point is: **you don't mix SQL statements with variables**. Instead, write SQL statement with hardcoded placeholders (everything is hardcoded except for the table name), define an array of (placeholder, variable) pairs, and let the magic happen under the hood, where everything is escaped for you.
