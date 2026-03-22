@@ -19,7 +19,7 @@ import { gql, request } from 'graphql-request'
 // reviewed by the Jest team to confirm they are not
 // donating just to juice their SEO.
 const FEATURED_SPONSORS = new Set(['route4me'])
-const graphqlQuery = gql`
+const opencollectiveGraphqlQuery = gql`
   {
     account(slug: "yourls") {
       orders(status: ACTIVE, limit: 1000) {
@@ -33,8 +33,35 @@ const graphqlQuery = gql`
             website
             imageUrl
           }
-          totalDonations {
-            value
+        }
+      }
+    }
+  }
+`
+
+const githubGraphqlQuery = gql`
+  {
+    user(login: "yourls") {
+      sponsorshipsAsMaintainer(first: 1000, activeOnly: true) {
+        nodes(filter: {isOneTimePayment: false}) {
+          sponsorEntity {
+            ... on Organization {
+              name
+              login
+              url
+              websiteUrl
+              avatarUrl
+            }
+            ... on User {
+              name
+              login
+              url
+              websiteUrl
+              avatarUrl
+            }
+          }
+          tier {
+            name
           }
         }
       }
@@ -44,22 +71,32 @@ const graphqlQuery = gql`
 
 const writeFile = promisify(fs.writeFile)
 
-request('https://api.opencollective.com/graphql/v2', graphqlQuery)
+request('https://api.opencollective.com/graphql/v2', opencollectiveGraphqlQuery)
   .then((data) => {
     const backers = data.account.orders.nodes
 
-    const backersWithFeatured = backers.map((backer) => {
+    return = backers.map((backer) => {
       if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
         backer.featured = true
       }
       return backer
     })
-
-    return writeFile(
-      path.resolve(path.dirname(''), 'backers.json'),
-      JSON.stringify(backersWithFeatured),
-    )
   })
+request('https://api.github.com/graphql', githubGraphqlQuery)
+  .then((data) => {
+    const backers = data.account.orders.nodes
+
+    return = backers.map((backer) => {
+      if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
+        backer.featured = true
+      }
+      return backer
+    })
+  })
+writeFile(
+    path.resolve(path.dirname(''), 'backers.json'),
+    JSON.stringify(backersWithFeatured),
+  )
   .then(() => {
     console.log('Fetched 1 file: backers.json')
   })
