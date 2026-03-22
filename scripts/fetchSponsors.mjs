@@ -84,10 +84,10 @@ request('https://api.opencollective.com/graphql/v2', opencollectiveGraphqlQuery)
   })
 request('https://api.github.com/graphql', githubGraphqlQuery)
   .then((data) => {
-    const backers = data.account.orders.nodes
+    const backers = data.user.sponsorshipsAsMaintainer.nodes
 
     return backers.map((backer) => {
-      if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
+      if (FEATURED_SPONSORS.has(backer.sponsorEntity.login)) {
         backer.featured = true
       }
       return backer
