@@ -71,32 +71,34 @@ const githubGraphqlQuery = gql`
 
 const writeFile = promisify(fs.writeFile)
 
-request('https://api.opencollective.com/graphql/v2', opencollectiveGraphqlQuery)
-  .then((data) => {
-    const backers = data.account.orders.nodes
-
-    return backers.map((backer) => {
-      if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
-        backer.featured = true
-      }
-      return backer
+Promise.allSettled([
+  request('https://api.opencollective.com/graphql/v2', opencollectiveGraphqlQuery)
+    .then((data) => {
+      const backers = data.account.orders.nodes
+  
+      return backers.map((backer) => {
+        if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
+          backer.featured = true
+        }
+        return backer
+      })
+    }),
+  request('https://api.github.com/graphql', githubGraphqlQuery)
+    .then((data) => {
+      const backers = data.user.sponsorshipsAsMaintainer.nodes
+  
+      return backers.map((backer) => {
+        if (FEATURED_SPONSORS.has(backer.sponsorEntity.login)) {
+          backer.featured = true
+        }
+        return backer
+      })
     })
-  })
-request('https://api.github.com/graphql', githubGraphqlQuery)
-  .then((data) => {
-    const backers = data.user.sponsorshipsAsMaintainer.nodes
-
-    return backers.map((backer) => {
-      if (FEATURED_SPONSORS.has(backer.sponsorEntity.login)) {
-        backer.featured = true
-      }
-      return backer
-    })
-  })
-writeFile(
+  ])
+  .then((data) => writeFile(
     path.resolve(path.dirname(''), 'backers.json'),
-    JSON.stringify(backersWithFeatured),
-  )
+    JSON.stringify(data),
+  ))
   .then(() => {
     console.log('Fetched 1 file: backers.json')
   })
