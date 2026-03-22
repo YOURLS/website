@@ -4,18 +4,15 @@ import Link from '@docusaurus/Link'
 import styles from './styles.module.css'
 import backers from '@site/backers.json'
 
-function Sponsor({
-  fromAccount: { name, slug, website, imageUrl },
-  totalDonations,
-}) {
+function Sponsor({ sponsorEntity: { name, slug, website, url, imageUrl } }) {
   return (
     <a
       key={slug}
       className={styles.sponsorItem}
-      title={`$${totalDonations.value} by ${name || slug}`}
+      title={`$${name || slug}`}
       target="_blank"
-      rel="nofollow noopener"
-      href={website || `https://opencollective.com/${slug}`}
+      rel="nofollow noopener sponsored"
+      href={website || url || `https://opencollective.com/${slug}`}
     >
       {
         <img
