@@ -16,7 +16,7 @@ import { gql, request } from 'graphql-request'
 
 // These sponsors will be featured on the homepage.
 // These backers donate >100 USD per month, and are
-// reviewed by the Jest team to confirm they are not
+// reviewed by the  team to confirm they are not
 // donating just to juice their SEO.
 const FEATURED_SPONSORS = new Set(['route4me'])
 const opencollectiveGraphqlQuery = gql`
@@ -75,7 +75,7 @@ request('https://api.opencollective.com/graphql/v2', opencollectiveGraphqlQuery)
   .then((data) => {
     const backers = data.account.orders.nodes
 
-    return = backers.map((backer) => {
+    return backers.map((backer) => {
       if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
         backer.featured = true
       }
@@ -86,7 +86,7 @@ request('https://api.github.com/graphql', githubGraphqlQuery)
   .then((data) => {
     const backers = data.account.orders.nodes
 
-    return = backers.map((backer) => {
+    return backers.map((backer) => {
       if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
         backer.featured = true
       }
