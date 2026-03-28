@@ -1,6 +1,7 @@
 .input {
   padding: calc(
-      var(--ifm-button-padding-vertical) * var(--ifm-button-size-multiplier)
+      var(--ifm-button-padding-vertical) *
+      var(--ifm-button-size-multiplier)
     )
     1em;
   line-height: 1.5;

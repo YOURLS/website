@@ -9,9 +9,9 @@
  * https://github.com/jestjs/jest/blob/bd1c6db7c15c23788ca3e09c919138e48dd3b28a/website/fetchSupporters.js
  */
 
-import fs from 'fs'
-import path from 'path'
-import { promisify } from 'util'
+import fs from 'node:fs'
+import path from 'node:path'
+import { promisify } from 'node:util'
 import { gql, request } from 'graphql-request'
 
 // These sponsors will be featured on the homepage.

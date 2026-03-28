@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import styles from './styles.module.css'
 
@@ -9,8 +9,7 @@ export default function Md5Generator() {
   const handleChange = async (e) => {
     setText(e.target.value)
     const salt = Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000
-    const encrypted =
-      'md5:' + salt + ':' + require('md5')(salt + e.target.value)
+    const encrypted = `md5:${salt}:${require('md5')(salt + e.target.value)}`
     setMd5(encrypted)
   }
 
