@@ -1,0 +1,21 @@
+# https://docs.github.com/actions
+
+name: Lint
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  packages: read
+  statuses: write
+
+jobs:
+  super-linter:
+    name: Super Linter
+    uses: YOURLS/.github/.github/workflows/lint.yml@main
