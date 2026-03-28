@@ -5,10 +5,13 @@
 
 # Production
 /build
+dist
 
 # Generated files
 .docusaurus
 .cache-loader
+.cache
+.temp
 
 # Misc
 .DS_Store
