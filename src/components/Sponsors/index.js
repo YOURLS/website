@@ -33,9 +33,21 @@ export default function Sponsors() {
     <section className={styles.sponsors}>
       <div className="container">
         <h3>Featured Sponsors</h3>
-        <p>For their outstanding support to the project, we are very thankful to our Angel Sponsors :</p>
         <p>
-        <a href="https://www.bairesdev.com/sponsoring-open-source-projects/"><img width="350px" alt="bd-logo-orange" src="https://github.com/user-attachments/assets/caa67711-33df-4974-9bbe-cd2b7356712e" /></a>
+          For their outstanding support to the project, we are very thankful to
+          our Angel Sponsors.
+          <br />
+          <a
+            href="https://www.bairesdev.com/sponsoring-open-source-projects/"
+            target="_blank"
+            rel="nofollow noopener"
+          >
+            <img
+              width="350px"
+              alt="bd-logo-orange"
+              src="https://github.com/user-attachments/assets/caa67711-33df-4974-9bbe-cd2b7356712e"
+            />
+          </a>
         </p>
         <div className={styles.sponsorsAvatars}>
           {backers
