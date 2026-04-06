@@ -31,8 +31,10 @@ export default function Sponsors() {
       <div className="container">
         <h3>Featured Sponsors</h3>
         <p>
+          YOURLS is free and open source, made possible by wonderful sponsors.
+          <br />
           For their outstanding support to the project, we are very thankful to
-          our Angel Sponsors.
+          them.
           <br />
           <a
             href="https://www.bairesdev.com/sponsoring-open-source-projects/"
@@ -53,8 +55,6 @@ export default function Sponsors() {
             .map(Sponsor)}
         </div>
         <p>
-          YOURLS is free and open source, made possible by wonderful sponsors.
-          <br />
           <a
             href="https://opencollective.com/yourls#section-contributors"
             target="_blank"
