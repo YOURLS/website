@@ -29,6 +29,13 @@ export default function Sponsors() {
   return (
     <section className={styles.sponsors}>
       <div className="container">
+        <h3>Featured Sponsors</h3>
+        <p>
+          YOURLS is free and open source, made possible by wonderful sponsors.
+          <br />
+          For their outstanding support to the project, we are very thankful to
+          them.
+        </p>
         <div className={styles.sponsorsAvatars}>
           {backers
             .filter((b) => b.featured)
@@ -36,8 +43,6 @@ export default function Sponsors() {
             .map(Sponsor)}
         </div>
         <p>
-          YOURLS is free and open source, made possible by wonderful sponsors.
-          <br />
           <a
             href="https://opencollective.com/yourls#section-contributors"
             target="_blank"
