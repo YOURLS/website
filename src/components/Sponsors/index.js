@@ -35,18 +35,6 @@ export default function Sponsors() {
           <br />
           For their outstanding support to the project, we are very thankful to
           them.
-          <br />
-          <a
-            href="https://www.bairesdev.com/sponsoring-open-source-projects/"
-            target="_blank"
-            rel="nofollow noopener"
-          >
-            <img
-              width="350px"
-              alt="bd-logo-orange"
-              src="https://github.com/user-attachments/assets/caa67711-33df-4974-9bbe-cd2b7356712e"
-            />
-          </a>
         </p>
         <div className={styles.sponsorsAvatars}>
           {backers
