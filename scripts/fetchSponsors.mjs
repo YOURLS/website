@@ -17,7 +17,7 @@ import { gql, request } from 'graphql-request'
 // These sponsors will be featured on the homepage.
 // These backers are reviewed by the team to confirm
 // they are not donating just to juice their SEO.
-const FEATURED_SPONSORS = new Set(['route4me'])
+const FEATURED_SPONSORS = new Set(['route4me', 'BairesDev-LLC'])
 const opencollectiveGraphqlQuery = gql`
   {
     account(slug: "yourls") {
