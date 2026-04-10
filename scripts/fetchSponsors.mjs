@@ -9,32 +9,52 @@
  * https://github.com/jestjs/jest/blob/bd1c6db7c15c23788ca3e09c919138e48dd3b28a/website/fetchSupporters.js
  */
 
-import fs from 'fs'
-import path from 'path'
-import { promisify } from 'util'
+import fs from 'node:fs'
+import path from 'node:path'
+import { promisify } from 'node:util'
 import { gql, request } from 'graphql-request'
 
 // These sponsors will be featured on the homepage.
-// These backers donate >100 USD per month, and are
-// reviewed by the Jest team to confirm they are not
-// donating just to juice their SEO.
-const FEATURED_SPONSORS = new Set(['route4me'])
-const graphqlQuery = gql`
+// These backers are reviewed by the team to confirm
+// they are not donating just to juice their SEO.
+const FEATURED_SPONSORS = new Set(['route4me', 'BairesDev-LLC'])
+const opencollectiveGraphqlQuery = gql`
   {
     account(slug: "yourls") {
       orders(status: ACTIVE, limit: 1000) {
         nodes {
-          tier {
-            slug
-          }
-          fromAccount {
+          sponsorEntity: fromAccount {
             name
             slug
             website
             imageUrl
           }
-          totalDonations {
-            value
+        }
+      }
+    }
+  }
+`
+
+const githubGraphqlQuery = gql`
+  {
+    organization(login: "YOURLS") {
+      sponsorshipsAsMaintainer(first: 100, activeOnly: true) {
+        nodes {
+          sponsorEntity {
+            ... on Organization {
+              name
+              slug: login
+              url
+              website: websiteUrl
+              imageUrl: avatarUrl
+            }
+            ... on User {
+              name
+              slug: login
+              url
+              website: websiteUrl
+              imageUrl: avatarUrl
+            }
           }
         }
       }
@@ -43,23 +63,35 @@ const graphqlQuery = gql`
 `
 
 const writeFile = promisify(fs.writeFile)
+const featuredBackers = (backer) => {
+  if (FEATURED_SPONSORS.has(backer.sponsorEntity.slug)) {
+    backer.featured = true
+  }
+  return backer
+}
 
-request('https://api.opencollective.com/graphql/v2', graphqlQuery)
-  .then((data) => {
-    const backers = data.account.orders.nodes
-
-    const backersWithFeatured = backers.map((backer) => {
-      if (FEATURED_SPONSORS.has(backer.fromAccount.slug)) {
-        backer.featured = true
-      }
-      return backer
-    })
-
-    return writeFile(
+Promise.all([
+  request(
+    'https://api.opencollective.com/graphql/v2',
+    opencollectiveGraphqlQuery,
+  ).then((data) => data.account.orders.nodes.map(featuredBackers)),
+  request(
+    'https://api.github.com/graphql',
+    githubGraphqlQuery,
+    {},
+    {
+      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+    },
+  ).then((data) =>
+    data.organization.sponsorshipsAsMaintainer.nodes.map(featuredBackers),
+  ),
+])
+  .then((data) =>
+    writeFile(
       path.resolve(path.dirname(''), 'backers.json'),
-      JSON.stringify(backersWithFeatured),
-    )
-  })
+      JSON.stringify([].concat(...data)),
+    ),
+  )
   .then(() => {
     console.log('Fetched 1 file: backers.json')
   })

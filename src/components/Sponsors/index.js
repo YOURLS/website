@@ -4,18 +4,15 @@ import Link from '@docusaurus/Link'
 import styles from './styles.module.css'
 import backers from '@site/backers.json'
 
-function Sponsor({
-  fromAccount: { name, slug, website, imageUrl },
-  totalDonations,
-}) {
+function Sponsor({ sponsorEntity: { name, slug, website, url, imageUrl } }) {
   return (
     <a
       key={slug}
       className={styles.sponsorItem}
-      title={`$${totalDonations.value} by ${name || slug}`}
+      title={`$${name || slug}`}
       target="_blank"
-      rel="nofollow noopener"
-      href={website || `https://opencollective.com/${slug}`}
+      rel="nofollow noopener sponsored"
+      href={website || url || `https://opencollective.com/${slug}`}
     >
       {
         <img
@@ -34,20 +31,10 @@ export default function Sponsors() {
       <div className="container">
         <h3>Featured Sponsors</h3>
         <p>
-          For their outstanding support to the project, we are very thankful to
-          our Angel Sponsors.
+          YOURLS is free and open source, made possible by wonderful sponsors.
           <br />
-          <a
-            href="https://www.bairesdev.com/sponsoring-open-source-projects/"
-            target="_blank"
-            rel="nofollow noopener"
-          >
-            <img
-              width="350px"
-              alt="bd-logo-orange"
-              src="https://github.com/user-attachments/assets/caa67711-33df-4974-9bbe-cd2b7356712e"
-            />
-          </a>
+          For their outstanding support to the project, we are very thankful to
+          them.
         </p>
         <div className={styles.sponsorsAvatars}>
           {backers
@@ -56,8 +43,6 @@ export default function Sponsors() {
             .map(Sponsor)}
         </div>
         <p>
-          YOURLS is free and open source, made possible by wonderful sponsors.
-          <br />
           <a
             href="https://opencollective.com/yourls#section-contributors"
             target="_blank"
