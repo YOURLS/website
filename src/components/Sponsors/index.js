@@ -32,25 +32,6 @@ export default function Sponsors() {
   return (
     <section className={styles.sponsors}>
       <div className="container">
-        <!---
-        <h3>Featured Sponsors</h3>
-        <p>
-          For their outstanding support to the project, we are very thankful to
-          our Angel Sponsors.
-          <br />
-          <a
-            href="sponsor URL"
-            target="_blank"
-            rel="nofollow noopener"
-          >
-          <img
-            width="350px"
-            alt="sponsor"
-            src="img url on GH"
-          />
-          </a>
-        </p>
-        -->
         <div className={styles.sponsorsAvatars}>
           {backers
             .filter((b) => b.featured)
