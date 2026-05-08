@@ -1,6 +1,7 @@
 ---
 title: "Integrating the New Google reCAPTCHA With YOURLS"
-date: 2015-05-04
+authors:
+- ozh
 categories: 
   - "tutorial"
 tags: 

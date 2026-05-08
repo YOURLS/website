@@ -1,6 +1,7 @@
 ---
 title: "Preventing abuse of your public YOURLS install"
-date: 2011-04-24
+authors:
+- ozh
 categories: 
   - "plugins-2"
   - "showcase"

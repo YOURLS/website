@@ -1,6 +1,7 @@
 ---
 title: "Should YOURLS be on GitHub instead?"
-date: 2012-08-22
+authors:
+- ozh
 categories: 
   - "announcement"
 tags: 

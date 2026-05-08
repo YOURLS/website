@@ -1,6 +1,7 @@
 ---
 title: "Hot: APC Cache plugin for YOURLS"
-date: 2011-06-09
+authors:
+- ozh
 categories: 
   - "plugins-2"
 tags: 

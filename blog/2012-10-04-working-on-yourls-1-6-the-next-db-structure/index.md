@@ -1,6 +1,7 @@
 ---
 title: "Working on YOURLS 1.6 : the next DB structure"
-date: 2012-10-04
+authors:
+- ozh
 categories: 
   - "plans"
 tags: 

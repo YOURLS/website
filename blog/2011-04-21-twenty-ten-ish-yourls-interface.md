@@ -1,6 +1,7 @@
 ---
 title: "Twenty-Ten-ish YOURLS interface"
-date: 2011-04-21
+authors:
+- ozh
 categories: 
   - "showcase"
 tags: 

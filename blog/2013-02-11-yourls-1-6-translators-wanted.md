@@ -1,6 +1,7 @@
 ---
 title: "YOURLS 1.6 : translators wanted !"
-date: 2013-02-11
+authors:
+- ozh
 categories: 
   - "announcement"
   - "plans"

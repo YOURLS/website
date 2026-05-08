@@ -1,6 +1,7 @@
 ---
 title: "YOURLS 1.7 and social bookmarklets"
-date: 2014-01-17
+authors:
+- ozh
 categories: 
   - "announcement"
 tags: 

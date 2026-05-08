@@ -1,6 +1,7 @@
 ---
 title: "It's Alpha but it's stable. For now!"
-date: 2013-01-11
+authors:
+- ozh
 categories: 
   - "announcement"
 tags: 

@@ -1,6 +1,7 @@
 ---
 title: "YOURLS 1.7 and automatically encrypted passwords"
-date: 2014-01-15
+authors:
+- ozh
 categories: 
   - "announcement"
 tags: 
