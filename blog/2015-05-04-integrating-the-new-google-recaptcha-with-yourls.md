@@ -1,13 +1,13 @@
 ---
-title: "Integrating the New Google reCAPTCHA With YOURLS"
+title: 'Integrating the New Google reCAPTCHA With YOURLS'
 authors:
-- ozh
-categories: 
-  - "tutorial"
-tags: 
-  - "captcha"
-  - "google"
-  - "spam"
+  - ozh
+categories:
+  - 'tutorial'
+tags:
+  - 'captcha'
+  - 'google'
+  - 'spam'
 ---
 
 _This guide and screenshots are courtesy of Jared Stark and [Erasure Web Services](http://erasurge.com/), originally available on their own [bitty.link shortener](http://bitty.link/recaptcha.html). It's duplicated here in case their goes offline or missing but please check on the original link first in case they have updated it. Much thanks to them!_

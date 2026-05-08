@@ -1,15 +1,16 @@
 ---
 title: "It's Alpha but it's stable. For now!"
 authors:
-- ozh
-categories: 
-  - "announcement"
-tags: 
-  - "1-6"
-  - "alpha"
+  - ozh
+categories:
+  - 'announcement'
+tags:
+  - '1-6'
+  - 'alpha'
 ---
 
 As of writing, YOURLS version number says "`1.6-alpha`". Despite boasting an intimidating "alpha" tag, it's currently completely stable: I didn't introduce yet any major change, especially in the DB structure, so feel really free to update today [using SVN](http://yourls.org/installsvn) or with a [nightly build](http://yourls.org/nightly-builds/). For the record, I'm using that version on _yourls.org_ and my personal _ozh.in_, amongst others.
+
 <!-- truncate -->
 
 This said, expect some breakages in the future: I'll slightly refactor the [way action works](http://code.google.com/p/yourls/issues/detail?id=1203), I'll change a bit [API returns](http://code.google.com/p/yourls/issues/detail?id=1277), probably a few other things, and of course, there'll be DB upgrading which is always the scary operation of all :)

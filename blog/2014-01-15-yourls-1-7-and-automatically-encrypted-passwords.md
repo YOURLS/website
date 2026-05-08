@@ -1,13 +1,13 @@
 ---
-title: "YOURLS 1.7 and automatically encrypted passwords"
+title: 'YOURLS 1.7 and automatically encrypted passwords'
 authors:
-- ozh
-categories: 
-  - "announcement"
-tags: 
-  - "1-7"
-  - "password"
-  - "security"
+  - ozh
+categories:
+  - 'announcement'
+tags:
+  - '1-7'
+  - 'password'
+  - 'security'
 ---
 
 Another day, another highlight of a new feature in [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases). In case you weren't there when the party started, we already covered defense against SQL injections, HTTP requests robustness, funky UTF8 charsets support, proxy support, automatic checking for a new version and a few other neat stuff.

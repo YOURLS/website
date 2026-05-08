@@ -1,13 +1,13 @@
 ---
-title: "YOURLS 1.6 : translators wanted !"
+title: 'YOURLS 1.6 : translators wanted !'
 authors:
-- ozh
-categories: 
-  - "announcement"
-  - "plans"
-tags: 
-  - "1-6"
-  - "translation"
+  - ozh
+categories:
+  - 'announcement'
+  - 'plans'
+tags:
+  - '1-6'
+  - 'translation'
 ---
 
 Change of plans for **YOURLS 1.6**. According to the RoadMap and previous posts here, the upcoming version 1.6 of YOURLS would introduce a new DB schema. But plans are made to be changed!
@@ -33,14 +33,14 @@ Instead of having hardcoded strings, such as `echo "Woah awesome"` and `return "
 More detailed documentation to help translators will be written later, but it's a really straightforward simple process:
 
 1. Download [YOURLS.pot](https://github.com/YOURLS/YOURLS.pot), the translation file template
-2. Rename it to `[your-locale]`.po, where `[your-locale]` is typically _language code, underscore, country code_ (for instance in Portugal that would be **pt\_PT**, while in Brazil it'd be **pt\_BR**).
+2. Rename it to `[your-locale]`.po, where `[your-locale]` is typically _language code, underscore, country code_ (for instance in Portugal that would be **pt_PT**, while in Brazil it'd be **pt_BR**).
 3. Install a translation software: it's nothing more than a text editor capable of reading .po files, showing you the untranslated string and a text box where you type in the translation, and saving a .mo file which is what PHP needs. A cross platform, simple yet complete editor is [Poedit](http://www.poedit.net/). There are also simple web based tools, such as [PoEditor](http://www.poeditor.com/) where you upload the .pot, translate, and download a .mo
-4. Once you have your fully translated **pt\_BR.po** and the generated **pt\_BR.mo**, host them somewhere (preferably on a source control enabled environment such as Github or Google Code to make contributions easier) and ping me! I'll maintain a list of available translations.
+4. Once you have your fully translated **pt_BR.po** and the generated **pt_BR.mo**, host them somewhere (preferably on a source control enabled environment such as Github or Google Code to make contributions easier) and ping me! I'll maintain a list of available translations.
 
 To test your translation file as you create it :
 
 1. [Download a nightly build or update via SVN](http://code.google.com/p/yourls/wiki/InstallFromSVN)
-2. Drop your pt\_BR.po and pt\_BR.mo files in `user/languages`
+2. Drop your pt_BR.po and pt_BR.mo files in `user/languages`
 3. Add `define( 'YOURLS_LANG', 'pt_BR' )` to your `config.php`
 4. That's it! Play with YOURLS
 
