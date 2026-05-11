@@ -20,7 +20,7 @@ I know at least 2 plugins on this topic:
 
 <!-- truncate -->
 
-- [YOURLS Abusedesk](http://blog.tty.nu/2010/08/29/yourls-abusedesk-released/) implements Google's Safebrowsing API
+- [YOURLS Abusedesk](https://github.com/florianoverkamp/yourls-abusedesk) implements Google's Safebrowsing API
 - [YOURLS Phishtank](http://pastie.org/1430803) implements Phishtank's one
 
 If you made a plugin on this topic, be sure to let me know (remember: **DON'T MODIFY core**, make a plugin instead!!)

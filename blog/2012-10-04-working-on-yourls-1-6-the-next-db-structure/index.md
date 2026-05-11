@@ -17,7 +17,7 @@ What's up, gents? I've begun working on the next iteration and here's what I'm u
 
 As everybody knows, the current database design in YOURLS is dumb and very inefficient. Its biggest flaw is that the keyword (_ie_ short url) is repeated in both the `URL` and the `LOG` tables, making it absurdly difficult to update a short url without losing all historical data.
 
-[![](images/yourls-db-15.png 'yourls-db-15')](http://ozh.dreamhosters.com/wp-content/uploads/2012/10/yourls-db-15.png)
+![](images/yourls-db-15.png 'yourls-db-15')
 
 Another design decision I regret was to store stuff in case they would be useful to anyone, such as user agents in the log table. Since there's no core feature using that info and I probably won't implement any, this should not be there. There's a plugin API for this.
 
@@ -29,7 +29,7 @@ I've been pondering about the next DB schema for a _very_ long time now, trying 
 
 ## YOURLS 1.6 : smarter yet simple (at least I hope so)
 
-I decided to make up my mind once for good and here is how I see things in YOURLS 1.6: [![](images/yourls-db-16.png 'yourls-db-16')](http://ozh.dreamhosters.com/wp-content/uploads/2012/10/yourls-db-16.png)
+I decided to make up my mind once for good and here is how I see things in YOURLS 1.6: ![](images/yourls-db-16.png 'yourls-db-16')
 
 The main `URL` table will be properly [normalized](http://en.wikipedia.org/wiki/Database_normalization) with a URL id to stop repeating the keyword across tables. I could probably go further in normalization (storing the long URL and title somewhere else, as I [first thought](http://code.google.com/p/yourls/wiki/DatabaseStructure)) but that's where I think it becomes too much trouble and hassle for too few benefits.
 

@@ -11,7 +11,7 @@ tags:
   - 'utf8'
 ---
 
-As you may know, [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases) was released a couple days ago ([announcement](http://ozh.dreamhosters.com/2014/01/yourls-1-7-tom-araya-released/)). I promised a few blog posts highlighting the goodness and new features this version brings, so let's get started.
+As you may know, [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases) was released a couple days ago ([announcement](/2014-01-10-yourls-1-7.md)). I promised a few blog posts highlighting the goodness and new features this version brings, so let's get started.
 
 Besides better protection against potential SQL injection attacks and overall security measures, what's new in YOURLS 1.7?
 
@@ -25,7 +25,7 @@ Instead of a half-baked home-grown set of functions to perform HTTP requests, YO
 
 ## Proxy support
 
-The first direct benefit for you, kind user, is that YOURLS is now proxy-compatible, and you can install it behind a proxy or firewall. The will primarily interest corporate users or anyone setting up a YOURLS shortener in a corporate environment. If you're into this, be sure to check the documentation: [YOURLS proxy support](https://github.com/YOURLS/YOURLS/wiki/Proxy-Support).
+The first direct benefit for you, kind user, is that YOURLS is now proxy-compatible, and you can install it behind a proxy or firewall. The will primarily interest corporate users or anyone setting up a YOURLS shortener in a corporate environment. If you're into this, be sure to check the documentation: [YOURLS proxy support](/docs/guide/advanced/proxy.md).
 
 By the way, this is an excellent example of how open source projects can cross-pollinate each others. Requests is an excellent library I wanted to use, I [contributed](https://github.com/rmccue/Requests/blob/master/CHANGELOG.md#160) to it to add proxy support, and now it powers the inners of YOURLS.
 
