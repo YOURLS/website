@@ -24,19 +24,26 @@ The new Google reCAPTCHA service aims to get rid of those traditional problems w
 
 Because of its easy of use, the new Google reCAPTCHA is ideal for URL Shortening websites since it allows users to create short URLS quickly while preventing spam at the same time. This tutorial will show you how to integrate this service into a YOURLS installation, much like what this website, [bitty.link](https://bitty.link/) uses.
 
-## The solution : tutorial
+## The solution: tutorial
 
 This tutorial will show how to implement the "No CAPTCHA reCAPTCHA" into the default YOURLS public interface setup. Obviously, it can be tweaked and modified for other public interfaces.
 
 **Please note that this tutorial uses the reCAPTCHA API 1.0.**
 
 1. Visit the [Google reCAPTCHA](https://google.com/recaptcha) website. You will need to "Get reCAPTCHA," which requires a Google account. After filling out the required information, you should receive your site key and secret key. Make sure to keep this information handy.
-2. In your YOURLS installation, open the file `includes/functions-html.php`. Copy the JavaScript client-side script from the reCAPTCHA website and place it in the described place ([screenshot](https://ozh.dreamhosters.com/wp-content/uploads/2015/05/tutorial1.png))
-3. Open your public interface file. On the reCAPTCHA website, copy the "sitekey" line and paste it in the described place ([screenshot](https://ozh.dreamhosters.com/wp-content/uploads/2015/05/tutorial2.png))
-4. Upload a copy of the [captcha.php](https://ozh.dreamhosters.com/wp-content/uploads/2015/05/captcha.txt) and [recaptchalib.php](https://ozh.dreamhosters.com/wp-content/uploads/2015/05/recaptchalib.txt) files to the directory of your YOURLS installation that has your public user interface in it. Although those two files do not use the most recent reCAPTCHA API, they are easier to implement and will still work just fine.
+2. In your YOURLS installation, open the file `includes/functions-html.php`. Copy the JavaScript client-side script from the reCAPTCHA website and place it in the described place.
+   ![tutorial1](images/tutorial1.png)
+3. Open your public interface file. On the reCAPTCHA website, copy the "sitekey" line and paste it in the described place.
+   ![tutorial2](images/tutorial2.png)
+4. Upload a copy of the [captcha.php](files/captcha.txt) and [recaptchalib.php](files/recaptchalib.txt) files to the directory of your YOURLS installation that has your public user interface in it. Although those two files do not use the most recent reCAPTCHA API, they are easier to implement and will still work just fine.
 5. In the captcha.php file, paste in your secret and site keys to the indicated spots.
-6. Open your public user interface file. Paste the following under where it says "Part to be executed if FORM has been submitted:" `include('captcha.php'); if ($resp != null && $resp->success) {` ([screenshot](https://ozh.dreamhosters.com/wp-content/uploads/2015/05/tutorial4.png))
-7. Place a `}` at the end of the text block in the example photo: ([screenshot](https://ozh.dreamhosters.com/wp-content/uploads/2015/05/tutorial5.png))
+6. Open your public user interface file. Paste the following under where it says "Part to be executed if FORM has been submitted:"
+   ```php
+   include('captcha.php'); if ($resp != null && $resp->success) {
+   ```
+   ![tutorial4](images/tutorial4.png)
+7. Place a `}` at the end of the text block in the example photo.
+   ![tutorial5](images/tutorial5.png)
 
 This is the most basic way to get the new Google reCAPTCHA working on your YOURLS instillation. Although it will prevent spam bots from submitting automated requests, if a user fails to fill out the captcha, unfortunately, a reason to why the request failed will not be given unless more code is added.
 
