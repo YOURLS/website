@@ -25,7 +25,7 @@ Instead of a half-baked home-grown set of functions to perform HTTP requests, YO
 
 ## Proxy support
 
-The first direct benefit for you, kind user, is that YOURLS is now proxy-compatible, and you can install it behind a proxy or firewall. The will primarily interest corporate users or anyone setting up a YOURLS shortener in a corporate environment. If you're into this, be sure to check the documentation: [YOURLS proxy support](/docs/guide/advanced/proxy.md).
+The first direct benefit for you, kind user, is that YOURLS is now proxy-compatible, and you can install it behind a proxy or firewall. The will primarily interest corporate users or anyone setting up a YOURLS shortener in a corporate environment. If you're into this, be sure to check the documentation: [YOURLS proxy support](/docs/guide/advanced/proxy).
 
 By the way, this is an excellent example of how open source projects can cross-pollinate each others. Requests is an excellent library I wanted to use, I [contributed](https://github.com/rmccue/Requests/blob/master/CHANGELOG.md#160) to it to add proxy support, and now it powers the inners of YOURLS.
 
