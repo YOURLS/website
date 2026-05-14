@@ -1,13 +1,13 @@
 ---
-title: 'YOURLS 1.6 : translators wanted !'
+title: 'YOURLS 1.6: translators wanted!'
 authors:
   - ozh
 categories:
-  - 'announcement'
-  - 'plans'
+  - announcement
+  - plans
 tags:
-  - '1-6'
-  - 'translation'
+  - 1-6
+  - translation
 ---
 
 Change of plans for **YOURLS 1.6**. According to the RoadMap and previous posts here, the upcoming version 1.6 of YOURLS would introduce a new DB schema. But plans are made to be changed!

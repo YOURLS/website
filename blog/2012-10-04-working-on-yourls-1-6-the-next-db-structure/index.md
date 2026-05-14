@@ -1,12 +1,12 @@
 ---
-title: 'Working on YOURLS 1.6 : the next DB structure'
+title: 'Working on YOURLS 1.6: the next DB structure'
 authors:
   - ozh
 categories:
-  - 'plans'
+  - plans
 tags:
-  - '1-6'
-  - 'db'
+  - 1-6
+  - db
 ---
 
 What's up, gents? I've begun working on the next iteration and here's what I'm up to.

@@ -1,14 +1,14 @@
 ---
-title: "What's new in YOURLS 1.7 : better HTTP requests handling"
+title: "What's new in YOURLS 1.7: better HTTP requests handling"
 authors:
   - ozh
 categories:
-  - 'announcement'
+  - announcement
 tags:
-  - '1-7'
-  - 'http'
-  - 'proxy'
-  - 'utf8'
+  - 1-7
+  - http
+  - proxy
+  - utf8
 ---
 
 As you may know, [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases) was released a couple days ago ([announcement](/2014-01-10-yourls-1-7.md)). I promised a few blog posts highlighting the goodness and new features this version brings, so let's get started.

@@ -3,10 +3,10 @@ title: 'Hot: APC Cache plugin for YOURLS'
 authors:
   - ozh
 categories:
-  - 'plugins-2'
+  - plugins-2
 tags:
-  - 'apc'
-  - 'cache'
+  - apc
+  - cache
 ---
 
 I'm particularly excited by this one: [Ian Barber](https://twitter.com/ianbarber) got his hand dirty and wrote the first release of an [APC Cache plugin for YOURLS](https://github.com/ianbarber/Yourls-APC-Cache).

@@ -1,12 +1,12 @@
 ---
-title: 'YOURLS 1.7 and social bookmarklets'
+title: YOURLS 1.7 and social bookmarklets
 authors:
   - ozh
 categories:
-  - 'announcement'
+  - announcement
 tags:
-  - '1-7'
-  - 'bookmarklets'
+  - 1-7
+  - bookmarklets
 ---
 
 Last post in our series "What's cool with [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases)" -- be sure to check previous posts dealing with SQL injections, security matters, HTTP improvements and other important subjects.

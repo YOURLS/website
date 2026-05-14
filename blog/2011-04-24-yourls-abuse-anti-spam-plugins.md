@@ -1,17 +1,17 @@
 ---
-title: 'Preventing abuse of your public YOURLS install'
+title: Preventing abuse of your public YOURLS install
 authors:
   - ozh
 categories:
-  - 'plugins-2'
-  - 'showcase'
+  - plugins-2
+  - showcase
 tags:
-  - 'abuse'
-  - 'gsb'
-  - 'malware'
-  - 'phishtank'
-  - 'plugins'
-  - 'spam'
+  - abuse
+  - gsb
+  - malware
+  - phishtank
+  - plugins
+  - spam
 ---
 
 A lot of you, beloved users, are using YOURLS to set up public shorteners. Sooner or later you all face the same problem: abuse by spammers, sometimes until your hosting provider shuts down your site. Hopefully, thanks to the plugin API, being abused by spammers is not inevitable destiny and plugins can address that issue.
