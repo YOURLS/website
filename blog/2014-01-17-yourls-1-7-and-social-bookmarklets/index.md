@@ -7,6 +7,7 @@ categories:
 tags:
   - 1-7
   - bookmarklets
+slug: /2014/01/yourls-1-7-and-social-bookmarklets
 ---
 
 Last post in our series "What's cool with [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases)" -- be sure to check previous posts dealing with SQL injections, security matters, HTTP improvements and other important subjects.

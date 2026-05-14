@@ -9,6 +9,7 @@ tags:
   - http
   - proxy
   - utf8
+slug: /2014/01/whats-new-in-yourls-1-7-better-http-requests-handling
 ---
 
 As you may know, [YOURLS 1.7](https://github.com/YOURLS/YOURLS/releases) was released a couple days ago ([announcement](/2014-01-10-yourls-1-7.md)). I promised a few blog posts highlighting the goodness and new features this version brings, so let's get started.

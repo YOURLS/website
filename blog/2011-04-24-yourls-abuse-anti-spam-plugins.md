@@ -12,6 +12,7 @@ tags:
   - phishtank
   - plugins
   - spam
+slug: /2011/04/yourls-abuse-anti-spam-plugins
 ---
 
 A lot of you, beloved users, are using YOURLS to set up public shorteners. Sooner or later you all face the same problem: abuse by spammers, sometimes until your hosting provider shuts down your site. Hopefully, thanks to the plugin API, being abused by spammers is not inevitable destiny and plugins can address that issue.

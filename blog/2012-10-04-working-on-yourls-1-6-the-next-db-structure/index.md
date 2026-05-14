@@ -7,6 +7,7 @@ categories:
 tags:
   - 1-6
   - db
+slug: /2012/10/working-on-yourls-1-6-the-next-db-structure
 ---
 
 What's up, gents? I've begun working on the next iteration and here's what I'm up to.

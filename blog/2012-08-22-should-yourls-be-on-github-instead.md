@@ -8,6 +8,7 @@ tags:
   - github
   - google
   - svn
+slug: /2012/08/should-yourls-be-on-github-instead
 ---
 
 I'm regularly asked if there's a chance that [YOURLS](https://yourls.org/) be hosted on [GitHub](https://github.com/) instead of [Google Code](https://code.google.com/p/yourls/) as it is now.

@@ -8,6 +8,7 @@ tags:
   - captcha
   - google
   - spam
+slug: /2015/05/integrating-the-new-google-recaptcha-with-yourls
 ---
 
 _This guide and screenshots are courtesy of Jared Stark and [Erasure Web Services](https://erasurge.com/), originally available on their own [bitty.link shortener](https://bitty.link/recaptcha.html). It's duplicated here in case their goes offline or missing but please check on the original link first in case they have updated it. Much thanks to them!_

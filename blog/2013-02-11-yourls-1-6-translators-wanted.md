@@ -8,6 +8,7 @@ categories:
 tags:
   - 1-6
   - translation
+slug: /2013/02/yourls-1-6-translators-wanted
 ---
 
 Change of plans for **YOURLS 1.6**. According to the RoadMap and previous posts here, the upcoming version 1.6 of YOURLS would introduce a new DB schema. But plans are made to be changed!

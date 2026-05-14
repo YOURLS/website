@@ -7,6 +7,7 @@ categories:
 tags:
   - 1-6
   - alpha
+slug: /2013/01/its-alpha-but-its-stable-for-now
 ---
 
 As of writing, YOURLS version number says "`1.6-alpha`". Despite boasting an intimidating "alpha" tag, it's currently completely stable: I didn't introduce yet any major change, especially in the DB structure, so feel really free to update today [using SVN](https://yourls.org/installsvn) or with a [nightly build](https://yourls.org/nightly-builds/). For the record, I'm using that version on _yourls.org_ and my personal _ozh.in_, amongst others.
