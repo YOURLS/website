@@ -10,7 +10,7 @@ tags:
   - 'svn'
 ---
 
-I'm regularly asked if there's a chance that [YOURLS](http://yourls.org/) be hosted on [GitHub](https://github.com/) instead of [Google Code](http://code.google.com/p/yourls/) as it is now.
+I'm regularly asked if there's a chance that [YOURLS](https://yourls.org/) be hosted on [GitHub](https://github.com/) instead of [Google Code](https://code.google.com/p/yourls/) as it is now.
 
 <!-- truncate -->
 

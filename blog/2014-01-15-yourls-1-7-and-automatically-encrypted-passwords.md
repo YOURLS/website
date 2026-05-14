@@ -27,9 +27,9 @@ $yourls_user_passwords = array(
 
 ```
 
-Simple and easy. Now, the thing is: if someone sees that file for whatever reason, they know your YOURLS password (which is the same for most of your other stuff online, [admit it](http://xkcd.com/792/)).
+Simple and easy. Now, the thing is: if someone sees that file for whatever reason, they know your YOURLS password (which is the same for most of your other stuff online, [admit it](https://xkcd.com/792/)).
 
-Previously in YOURLS you could manually hack the config file to encrypt yourself passwords, using a [salt and a MD5 hash](http://yourls.org/md5.php). Near perfect and practically undecryptable, except that whenever something has to be done manually, well, it has to be done. And you don't do it.
+Previously in YOURLS you could manually hack the config file to encrypt yourself passwords, using a [salt and a MD5 hash](https://yourls.org/md5.php). Near perfect and practically undecryptable, except that whenever something has to be done manually, well, it has to be done. And you don't do it.
 
 We've improved things in YOURLS 1.7 : encryption is now automatic.
 

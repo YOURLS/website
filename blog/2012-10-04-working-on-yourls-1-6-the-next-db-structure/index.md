@@ -25,13 +25,13 @@ There are a couple of awesome features I want to work on for YOURLS 1.6, one of 
 
 ## YOURLS 1.6 : previous thoughts
 
-I've been pondering about the next DB schema for a _very_ long time now, trying to think about the most state-of-the-art structure I could come up with (given my overall blatant lack of skill for DB things) and addressing all possible future features and current issues. I've [proposed stuff](http://code.google.com/p/yourls/wiki/DatabaseStructure) and a few people have been kind enough to comment. But all this had one weakness : it was complicated and scaring me. Seriously :)
+I've been pondering about the next DB schema for a _very_ long time now, trying to think about the most state-of-the-art structure I could come up with (given my overall blatant lack of skill for DB things) and addressing all possible future features and current issues. I've [proposed stuff](https://code.google.com/p/yourls/wiki/DatabaseStructure) and a few people have been kind enough to comment. But all this had one weakness : it was complicated and scaring me. Seriously :)
 
 ## YOURLS 1.6 : smarter yet simple (at least I hope so)
 
 I decided to make up my mind once for good and here is how I see things in YOURLS 1.6: ![](images/yourls-db-16.png 'yourls-db-16')
 
-The main `URL` table will be properly [normalized](http://en.wikipedia.org/wiki/Database_normalization) with a URL id to stop repeating the keyword across tables. I could probably go further in normalization (storing the long URL and title somewhere else, as I [first thought](http://code.google.com/p/yourls/wiki/DatabaseStructure)) but that's where I think it becomes too much trouble and hassle for too few benefits.
+The main `URL` table will be properly [normalized](https://en.wikipedia.org/wiki/Database_normalization) with a URL id to stop repeating the keyword across tables. I could probably go further in normalization (storing the long URL and title somewhere else, as I [first thought](https://code.google.com/p/yourls/wiki/DatabaseStructure)) but that's where I think it becomes too much trouble and hassle for too few benefits.
 
 The `URL_META` table will store anything you'd like about a particular short URL and will be used by plugins: some tags, a note, a mime type to handle redirection differently, anything.
 

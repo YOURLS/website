@@ -27,9 +27,9 @@ Oh, and of course, if you share links on social networks this way, be sure to te
 
 ## Happy shortening !
 
-This ends the tour of new features in YOURLS 1.7. Have fun using it, shorten URLs like it's your birthday, [star the project](https://github.com/YOURLS/YOURLS) on Github, follow [@yourls](http://twitter.com/yourls) for general YOURLS news and tell your friends about it.
+This ends the tour of new features in YOURLS 1.7. Have fun using it, shorten URLs like it's your birthday, [star the project](https://github.com/YOURLS/YOURLS) on Github, follow [@yourls](https://twitter.com/yourls) for general YOURLS news and tell your friends about it.
 
-<iframe src="http://ghbtns.com/github-btn.html?user=yourls&amp;repo=yourls&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+<iframe src="https://ghbtns.com/github-btn.html?user=yourls&amp;repo=yourls&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
 
 Depending on feedback we may release a 1.7.1 if and when we feel it's necessary. The next batch of features that will make it into 1.8 and 2.0 are currently being under development and, as usual, there is \*no ETA\* :)
 
