@@ -3,12 +3,10 @@
   "name": "website",
   "compatibility_date": "2026-05-11",
   "observability": {
-    "enabled": true
+    "enabled": true,
   },
+  "main": "./worker/index.ts",
   "assets": {
-    "directory": "build"
+    "directory": "build",
   },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
 }
