@@ -1,4 +1,5 @@
-# https://developers.cloudflare.com/pages/platform/redirects/
+# https://developers.cloudflare.com/workers/static-assets/redirects/
 
+/admin/* https://app.yourls.org/admin/:splat 308
 /cookiekey.php https://api.yourls.org/services/cookiekey/1.0/ 301
 /md5.php https://yourls.org/md5

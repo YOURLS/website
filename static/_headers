@@ -1,4 +1,4 @@
-# https://developers.cloudflare.com/pages/platform/headers/
+# https://developers.cloudflare.com/workers/static-assets/headers/
 
 /*
   X-Frame-Options: SAMEORIGIN
