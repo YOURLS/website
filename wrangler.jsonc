@@ -9,6 +9,7 @@
   "assets": {
     "directory": "build",
     "not_found_handling": "404-page",
+    "binding": "ASSETS",
   },
   "compatibility_flags": ["assets_navigation_has_no_effect"],
 }
