@@ -13,7 +13,7 @@ Hello everyone, we're excited to announce the release of [YOURLS 1.10](https://g
 
 ## Salute to Tatiana « Tati » Shmayluk \\m/
 
-In our tradition to name a new release after a metal vocalist, we're dedicating 1.10 to Tatiana "Tati" Shmayluk, frontwoman of Ukrainian heavy metal band [Jinjer](http://jinjer-metal.com/). I'm in awe of her ability to scream her throat out almost every night on tour, and her courage to face anxiety off-stage without the help of alcohol (two years sober!). If you haven't listened to Jinjer before, why not start with the badass title track from their new album, ["Duél"](https://www.youtube.com/watch?v=hEt3MajR0cU)? 🤘
+In our tradition to name a new release after a metal vocalist, we're dedicating 1.10 to Tatiana "Tati" Shmayluk, frontwoman of Ukrainian heavy metal band [Jinjer](https://jinjer-metal.com/). I'm in awe of her ability to scream her throat out almost every night on tour, and her courage to face anxiety off-stage without the help of alcohol (two years sober!). If you haven't listened to Jinjer before, why not start with the badass title track from their new album, ["Duél"](https://www.youtube.com/watch?v=hEt3MajR0cU)? 🤘
 
 ![](./Tatiana.jpg)
 
