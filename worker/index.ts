@@ -17,5 +17,7 @@ export default class extends WorkerEntrypoint<Env> {
     if (app.status !== 404) {
       return app
     }
+
+    return new Response(null, { status: 404 });
   }
 }
