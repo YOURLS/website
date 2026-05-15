@@ -8,5 +8,6 @@
   "main": "./worker/index.ts",
   "assets": {
     "directory": "build",
+    "not_found_handling": "404-page",
   },
 }
