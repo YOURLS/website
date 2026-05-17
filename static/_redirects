@@ -1,5 +1,8 @@
 # https://developers.cloudflare.com/workers/static-assets/redirects/
 
-/admin/* https://app.yourls.org/admin/:splat 308
+/blog/feed/ /blog/atom.xml 301
+/md5.php /md5 301
 /cookiekey.php https://api.yourls.org/services/cookiekey/1.0/ 301
-/md5.php https://yourls.org/md5
+/hooklist.php https://app.yourls.org/hooklist.php 308
+/admin/* https://app.yourls.org/admin/:splat 308
+/xref/* https://app.yourls.org/xref/:splat 308
