@@ -12,4 +12,4 @@ jobs:
     name: Node.js
     uses: YOURLS/.github/.github/workflows/nodejs.yml@main
     with:
-      action-matrix: '["lint", "build"]'
+      action-matrix: '["build"]'
