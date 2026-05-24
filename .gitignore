@@ -26,3 +26,7 @@ yarn-error.log*
 .dev.vars*
 !.dev.vars.example
 !.env.example
+
+# super linter
+/github_conf
+/super-linter-output
