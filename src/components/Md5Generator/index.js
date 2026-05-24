@@ -10,6 +10,7 @@ export default function Md5Generator() {
     setText(e.target.value)
     const salt = Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000
     const encrypted =
+
       `md5:${salt}:${require('md5')(salt + e.target.value)}`
     setMd5(encrypted)
   }
