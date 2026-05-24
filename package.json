@@ -15,8 +15,6 @@
     "preview": "npm run build && wrangler dev"
   },
   "dependencies": {
-    "@docusaurus/core": "3.10.1",
-    "@docusaurus/preset-classic": "3.10.1",
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
     "md5": "^2.3.0",
@@ -25,6 +23,8 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "@docusaurus/core": "3.10.1",
+    "@docusaurus/preset-classic": "3.10.1",
     "@docusaurus/module-type-aliases": "3.10.1",
     "@docusaurus/types": "3.10.1",
     "graphql-request": "^7.4.0",
