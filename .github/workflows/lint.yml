@@ -1,0 +1,24 @@
+# https://docs.github.com/actions
+
+name: Lint
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  packages: read
+  statuses: write
+
+jobs:
+  super-linter:
+    name: Code Base
+    uses: YOURLS/.github/.github/workflows/lint.yml@main
+    secrets: inherit
+    with:
+      fix: true
