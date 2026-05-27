@@ -33,6 +33,7 @@ $signature = hash('sha256', $timestamp . '1002a612b4' );
 // $signature = "10c28ab4a8b1b6acf3bef1a3e3284f4984d... (64 chars)"
 ?>
 ```
+
 By default, the hash must be one of `sha256`, `sha384` or `sha512`, unless explicitly allowed by a plugin via
 the `allowed_hash_algos` filter.
 
