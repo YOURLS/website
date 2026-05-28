@@ -8,7 +8,7 @@ To improve security and user experience, YOURLS **automatically encrypts** these
 
 ## Editing login & passwords in `config.php`
 
-Edit and save your config file with an array of simple `key => value` associations like the followings:
+Edit and save your config file with an array of simple `key => value` associations like the following:
 
 One login/password:
 
@@ -73,7 +73,7 @@ To do so: simply replace the string `md5:<5 digits>:<32 chars>` with your passwo
 
 ### Why hash passwords?
 
-Storing your password as a crypted hash is more secure: if someone has access to your `config.php`, they won't be able to determine what your password is and won't be able to log in your setup. The drawback is that if you forget your own password, you cannot retrieve it: see below.
+Storing your password as a encrypted hash is more secure: if someone has access to your `config.php`, they won't be able to determine what your password is and won't be able to log in your setup. The drawback is that if you forget your own password, you cannot retrieve it: see below.
 
 ### I don't remember my password / I want to change it
 
