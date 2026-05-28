@@ -37,7 +37,7 @@ $signature = hash('sha256', $timestamp . '1002a612b4' );
 By default, the hash must be one of `sha256`, `sha384` or `sha512`, unless explicitly allowed by a plugin via
 the `allowed_hash_algos` filter.
 
-Now use parameters `signature`, `timestamp` and `hash_algo` in your API requests. Example:
+Now use parameters `signature`, `timestamp` and `hash` in your API requests. Example:
 
 `https://yoursite/yourls-api.php?timestamp=$timestamp&signature=$signature&hash=sha256&action=...`
 
