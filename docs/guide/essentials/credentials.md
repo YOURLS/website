@@ -4,7 +4,7 @@
 
 In `config.php`, the variable `$yourls_user_passwords` shall contain an array of usernames and passwords.
 
-To improve security and user experience, YOURLS 1.7+ **automatically encrypts** these passwords within your config file.
+To improve security and user experience, YOURLS **automatically encrypts** these passwords within your config file.
 
 ## Editing login & passwords in `config.php`
 
@@ -33,7 +33,8 @@ $yourls_user_passwords = array(
 
 ## Password auto-encryption
 
-Next time you'll run YOURLS, this array will be rewritten, replacing plain text passwords with encrypted and undecipherable hashes. If you check now your `config.php`, you should see something like:
+Next time you'll run YOURLS, this array will be rewritten, replacing plain text passwords with encrypted and
+undecipherable hashes. If you check now your `config.php`, you should see something like:
 
 ```php
 <?php
@@ -44,10 +45,12 @@ $yourls_user_passwords = array(
 );
 ```
 
-User will still log in using `joe` as a username and `MyPassword` as a password, but this password is no longer written down anywhere in the config file.
+User will still log in using `joe` as a username and `MyPassword` as a password, but this password is no longer written
+down anywhere in the config file.
 
 :::tip Nerd note:
-We're using the Blowfish algorithm to encrypt passwords, an industry standard strong one-way hashing algorithm. This will hash your passwords so tight even the NSA will never be able to find out.
+We're using PHP's default password hashing algorithm, Blowfish as of writing, an industry standard strong one-way hashing algorithm.
+This will hash your passwords so tight even the NSA will never be able to find out.
 :::
 
 ## FAQ
@@ -69,34 +72,6 @@ Storing your password as a crypted hash is more secure: if someone has access to
 ### I don't remember my password / I want to change it
 
 Simply edit your `config.php` and write a new password in clear text. Next time you'll load YOURLS, it will be encrypted again.
-
-### Manual MD5 encryption
-
-If you prefer, you can manually encrypt passswords using a MD5 salted hash of the following structure:
-
-`md5:< salt of 5 digits >:< md5 of salt + password >`
-
-A PHP example to generate an encrypted password would be:
-
-```php
-<?php
-$password = 'MyPassword';
-$salt = rand( 10000, 99999 ); // example: 71688
-$encrypted = 'md5:' . $salt . ':' . md5( $salt . $password ) // example: md5:71688:0ce43474167f743b7b92d046ae970801
-```
-
-You can simply use the [YOURLS salted hash generator](https://yourls.org/md5).
-
-Edit your `config.php` so that the `key => value` associations with encrypted passwords looks like the following:
-
-```php
-<?php
-$yourls_user_passwords = array(
-    'joe' => 'md5:71688:0ce43474167f743b7b92d046ae970801',
-);
-```
-
-Hashes using MD5 are slightly less secure than using native YOURLS encryption, but still way better than plain text passwords.
 
 ### I don't want to encrypt my password
 
