@@ -61,9 +61,15 @@ If YOURLS cannot edit and save your `config.php` file, you will see the followin
 
 > _Could not auto-encrypt passwords. Error was: "cannot write file"._
 
-Your config file is probably locked for reading and or writing (eg _chmoded_), which can be a good security practice. Temporarily lift that restriction (`chmod 0666 config.php`), load a YOURLS page again, then `chmod` it back.
+Your config file is probably locked for reading and or writing (eg _chmoded_), which can be a good security practice. In a terminal console, note
+the original _chmod_ (`stat -c "%a" config.php`), temporarily lift that restriction (`chmod 0666 config.php`), load a YOURLS page again,
+then `chmod` it back to the original value (for example `chmod 600 config.php`).
 
-If for some reason you cannot get it working, see **manual MD5 encryption** below
+### I have an error message: "_Password stored as MD5 hash_"
+
+If your `config.php` contains password encrypted the old way with `md5()`, you should consider using more robust hashes.
+
+To do so: simply replace the string `md5:<5 digits>:<32 chars>` with your password in clear text, load a YOURLS page again. Everything should be now encrypted.
 
 ### Why hash passwords?
 
