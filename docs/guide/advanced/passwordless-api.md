@@ -6,7 +6,7 @@ If you're worried about sending your credentials into the wild, you can also mak
 
 ## Signature token
 
-Your secret signature token will be a string like `1002a612b4`
+Your secret signature token will be a 32 character string like `4ea59aab37f6df0755a6da98ee5ca85d`.
 
 A secret signature token is unique, associated to one account, and can be used only for API requests. It cannot be used to
 log in your YOURLS setup. You will find it in the Tools page of your YOURLS install.
@@ -14,11 +14,13 @@ log in your YOURLS setup. You will find it in the Tools page of your YOURLS inst
 **NB**: Can't see this signature on the Tools page? It's probably because your install is public. Therefore, you don't use a
 login and password to use it. Therefore there's no signature token to be used instead of a login/password pair.
 
+If you know what you are doing, you can customize the signature length or even content with filters `auth_signature_length` and `auth_signature`.
+
 ## Usage of the signature token
 
 Use parameter `signature` in your API requests. Example:
 
-`https://yoursite/yourls-api.php?signature=1002a612b4&action=...`
+`https://yoursite/yourls-api.php?signature=4ea59aab37f6df0755a6da98ee5ca85d&action=...`
 
 ## Usage of a time limited signature token
 
@@ -29,12 +31,12 @@ First, craft the time limited signature token:
 ```php
 <?php
 $timestamp = time();
-$signature = hash('sha256', $timestamp . '1002a612b4' );
+$signature = hash('sha256', $timestamp . '4ea59aab37f6df0755a6da98ee5ca85d' );
 // $signature = "10c28ab4a8b1b6acf3bef1a3e3284f4984d... (64 chars)"
 ?>
 ```
 
-By default, the hash must be one of `sha256`, `sha384` or `sha512`, unless explicitly allowed by a plugin via
+The hash must be one of `sha256`, `sha384` or `sha512`, unless explicitly allowed by a plugin via
 the `allowed_hash_algos` filter.
 
 Now use parameters `signature`, `timestamp` and `hash` in your API requests. Example:
