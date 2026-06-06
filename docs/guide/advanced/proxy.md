@@ -37,9 +37,10 @@ This setting supports a comma separated list of hosts, using `*` as a wildcard i
 
 ## Trusted proxies for IP detection
 
-When YOURLS runs behind a reverse proxy, load balancer, or CDN (such as Cloudflare, nginx, or AWS ALB), the visitor's real IP address is passed along in the `X-Forwarded-For` HTTP header. By default, YOURLS only trusts `REMOTE_ADDR` and ignores forwarded headers, to prevent IP spoofing.
+When YOURLS runs behind a reverse proxy, a load balancer, or a CDN, the visitor's real IP address is passed along in the `X-Forwarded-For` HTTP header.
+By default, YOURLS only trusts `REMOTE_ADDR` and ignores forwarded headers, to prevent IP spoofing.
 
-If you need YOURLS to read the real client IP from forwarded headers, you must explicitly declare which proxy IPs are trusted, using the `get_ip_trusted_proxies` filter in a plugin.
+If YOURLS needs to read the real client IP from forwarded headers, the trusted proxy IPs must be declared, using the `get_ip_trusted_proxies` filter in a plugin.
 
 ### Why this matters
 
