@@ -29,6 +29,6 @@
     "@docusaurus/types": "3.10.2",
     "graphql-request": "^7.4.0",
     "prettier": "^3.9.5",
-    "wrangler": "^4.110.0"
+    "wrangler": "^4.111.0"
   }
 }
