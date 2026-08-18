@@ -127,7 +127,7 @@ The steps to create a filter function are:
 
 :::warning
 
-Even when your Filter doesn't alter the passed value in any way, it **must _return_** the unmodified value!
+Even when your filter doesn't alter the passed value in any way, it **must _return_** the unmodified value!
 
 :::
 
@@ -162,8 +162,8 @@ function my_silly_function( $original_keyword ) {
 Certain filter hooks, which have names starting with `shunt_`, are used to let plugins conditionally tell YOURLS it should skip some actions. For example, you can skip logging/click-tracking for users matching a set of conditions defined by a custom function. Shunts are registered like any other filter:
 
 ```php
-yourls_add_filter( 'shunt_update_clicks', 'yp_dont_log_conditional' );
-yourls_add_filter( 'shunt_log_redirect', 'yp_dont_log_conditional' );
+yourls_add_filter('shunt_update_clicks', 'yp_dont_log_conditional');
+yourls_add_filter('shunt_log_redirect', 'yp_dont_log_conditional');
 
 function yp_dont_log_conditional($value = yourls_shunt_default()) {
     if (yp_dont_log_conditions_match()) {
