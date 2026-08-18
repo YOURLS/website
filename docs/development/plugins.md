@@ -210,7 +210,7 @@ First we need to create the plugin directory and file:
 1. in `user/plugins/` create a new directory, named for instance `my_first_plugin`
 1. create a new empty file named `plugin.php`
 
-**ProTip**: On GitHub, clone this skeleton repository to get yours in seconds: <https://github.com/YOURLS/plugin-sample>
+**ProTip**: On GitHub, clone this skeleton repository to get yours in seconds: [YOURLS/plugin-sample](https://github.com/YOURLS/plugin-sample)
 
 In this empty `plugin.php` paste the following code:
 
