@@ -117,7 +117,7 @@ A typical filter in YOURLS is a function call like the following:
 $value = yourls_apply_filter( 'some_filter', $value );
 ```
 
-#### Create a Filter function
+#### Create a filter function
 
 The steps to create a filter function are:
 
@@ -159,23 +159,25 @@ function my_silly_function( $original_keyword ) {
 
 #### Special case: Shunts
 
-Certain filter hooks, which have names starting with `shunt_`, are used to let plugins conditionally tell YOURLS it should skip some actions. For example, you can skip logging/click-tracking for users matching a set of conditions defined by a custom function. Shunts are registered like any other filter:
+Certain filter hooks, which have names starting with `shunt_`, are used to let plugins conditionally tell YOURLS it should skip some actions. For example, you can skip logging/click-tracking for users matching a set of conditions defined by a custom function.
+
+Shunts are registered like any other filter, and should return the unmodified value they were passed unless conditions match:
 
 ```php
 yourls_add_filter('shunt_update_clicks', 'yp_dont_log_conditional');
 yourls_add_filter('shunt_log_redirect', 'yp_dont_log_conditional');
 
-function yp_dont_log_conditional($value = yourls_shunt_default()) {
+function yp_dont_log_conditional($original_value) {
     if (yp_dont_log_conditions_match()) {
         return true;
     }
-    return $value;
+    return $original_value;
 }
 ```
 
 :::danger
 
-**Any** non-default return value will trigger the shunt, even `false` or `0`. Unless your plugin's own conditions are met, it should **never** return anything other than the passed-in `$value`.
+**Any** non-default return value will trigger the shunt, even `false` or `0`. Unless your plugin's own conditions are met, it should **never** return anything other than the `$original_value` passed in.
 
 :::
 
