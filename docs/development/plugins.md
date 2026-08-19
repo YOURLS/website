@@ -117,7 +117,7 @@ A typical filter in YOURLS is a function call like the following:
 $value = yourls_apply_filter( 'some_filter', $value );
 ```
 
-#### Create a Filter function
+#### Create a filter function
 
 The steps to create a filter function are:
 
