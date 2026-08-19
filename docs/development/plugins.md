@@ -159,7 +159,9 @@ function my_silly_function( $original_keyword ) {
 
 #### Special case: Shunts
 
-Certain filter hooks, which have names starting with `shunt_`, are used to let plugins conditionally tell YOURLS it should skip some actions. For example, you can skip logging/click-tracking for users matching a set of conditions defined by a custom function. Shunts are registered like any other filter:
+Certain filter hooks, which have names starting with `shunt_`, are used to let plugins conditionally tell YOURLS it should skip some actions. For example, you can skip logging/click-tracking for users matching a set of conditions defined by a custom function.
+
+Shunts are registered like any other filter, and should return the unmodified value they were passed unless conditions match:
 
 ```php
 yourls_add_filter('shunt_update_clicks', 'yp_dont_log_conditional');
