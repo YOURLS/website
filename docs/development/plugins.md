@@ -167,7 +167,7 @@ Shunts are registered like any other filter, and should return the unmodified va
 yourls_add_filter('shunt_update_clicks', 'yp_dont_log_conditional');
 yourls_add_filter('shunt_log_redirect', 'yp_dont_log_conditional');
 
-function yp_dont_log_conditional($value = yourls_shunt_default()) {
+function yp_dont_log_conditional($value) {
     if (yp_dont_log_conditions_match()) {
         return true;
     }
