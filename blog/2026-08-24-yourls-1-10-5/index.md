@@ -25,7 +25,7 @@ This update contains _a lot_ of miscellaneous security improvements and hardenin
   in your config file (something like `md5:12345:badc0ffeebadc0debadc0ffeebadc0de`) will be shown a
   friendly reminder to upgrade with a [helpful link](/docs/guide/essentials/credentials):
 
-    <img width="700" alt="image" src="https://github.com/user-attachments/assets/57ee71c0-8ff0-47a0-bc0b-b40fa982e006" />
+    ![](./update-md5-credentials.png)
 
   It also means your API signature (found in `/admin/tools.php`) is now a _longer_ string. Users of the
   [Passwordless API](/docs/guide/advanced/passwordless-api) will need to update their signature to the new value.
