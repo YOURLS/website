@@ -74,9 +74,7 @@ It's the typical case of "upload files over older ones and forget", which as alw
 
 Also as always, if it's been a while since your last DB backup, we suggest you do that **before** updating, since the new version will ask your database to change some stuff.
 
-<!-- markdownlint-disable-next-line MD026 -->
-
-## Spread the word
+## Spread the word! <!-- markdownlint-disable-line MD026 -->
 
 Help us make YOURLS bigger!
 You can do your part by telling friends to update, by sharing this release on the Fediverse (mention @[YOURLS@fosstodon.org](https://fosstodon.org/@YOURLS)!),
