@@ -76,7 +76,7 @@ Also as always, if it's been a while since your last DB backup, we suggest you d
 
 <!-- markdownlint-disable-next-line MD026 -->
 
-## Spread the word!
+## Spread the word
 
 Help us make YOURLS bigger!
 You can do your part by telling friends to update, by sharing this release on the Fediverse (mention @[YOURLS@fosstodon.org](https://fosstodon.org/@YOURLS)!),
