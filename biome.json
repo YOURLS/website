@@ -1,0 +1,5 @@
+{
+  "linter": {
+    "includes": ["!**/*.svg"]
+  }
+}

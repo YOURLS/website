@@ -117,13 +117,19 @@ A typical filter in YOURLS is a function call like the following:
 $value = yourls_apply_filter( 'some_filter', $value );
 ```
 
-#### Create a Filter function
+#### Create a filter function
 
 The steps to create a filter function are:
 
 1. define a custom PHP function `my_filter_function()` that accepts arguments, process them and _return_ them;
 1. hook your function to the particular filter, using YOURLS function `yourls_add_filter()`;
 1. put your custom function and its hook into a plugin file.
+
+:::warning
+
+Even when your filter doesn't alter the passed value in any way, it **must _return_** the unmodified value!
+
+:::
 
 #### Example of a filter function
 
@@ -150,6 +156,30 @@ function my_silly_function( $original_keyword ) {
     return $silly_keyword;
 }
 ```
+
+#### Special case: Shunts
+
+Certain filter hooks, which have names starting with `shunt_`, are used to let plugins conditionally tell YOURLS it should skip some actions. For example, you can skip logging/click-tracking for users matching a set of conditions defined by a custom function.
+
+Shunts are registered like any other filter, and should return the unmodified value they were passed unless conditions match:
+
+```php
+yourls_add_filter('shunt_update_clicks', 'yp_dont_log_conditional');
+yourls_add_filter('shunt_log_redirect', 'yp_dont_log_conditional');
+
+function yp_dont_log_conditional($original_value) {
+    if (yp_dont_log_conditions_match()) {
+        return true;
+    }
+    return $original_value;
+}
+```
+
+:::danger
+
+**Any** non-default return value will trigger the shunt, even `false` or `0`. Unless your plugin's own conditions are met, it should **never** return anything other than the `$original_value` passed in.
+
+:::
 
 ### Advanced syntax for hooks
 
@@ -182,7 +212,7 @@ First we need to create the plugin directory and file:
 1. in `user/plugins/` create a new directory, named for instance `my_first_plugin`
 1. create a new empty file named `plugin.php`
 
-**ProTip**: On GitHub, clone this skeleton repository to get yours in seconds: https://github.com/YOURLS/plugin-sample
+**ProTip**: On GitHub, clone this skeleton repository to get yours in seconds: [YOURLS/plugin-sample](https://github.com/YOURLS/plugin-sample)
 
 In this empty `plugin.php` paste the following code:
 
