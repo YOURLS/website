@@ -41,7 +41,7 @@ This update contains _a lot_ of miscellaneous security improvements and hardenin
 - **Many, many more unit tests were added**.
 
   Unit tests are automated tests running every time someone modifies the core code.
-  They ensure that adding or modifying code and feature won't break something unforeseen. We're currently automatically
+  They ensure that adding or modifying code and features won't break something unforeseen. We're currently automatically
   checking that YOURLS runs fine under [PHP 8.1 to 8.6](https://github.com/YOURLS/YOURLS/actions/runs/32036967288),
   and the number of automated tests have simply _doubled_ over the last few months. This brings geek satisfaction to geeks,
   and peace of mind to end users :)
