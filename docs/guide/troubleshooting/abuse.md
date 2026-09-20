@@ -18,7 +18,7 @@ Your install is completely private and access is supposed to be restricted to a 
 - Change DB logins/passwords
 - Make sure YOURLS is up to date. Always.
 - Make sure your plugins are up to date. Get rid of the plugins you're not sure about and don't need absolutely.
-- There are several plugins to help you prevent or throttle spam links. See the [plugin list](https://github.com/YOURLS/awesome-yourls).
+- There are several plugins to help you prevent or throttle spam links. See the [plugin list](https://github.com/YOURLS/awesome).
 - Make sure your server is not stupidly configured to execute `.php.txt` files, read this [blog post](https://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/)
 
 If you suspect YOURLS, a plugin or another script (see below) has been compromised, do not just update: the compromised file may still be present and continue to give access to malicious users. If unsure, delete all files and reinstall latest versions of what you strictly need.

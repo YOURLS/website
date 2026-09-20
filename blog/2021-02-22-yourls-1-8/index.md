@@ -36,7 +36,7 @@ Take that, IDN and stuff
 
 ## "Awesome YOURLS" is more awesome now
 
-[Awesome YOURLS](https://github.com/YOURLS/awesome-yourls) is the curated list of, well, awesome things about YOURLS: plugins, translations, themes, install guides, tutorials, tools, packages for various platforms, applications and programming languages. It's a truly amazing resource list.
+[Awesome YOURLS](https://github.com/YOURLS/awesome) is the curated list of, well, awesome things about YOURLS: plugins, translations, themes, install guides, tutorials, tools, packages for various platforms, applications and programming languages. It's a truly amazing resource list.
 
 The list has been improved lately: more content, more readable. More awesomeness. Be sure to check it, star it on GitHub and have your work featured there!
 

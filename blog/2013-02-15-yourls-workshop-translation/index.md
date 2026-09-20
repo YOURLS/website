@@ -53,7 +53,7 @@ Last step: make sure others can benefit from you hard work!
 
 1. Upload your two PO and MO files somewhere on the interweb. I recommend using a source controlled service, such as [GitHub](https://github.com/): this will make your changes easy to track, your files easy to maintain, and others' contributions easy to implement. If you don't want to use Git, a regular hosting (your blog) will be fine
 
-2. Ping us! Open a pull request on https://github.com/YOURLS/awesome-yourls and tell us where your translation lives (see [examples](https://github.com/YOURLS/awesome/pulls?q=is%3Apr+translation+))
+2. Ping us! Open a pull request on https://github.com/YOURLS/awesome and tell us where your translation lives (see [examples](https://github.com/YOURLS/awesome/pulls?q=is%3Apr+translation+))
 
 ## Protips: what makes a good translation ?
 

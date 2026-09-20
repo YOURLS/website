@@ -8,7 +8,7 @@ Want to run your own little _bitly_? You need what is called a **public interfac
 
 A sample public interface is provided, named `sample-public-front-page.txt`. Rename it as a `.php` file and customize it to suit your needs.
 
-You will find examples and inspiration in the [Showcase section](https://github.com/YOURLS/awesome-yourls#showcases) of Awesome YOURLS.
+You will find examples and inspiration in the [Showcase section](https://github.com/YOURLS/awesome#showcases) of Awesome YOURLS.
 
 ## Public API
 
@@ -18,7 +18,7 @@ Similarly, you can run a public API with a private install. There is also a samp
 
 If you run a public interface, you will have to deal with spam and if you're not prepared, your webhost will not like it and eventually shut your account down.
 
-Read the page about [Abuse](/docs/guide/troubleshooting/abuse). Install anti spam plugins from the [Plugin List](https://github.com/YOURLS/awesome-yourls) or even consider adding a [Captcha](https://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/). Also, read this [blog post](https://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/).
+Read the page about [Abuse](/docs/guide/troubleshooting/abuse). Install anti spam plugins from the [Plugin List](https://github.com/YOURLS/awesome) or even consider adding a [Captcha](https://blog.yourls.org/2015/05/integrating-the-new-google-recaptcha-with-yourls/). Also, read this [blog post](https://blog.yourls.org/2013/03/getting-spam-links-in-yourls-read-this/).
 
 ## Protocols
 
