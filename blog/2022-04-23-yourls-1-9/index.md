@@ -57,13 +57,13 @@ This one is for plugin authors: we have released a convenient [Test Suite tool f
 
 This is truly a new dawn for YOURLS plugin coders. The typical YOURLS plugin is a simple file with a couple filters and actions performing a simple task, and it's tempting to just forget about it. The [Test suite for plugins](https://github.com/YOURLS/YOURLS-test-suite-for-plugins) makes it easier to write tests, forget about your plugin AND be noticed if, for instance, a future YOURLS release breaks something!
 
-Plugin authors: go ahead, play with the test suite, write some tests and earn the "test icon" 🧪 in the [Awesome YOURLS](https://github.com/YOURLS/awesome-yourls) list! Feel free to ping Ozh if you need some guidance to get started.
+Plugin authors: go ahead, play with the test suite, write some tests and earn the "test icon" 🧪 in the [Awesome YOURLS](https://github.com/YOURLS/awesome) list! Feel free to ping Ozh if you need some guidance to get started.
 
 ## Wrapping it up
 
 [YOURLS 1.9 is out](https://github.com/YOURLS/YOURLS/releases/tag/1.9), right in time to celebrate our **8000th star** on GitHub.
 
-Over the years YOURLS has been consistently in the [Top 100 PHP projects on GitHub](https://github.com/ozh/top_100_PHP_projects) and we are really humbled and honoured. From the bottom of our hearts, we're sending a warm thank you to every people using YOURLS in small personal projects or large corporate environment, to people writing plugins and providing materials that make a [vivid ecosystem](https://github.com/YOURLS/awesome-yourls), to people [financially supporting](https://docs.yourls.org/sponsor.html) the project, and to everyone telling the world about it!
+Over the years YOURLS has been consistently in the [Top 100 PHP projects on GitHub](https://github.com/ozh/top_100_PHP_projects) and we are really humbled and honoured. From the bottom of our hearts, we're sending a warm thank you to every people using YOURLS in small personal projects or large corporate environment, to people writing plugins and providing materials that make a [vivid ecosystem](https://github.com/YOURLS/awesome), to people [financially supporting](https://docs.yourls.org/sponsor.html) the project, and to everyone telling the world about it!
 
 Now it's time to do your part!
 

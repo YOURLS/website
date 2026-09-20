@@ -86,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'Awesome YOURLS',
-                href: 'https://github.com/YOURLS/awesome-yourls',
+                href: 'https://github.com/YOURLS/awesome',
               },
               {
                 label: 'Plugin sample',

@@ -20,6 +20,6 @@ Don't modify core: **override core**. YOURLS, like many well designed apps and C
 
 Implement your custom features in separate files that will be left untouched when you update YOURLS.
 
-There's a tutorial on how to make [Plugins](/docs/development/plugins). There's an ever growing [Plugin List](https://github.com/YOURLS/awesome-yourls) that may already feature what you're looking for.
+There's a tutorial on how to make [Plugins](/docs/development/plugins). There's an ever growing [Plugin List](https://github.com/YOURLS/awesome) that may already feature what you're looking for.
 
 **Don't hack core**. Seriously.

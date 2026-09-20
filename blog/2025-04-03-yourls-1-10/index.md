@@ -37,7 +37,7 @@ We took our VuePress docs and made them even better. The documentation now lives
 
 ## Wrapping it up
 
-Over the years YOURLS has been consistently in the [Top 100 PHP projects on GitHub](https://github.com/ozh/top_100_PHP_projects) and we are really humbled and honoured. From the bottom of our hearts, we're sending a warm thank you to every people using YOURLS in small personal projects or large corporate environment, to people writing plugins and providing materials that make a [vivid ecosystem](https://github.com/YOURLS/awesome-yourls), to people [financially supporting](https://yourls.org/sponsor) the project, and to everyone telling the world about it!
+Over the years YOURLS has been consistently in the [Top 100 PHP projects on GitHub](https://github.com/ozh/top_100_PHP_projects) and we are really humbled and honoured. From the bottom of our hearts, we're sending a warm thank you to every people using YOURLS in small personal projects or large corporate environment, to people writing plugins and providing materials that make a [vivid ecosystem](https://github.com/YOURLS/awesome), to people [financially supporting](https://yourls.org/sponsor) the project, and to everyone telling the world about it!
 
 Now it's time to do your part!
 

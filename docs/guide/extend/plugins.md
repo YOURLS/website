@@ -10,7 +10,7 @@ Core plugins are bundled with YOURLS. They aim to either provide sample code for
 
 ## Normal plugins
 
-Normal plugins are written (and hopefully maintained) by various YOURLS users. You will find the list in the dedicated repository: [github.com/YOURLS/awesome-yourls](https://github.com/YOURLS/awesome-yourls)
+Normal plugins are written (and hopefully maintained) by various YOURLS users. You will find the list in the dedicated repository: [github.com/YOURLS/awesome](https://github.com/YOURLS/awesome)
 
 Being listed does not guarantee that the plugin is approved, its code is clean, future proof or anything (unless it's been made by Ozh of course 😊)
 
@@ -18,13 +18,13 @@ Being listed does not guarantee that the plugin is approved, its code is clean, 
 
 Creating a plugin for YOURLS requires some PHP knowledge, but it's fairly easy. Follow the [plugins development guide](/docs/development/plugins).
 
-## Get your plugin listed on awesome-yourls
+## Get your plugin listed on YOURLS/awesome
 
 You made a plugin? Awesome news! Getting your plugin listed is easy:
 
 1. First, get your plugin hosted somewhere. Your blog is OK. A source controlled environment such as GitHub is excellent. Tip: clone [this repository](https://github.com/YOURLS/plugin-sample) to create your plugin repository in seconds.
 2. Your plugin should be announced/hosted where users can post comments, submit bug reports and give feedback.
-3. Open a pull request on [github.com/YOURLS/awesome-yourls](https://github.com/YOURLS/awesome-yourls).
+3. Open a pull request on [github.com/YOURLS/awesome](https://github.com/YOURLS/awesome).
 
 ## Find plugin ideas
 

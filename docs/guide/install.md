@@ -21,4 +21,4 @@ If you are totally new to web app management, it might not be the best idea to j
 
 ## Third party guides
 
-Head to [Awesome YOURLS](https://github.com/YOURLS/awesome-yourls#guides--tutorials) for installation guides covering specific environments, translated in different languages.
+Head to [Awesome YOURLS](https://github.com/YOURLS/awesome#guides--tutorials) for installation guides covering specific environments, translated in different languages.
